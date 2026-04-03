@@ -106,7 +106,7 @@ export default function RumusCepat() {
               Tier {topik.tier}
             </span>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 10 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 10 }}>
             {topik.formulas.map((f, i) => (
               <div key={i} className="formula-card">
                 <div className="formula-name">{f.name}</div>
