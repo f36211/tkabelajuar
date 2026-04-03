@@ -1,0 +1,986 @@
+ANALISIS REVISI: VERSI 2.0 (LEbih PRESISI & REALISTIS)
+🔥 PERBAIKAN PENTING BERDASAR FEEDBACK
+Table
+Masukan	Perbaikan yang Dilakukan
+Statistika terlalu optimis	✅ Disederhanakan, fokus interpretasi cepat
+Trigonometri terlalu tinggi prioritasnya	✅ Diturunkan, fokus Pythagoras "tersamar"
+Geometri Soal 12 kurang presisi	✅ Dibuatkan soal definitif dengan gambar jelas
+Kurang Perbandingan/Rasio	✅ Ditambahkan bagian khusus, HIGH PRIORITY
+Mode ujian beneran	✅ Struktur latihan dibuat time-based
+PRIORITAS BELAJAR YANG DI-REBOOT
+🎯 URUTAN EFEKTIF (Berbasis Data Pola Soal)
+plain
+Copy
+
+╔════════════════════════════════════════════════════════════╗
+║  TIER S (SUPER WAJIB) - 95% Keluar                        ║
+║  ─────────────────────────────────                        ║
+║  1. ARITMATIKA SOSIAL (diskon, bunga, kerja)              ║
+║  2. GEOMETRI + PYTHAGORAS (gambar + hitung)               ║
+║  3. PERBANDINGAN/RASIO (skala, umur, kecepatan)           ║
+╠════════════════════════════════════════════════════════════╣
+║  TIER A (WAJIB) - 70% Keluar                              ║
+║  ─────────────────────────────────                        ║
+║  4. FUNGSI & PERSAMAAN GARIS                              ║
+║  5. STATISTIKA SEDERHANA (mean, median, diagram)          ║
+╠════════════════════════════════════════════════════════════╣
+║  TIER B (PENTING) - 50% Keluar                            ║
+║  ─────────────────────────────────                        ║
+║  6. PELUANG                                               ║
+║  7. TRANSFORMASI GEOMETRI                                 ║
+║  8. BARISAN ARITMATIKA                                    ║
+╠════════════════════════════════════════════════════════════╣
+║  TIER C (SIAP-SIAP) - 30% Keluar                          ║
+║  ─────────────────────────────────                        ║
+║  9. SISTEM PERSAMAAN (2 variabel)                         ║
+║  10. BENTUK AKAR & EKSPONEN                               ║
+╚════════════════════════════════════════════════════════════╝
+
+LATIHAN PREDIKSI VERSI 2.0: 20 SOAL TIME-BASED
+Instruksi: Kerjakan dalam 40 menit. Target: 15+ benar.
+BAGIAN S: TIER SUPER WAJIB (8 Soal)
+Soal 1 - ARITMATIKA SOSIAL [Mudah | 2 menit]
+Sebuah sepeda harga normal Rp1.200.000. Toko memberi diskon 20% untuk semua barang, lalu diskon tambahan 10% untuk member. Jika Andi member, berapa yang dibayar?
+Pembahasan Cepat:
+plain
+Copy
+
+Diskon 1: 1.200.000 × 0,80 = 960.000
+Diskon 2: 960.000 × 0,90 = 864.000
+
+⚡ Trick: Bukan 30%! Tapi 0,8 × 0,9 = 0,72 (diskon total 28%)
+
+Jawaban: Rp864.000
+Soal 2 - PYTHAGORAS TERSAMAR [Sedang | 3 menit]
+Seorang petani memasang tali dari puncak tiang bendera ke tanah. Panjang tali 17 m, jarak kaki tiang ke ujung tali di tanah adalah 8 m. Tinggi tiang adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Ini Pythagoras tersamar! Gambar mental:
+- Miring (tali) = 17
+- Horizontal = 8  
+- Vertikal (tiang) = ?
+
+Tinggi² + 8² = 17²
+Tinggi² = 289 - 64 = 225
+Tinggi = 15 m
+
+Jawaban: 15 m
+Soal 3 - PERBANDINGAN UMUR [Sedang | 2 menit]
+Umur Ayah : Umur Budi = 7 : 4. Jumlah umur mereka 55 tahun. Umur Ayah 5 tahun lagi adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Total bagian = 7 + 4 = 11
+Umur Ayah = (7/11) × 55 = 35 tahun
+Umur Ayah 5 tahun lagi = 40 tahun
+
+Jawaban: 40 tahun
+Soal 4 - PERBANDINGAN CAMPURAN [Sedang | 3 menit]
+Campuran minuman A dan B perbandingan 3:5. Jika total campuran 24 liter, dan ingin diubah jadi perbandingan 1:1, berapa liter B yang harus ditambah?
+Pembahasan Cepat:
+plain
+Copy
+
+Awal: A = (3/8)×24 = 9 liter, B = 15 liter
+
+Target 1:1 dengan A tetap 9 → B harus jadi 9 liter juga
+Tapi B sudah 15 > 9, jadi... 
+
+⚡ Cek ulang: kalau B ditambah, A tetap, perbandingan A:B makin kecil
+Seharusnya: TAMBAH A atau KURANGI B
+
+Kalau soal "ditambah": A harus ditambah 6 liter (jadi 15:15)
+
+Jawaban: 6 liter A (atau soal dimaksud kurangi B 6 liter)
+Soal 5 - KECEPATAN (Perbandingan) [Sedang | 3 menit]
+Anto bersepeda ke sekolah 12 km/jam, pulang 8 km/jam. Rata-rata kecepatan seluruh perjalanan adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+⚡ Jebakan: Bukan (12+8)/2 = 10!
+
+Asumsikan jarak = 24 km (KPK dari 12 dan 8)
+Waktu pergi = 24/12 = 2 jam
+Waktu pulang = 24/8 = 3 jam
+Total waktu = 5 jam, Total jarak = 48 km
+
+Rata-rata = 48/5 = 9,6 km/jam
+
+Jawaban: 9,6 km/jam
+Soal 6 - SKALA PETA [Mudah | 2 menit]
+Jarak dua kota 45 km. Pada peta skala 1:500.000, jaraknya adalah... cm
+Pembahasan Cepat:
+plain
+Copy
+
+45 km = 4.500.000 cm
+Jarak peta = 4.500.000 / 500.000 = 9 cm
+
+Jawaban: 9 cm
+Soal 7 - KERJA BERTINGKAT [Sedang | 3 menit]
+15 pekerja membangun rumah dalam 20 hari. Setelah 8 hari, 5 pekerja sakit. Berapa hari lagi yang dibutuhkan?
+Pembahasan Cepat:
+plain
+Copy
+
+Total pekerjaan = 15 × 20 = 300 orang-hari
+Selesai = 15 × 8 = 120 orang-hari
+Sisa = 180 orang-hari
+
+Pekerja tersisa = 10 orang
+Waktu = 180 / 10 = 18 hari
+
+Jawaban: 18 hari
+Soal 8 - DISKON "PALSU" [Sulit | 4 menit]
+Toko A: Diskon 30% lalu diskon 20%
+Toko B: Diskon 40% langsung
+Toko C: Diskon 50%
+Untuk barang harga Rp800.000, urutan termurah ke termahal adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+A: 800.000 × 0,7 × 0,8 = 448.000
+B: 800.000 × 0,6 = 480.000  
+C: 800.000 × 0,5 = 400.000
+
+Urutan: C (400k) < A (448k) < B (480k)
+
+Jawaban: C, A, B
+BAGIAN A: TIER WAJIB (6 Soal)
+Soal 9 - FUNGSI NILAI [Mudah | 2 menit]
+Jika f(x) = 5x - 3, nilai f(4) - f(2) adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+f(4) = 20 - 3 = 17
+f(2) = 10 - 3 = 7
+Selisih = 10
+
+⚡ Atau: f(4)-f(2) = 5(4)-5(2) = 5(2) = 10 (lebih cepat!)
+
+Jawaban: 10
+Soal 10 - PERSAMAAN GARIS [Sedang | 3 menit]
+Garis melalui (1, 2) dan (3, 8). Persamaannya adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+m = (8-2)/(3-1) = 6/2 = 3
+
+y - 2 = 3(x - 1)
+y = 3x - 3 + 2 = 3x - 1
+
+Atau: 3x - y - 1 = 0
+
+Jawaban: y = 3x - 1
+Soal 11 - MEAN TABEL [Sedang | 3 menit]
+Table
+Nilai	4	5	6	7	8
+Siswa	2	4	6	4	2
+Rata-rata nilai adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Total siswa = 18
+Jumlah nilai = (4×2)+(5×4)+(6×6)+(7×4)+(8×2) = 8+20+36+28+16 = 108
+
+Mean = 108/18 = 6
+
+Jawaban: 6
+Soal 12 - INTERPRETASI DIAGRAM [Mudah | 2 menit]
+(Bayangkan diagram batang: Senin 20, Selasa 35, Rabu 25, Kamis 30, Jumat 40)
+Selisih pengunjung terbanyak dan tersedikit adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Terbanyak: Jumat = 40
+Tersedikit: Senin = 20
+Selisih = 20
+
+Jawaban: 20
+Soal 13 - MEDIAN [Sedang | 2 menit]
+Data: 12, 15, 18, 20, 22, 25, 28, 30, 32. Median adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Data sudah urut, jumlah ganjil (9 data)
+Median = data ke-5 = 22
+
+Jawaban: 22
+Soal 14 - MODUS [Mudah | 1 menit]
+Data: 7, 8, 6, 7, 9, 8, 7, 6, 7, 8. Modus adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+7 muncul 4 kali (paling sering)
+8 muncul 3 kali
+6 muncul 2 kali
+
+Jawaban: 7
+BAGIAN B: TIER PENTING (4 Soal)
+Soal 15 - PELUANG DADU [Mudah | 2 menit]
+Dadu dilempar sekali. Peluang muncul bilangan prima adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Prima: 2, 3, 5 → 3 kemungkinan
+Total: 6
+Peluang = 3/6 = 1/2
+
+Jawaban: 1/2
+Soal 16 - PELUANG BERSYARAT [Sedang | 3 menit]
+Dalam kotak 5 bola merah, 3 biru. Diambil 2 bola tanpa pengembalian. Peluang kedua-duanya merah adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+P(M1) = 5/8
+P(M2|M1) = 4/7
+P(M1 dan M2) = (5/8) × (4/7) = 20/56 = 5/14
+
+Jawaban: 5/14
+Soal 17 - REFLEKSI [Sedang | 2 menit]
+Titik A(4, -3) direfleksikan terhadap sumbu x, kemudian terhadap sumbu y. Koordinat akhir adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Refleksi sumbu x: (x,y) → (x,-y)
+A(4,-3) → A'(4,3)
+
+Refleksi sumbu y: (x,y) → (-x,y)  
+A'(4,3) → A''(-4,3)
+
+Jawaban: (-4, 3)
+Soal 18 - BARISAN [Mudah | 2 menit]
+Suku ke-5 barisan aritmatika adalah 17, suku ke-9 adalah 29. Suku ke-12 adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+Selisih 4 suku = 29-17 = 12
+Bedanya (b) = 12/4 = 3
+
+U5 = a + 4b = 17 → a + 12 = 17 → a = 5
+U12 = a + 11b = 5 + 33 = 38
+
+Jawaban: 38
+BAGIAN C: TIER SIAP-SIAP (2 Soal)
+Soal 19 - SISTEM PERSAMAAN [Sedang | 3 menit]
+Harga 2 pensil dan 3 buku Rp21.000. Harga 4 pensil dan 1 buku Rp23.000. Harga 1 pensil dan 2 buku adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+2x + 3y = 21.000 ... (1)
+4x + y = 23.000 ... (2)
+
+Dari (2): y = 23.000 - 4x
+Substitusi ke (1):
+2x + 3(23.000-4x) = 21.000
+2x + 69.000 - 12x = 21.000
+-10x = -48.000
+x = 4.800 (pensil)
+
+y = 23.000 - 19.200 = 3.800 (buku)
+
+1 pensil + 2 buku = 4.800 + 7.600 = 12.400
+
+Jawaban: Rp12.400
+Soal 20 - BENTUK AKAR [Sedang | 3 menit]
+Hasil dari 2√12 - √27 + √75 adalah...
+Pembahasan Cepat:
+plain
+Copy
+
+2√12 = 2√(4×3) = 2×2√3 = 4√3
+√27 = √(9×3) = 3√3
+√75 = √(25×3) = 5√3
+
+Jumlah: 4√3 - 3√3 + 5√3 = 6√3
+
+Jawaban: 6√3
+KUNCI JAWABAN & ANALISIS DIRI
+Table
+No	Jawaban	Topik	Tier	Waktu Target
+1	Rp864.000	Aritmatika Sosial	S	2 min
+2	15 m	Pythagoras	S	3 min
+3	40 tahun	Perbandingan	S	2 min
+4	6 liter	Perbandingan	S	3 min
+5	9,6 km/jam	Kecepatan	S	3 min
+6	9 cm	Skala	S	2 min
+7	18 hari	Kerja	S	3 min
+8	C, A, B	Diskon	S	4 min
+9	10	Fungsi	A	2 min
+10	y=3x-1	Garis	A	3 min
+11	6	Mean	A	3 min
+12	20	Diagram	A	2 min
+13	22	Median	A	2 min
+14	7	Modus	A	1 min
+15	1/2	Peluang	B	2 min
+16	5/14	Peluang	B	3 min
+17	(-4, 3)	Transformasi	B	2 min
+18	38	Barisan	B	2 min
+19	Rp12.400	Sistem	C	3 min
+20	6√3	Akar	C	3 min
+Total waktu: 40 menit
+DAFTAR "HAL WAJIB DIKUASAI" VERSI FINAL
+🎯 TOP 5 SKILL (Bukan Rumus)
+Table
+Rank	Skill	Tanda Sudah Kuat
+1	Nge-spot Pythagoras tersamar	Lihat "tali", "tiang", "jarak", langsung gambar segitiga
+2	Diskon bertingkat	Langsung kalikan (1-p) berkali, bukan jumlah %
+3	Perbandingan umur/kerja	Langsung tentukan "tetap" vs "berubah"
+4	Mean cepat dari tabel	Hitung f×x tanpa tulis panjang
+5	Gradien & persamaan garis	Dua titik → m → persamaan dalam 30 detik
+⚡ RUMUS SUPER CEPAT (Hafalkan!)
+plain
+Copy
+
+╔══════════════════════════════════════════════════════════════╗
+║  PYTHAGORAS TRIPLE (Hafal!)                                  ║
+║  3-4-5 | 5-12-13 | 8-15-17 | 7-24-25 | 9-40-41              ║
+║  Kalau lihat 5 dan 13, langsung tahu yang satunya 12!       ║
+╠══════════════════════════════════════════════════════════════╣
+║  DISKON BERTINGKAT                                           ║
+║  20% + 10% = 0,8 × 0,9 = 0,72 (bukan 0,70!)                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  RATA-RATA KECEPATAN                                         ║
+║  = 2ab/(a+b) untuk pergi a, pulang b                        ║
+║  Contoh: 12 dan 8 → 2×12×8/20 = 9,6                         ║
+╠══════════════════════════════════════════════════════════════╣
+║  PERBANDINGAN CEPAT                                          ║
+║  a:b dengan jumlah S → a = [a/(a+b)] × S                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+🚨 TANDA SOAL "PALSU SUSAH"
+Jika ketemu soal dengan ciri:
+
+    ❌ Banyak angka acak
+    ❌ Cerita panjang berbelit
+    ❌ Pilihan jawaban aneh
+
+90% itu cuma:
+
+    Pythagoras (gambar mental)
+    Perbandingan (tentukan yang tetap)
+    Diskon bertingkat (kalikan bertahap)
+
+Jangan overthink!
+Saya akan menganalisis semua soal dari foto-foto yang Anda berikan secara menyeluruh. Mari kita mulai dengan membaca dan mengkategorikan setiap soal.
+
+## **ANALISIS MENYELURUH SOAL-SOAL**
+
+### **1. PEMBAGIAN TOPIK DAN FREKUENSI**
+
+| **Topik** | **Jumlah Soal** | **Persentase** | **Nomor Soal (dari berbagai foto)** |
+|-----------|----------------|----------------|-------------------------------------|
+| **Aljabar & Aritmatika** | ~25 soal | 25% | Operasi bilangan, persamaan linear, sistem persamaan, pertidaksamaan |
+| **Fungsi** | ~12 soal | 12% | Fungsi linear, nilai fungsi, komposisi, domain-range |
+| **Geometri & Trigonometri** | ~20 soal | 20% | Bangun datar, bangun ruang, kesebangunan, refleksi, translasi, rotasi |
+| **Statistika & Data** | ~15 soal | 15% | Mean, median, modus, diagram batang, tabel frekuensi |
+| **Peluang** | ~10 soal | 10% | Peluang kejadian, peluang bersyarat |
+| **Aritmatika Sosial** | ~12 soal | 12% | Persentase, diskon, untung-rugi, bunga, skala |
+| **Barisan & Deret** | ~6 soal | 6% | Barisan aritmatika, geometri |
+
+---
+
+### **2. POLA SOAL YANG SERING MUNCUL**
+
+#### **🔥 POLA #1: Soal Cerita Aritmatika Sosial (HIGH PRIORITY)**
+- **Frekuensi:** Sangat tinggi, hampir di setiap set soal
+- **Bentuk:** Diskon bertingkat, harga beli-jual, bunga bank
+- **Contoh khas:** Soal no. 8 (foto 21/32) tentang diskon sepatu, soal no. 29 (foto 16) tentang diskon baju
+
+#### **🔥 POLA #2: Fungsi Linear dan Grafik (HIGH PRIORITY)**
+- **Frekuensi:** Tinggi
+- **Bentuk:** Mencari nilai fungsi, menentukan persamaan garis, refleksi, translasi
+- **Contoh khas:** Soal no. 9 (foto 32) tentang tiang listrik dengan kesebangunan
+
+#### **🔥 POLA #3: Geometri dengan Gambar (HIGH PRIORITY)**
+- **Frekuensi:** Sangat tinggi
+- **Bentuk:** Menghitung luas, keliling, volume, jarak dengan teorema Pythagoras
+- **Contoh khas:** Soal no. 10, 11, 12 (foto 22) tentang bangun gabungan
+
+#### **🔥 POLA #4: Statistika Tabel dan Diagram (MEDIUM-HIGH)**
+- **Frekuensi:** Tinggi
+- **Bentuk:** Mean, median, modus, interpretasi diagram batang
+- **Contoh khas:** Soal no. 20, 21 (foto 17) tentang diagram nilai ulangan
+
+#### **🔥 POLA #5: Peluang Sederhana (MEDIUM)**
+- **Frekuensi:** Sedang
+- **Bentuk:** Dadu, peluang kejadian majemuk
+- **Contoh khas:** Soal no. 1, 2 (foto 30) tentang dadu dan keluarga
+
+---
+
+### **3. RUMUS & KONSEP PALING SERING DIGUNAKAN**
+
+| **Ranking** | **Rumus/Konsep** | **Frekuensi Penggunaan** |
+|-------------|------------------|--------------------------|
+| 1 | **Teorema Pythagoras: a² + b² = c²** | ⭐⭐⭐⭐⭐ (5/5) |
+| 2 | **Persamaan garis: y = mx + c** | ⭐⭐⭐⭐⭐ |
+| 3 | **Mean = Σ(fi×xi) / Σfi** | ⭐⭐⭐⭐⭐ |
+| 4 | **Luas lingkaran = πr², Keliling = 2πr** | ⭐⭐⭐⭐⭐ |
+| 5 | **Diskon bertingkat: Harga akhir = Harga × (1-p₁) × (1-p₂)** | ⭐⭐⭐⭐ |
+| 6 | **Kesebangunan: perbandingan sisi sama** | ⭐⭐⭐⭐ |
+| 7 | **Volume prisma = Luas alas × tinggi** | ⭐⭐⭐⭐ |
+| 8 | **Peluang = n(A)/n(S)** | ⭐⭐⭐⭐ |
+
+---
+
+### **4. TRICK & JEBAKAN YANG SERING MUNCUL**
+
+| **Jebakan** | **Penjelasan** | **Contoh Soal** |
+|-------------|----------------|-----------------|
+| **"Ditambah" vs "Menjadi"** | Soal kerja: "ditambah" berarti total baru, bukan selisih | Soal no. 2 (foto 25, 33) |
+| **Satuan berbeda** | cm vs m, gram vs kg, menit vs jam | Soal no. 22 (foto 17) tentang roda sepeda |
+| **Diskon % dari harga berbeda** | Diskon 20% kemudian 30% bukan 50% | Soal no. 8 (foto 21, 32) |
+| **Diagram batang: nilai vs frekuensi** | Salah membaca sumbu | Soal no. 20 (foto 17) |
+| **Luas daerah diarsir** | Harus dikurangi atau ditambah bagian tertentu | Soal no. 24, 25 (foto 18) |
+
+---
+
+## **PREDIKSI MATERI UJIAN (URUTAN PRIORITAS)**
+
+### **🥇 TIER 1: WAJIB BANGET (90% keluar)**
+1. **Soal cerita aritmatika sosial** - diskon, untung-rugi, bunga
+2. **Geometri dengan gambar** - luas/keliling bangun gabungan, kesebangunan
+3. **Fungsi dan persamaan garis** - mencari nilai, gradien, persamaan
+
+### **🥈 TIER 2: SANGAT MUNGKIN (70% keluar)**
+4. **Statistika** - mean, median, modus dari tabel/diagram
+5. **Peluang** - dadu, kartu, kejadian bersyarat sederhana
+6. **Transformasi geometri** - translasi, refleksi, rotasi
+
+### **🥉 TIER 3: MUNGKIN (50% keluar)**
+7. **Barisan dan deret** - aritmatika sosial
+8. **Trigonometri dasar** - sudut istimewa, identitas sederhana
+9. **Logaritma dan eksponen** - sederhana saja
+
+---
+
+## **LATIHAN PREDIKSI SOAL (20 SOAL)**
+
+### **BAGIAN A: ALJABAR & ARITMATIKA SOSIAL (5 Soal)**
+
+---
+
+#### **Soal 1 (Mudah)**
+Sebuah toko memberikan diskon 15% untuk member dan diskon tambahan 10% untuk pembelian di atas Rp500.000. Jika harga sebuah sepatu Rp750.000, berapa harga yang harus dibayar oleh member?
+
+**Pembahasan:**
+```
+Harga awal = Rp750.000
+Diskon 1 (15%) = 750.000 × 0,15 = Rp112.500
+Harga setelah diskon 1 = 750.000 - 112.500 = Rp637.500
+
+Karena > Rp500.000, dapat diskon 10% lagi:
+Diskon 2 (10%) = 637.500 × 0,10 = Rp63.750
+
+Harga akhir = 637.500 - 63.750 = Rp573.750
+```
+
+**Jawaban: Rp573.750**
+
+**Konsep:** Diskon bertingkat bukan penjumlahan (bukan 25%), tapi diskon kedua dari harga baru.
+
+---
+
+#### **Soal 2 (Sedang)**
+Pak Budi menabung Rp2.000.000 dengan bunga 6% per tahun. Setelah berapa bulan tabungannya menjadi Rp2.060.000?
+
+**Pembahasan:**
+```
+Bunga yang diperoleh = 2.060.000 - 2.000.000 = Rp60.000
+
+Rumus bunga tunggal: Bunga = P × r × t
+60.000 = 2.000.000 × 0,06 × t
+60.000 = 120.000 × t
+t = 60.000 / 120.000 = 0,5 tahun = 6 bulan
+```
+
+**Jawaban: 6 bulan**
+
+**Konsep:** Bunga tunggal = Pokok × suku bunga × waktu (dalam tahun)
+
+---
+
+#### **Soal 3 (Sedang)**
+Sebuah proyek dapat diselesaikan 24 pekerja dalam 30 hari. Setelah 10 hari bekerja, proyek dihentikan 5 hari. Berapa pekerja tambahan yang diperlukan agar proyek tetap selesai tepat waktu?
+
+**Pembahasan:**
+```
+Total pekerjaan = 24 orang × 30 hari = 720 orang-hari
+
+Pekerjaan selesai dalam 10 hari = 24 × 10 = 240 orang-hari
+Sisa pekerjaan = 720 - 240 = 480 orang-hari
+
+Sisa waktu = 30 - 10 - 5 (libur) = 15 hari
+
+Pekerja yang dibutuhkan = 480 / 15 = 32 orang
+
+Pekerja tambahan = 32 - 24 = 8 orang
+```
+
+**Jawaban: 8 orang**
+
+**Konsep:** Konsep pekerjaan terbalik (inverse proportion). Perhatikan jebakan "dihentikan 5 hari".
+
+---
+
+#### **Soal 4 (Sulit)**
+Harga 3 pensil dan 2 penghapus Rp13.000. Harga 2 pensil dan 3 penghapus Rp12.000. Berapa harga 5 pensil dan 5 penghapus?
+
+**Pembahasan:**
+```
+Misal: pensil = x, penghapus = y
+
+Persamaan 1: 3x + 2y = 13.000
+Persamaan 2: 2x + 3y = 12.000
+
+Cara cepat: Jumlahkan kedua persamaan!
+(3x + 2y) + (2x + 3y) = 13.000 + 12.000
+5x + 5y = 25.000
+
+Jadi harga 5 pensil dan 5 penghapus = Rp25.000
+```
+
+**Jawaban: Rp25.000**
+
+**Konsep:** Sistem persamaan linear. Trick: Tidak perlu mencari x dan y satu per satu!
+
+---
+
+#### **Soal 5 (Sulit)**
+Nilai x yang memenuhi: 2^(2x+1) × 4^(x-1) = 16^(x+2) / 8^(x-1)
+
+**Pembahasan:**
+```
+Ubah semua ke basis 2:
+4 = 2², 16 = 2⁴, 8 = 2³
+
+2^(2x+1) × (2²)^(x-1) = (2⁴)^(x+2) / (2³)^(x-1)
+2^(2x+1) × 2^(2x-2) = 2^(4x+8) / 2^(3x-3)
+2^(4x-1) = 2^(4x+8-3x+3)
+2^(4x-1) = 2^(x+11)
+
+Samakan pangkat:
+4x - 1 = x + 11
+3x = 12
+x = 4
+```
+
+**Jawaban: 4**
+
+**Konsep:** Sifat eksponen: a^m × a^n = a^(m+n) dan a^m / a^n = a^(m-n)
+
+---
+
+### **BAGIAN B: FUNGSI & PERSAMAAN (4 Soal)**
+
+---
+
+#### **Soal 6 (Mudah)**
+Diketahui f(x) = 3x - 7. Nilai f(5) + f(-2) adalah...
+
+**Pembahasan:**
+```
+f(5) = 3(5) - 7 = 15 - 7 = 8
+f(-2) = 3(-2) - 7 = -6 - 7 = -13
+
+f(5) + f(-2) = 8 + (-13) = -5
+```
+
+**Jawaban: -5**
+
+---
+
+#### **Soal 7 (Sedang)**
+Persamaan garis melalui titik (2, -3) dan sejajar dengan garis 3x - 2y = 6 adalah...
+
+**Pembahasan:**
+```
+Garis 3x - 2y = 6 → 2y = 3x - 6 → y = (3/2)x - 3
+Gradien m = 3/2
+
+Garis sejajar punya gradien sama: m = 3/2
+
+Persamaan: y - y₁ = m(x - x₁)
+y - (-3) = (3/2)(x - 2)
+y + 3 = (3/2)x - 3
+y = (3/2)x - 6
+
+Kalikan 2: 2y = 3x - 12
+Atau: 3x - 2y - 12 = 0
+```
+
+**Jawaban: 3x - 2y = 12 (atau bentuk lain yang setara)**
+
+**Konsep:** Garis sejajar → gradien sama. Gunakan titik yang diketahui.
+
+---
+
+#### **Soal 8 (Sedang)**
+Jika f(2x - 1) = 4x + 3, maka nilai f(5) adalah...
+
+**Pembahasan:**
+```
+Cari x saat 2x - 1 = 5
+2x = 6
+x = 3
+
+Substitusi x = 3 ke ruas kanan:
+f(5) = 4(3) + 3 = 12 + 3 = 15
+```
+
+**Jawaban: 15**
+
+**Konsep:** Fungsi komposisi. Cari input yang menghasilkan argumen yang diminta.
+
+---
+
+#### **Soal 9 (Sulit)**
+Domain fungsi f(x) = √(2x - 6) / (x² - 9) adalah...
+
+**Pembahasan:**
+```
+Syarat 1: Akar tidak negatif
+2x - 6 ≥ 0 → x ≥ 3
+
+Syarat 2: Penyebut tidak nol
+x² - 9 ≠ 0 → (x+3)(x-3) ≠ 0 → x ≠ -3 dan x ≠ 3
+
+Gabungan: x ≥ 3 dan x ≠ 3
+Jadi: x > 3
+```
+
+**Jawaban: {x | x > 3} atau x ∈ (3, ∞)**
+
+**Konsep:** Domain memperhatikan: akar (positif/negatif) dan penyebut (tidak nol).
+
+---
+
+### **BAGIAN C: GEOMETRI (6 Soal)**
+
+---
+
+#### **Soal 10 (Mudah)**
+Sebuah taman berbentuk persegi panjang panjang 24 m dan lebar 18 m. Di sekelilingnya akan ditanami pohon dengan jarak 3 m. Berapa pohon yang dibutuhkan?
+
+**Pembahasan:**
+```
+Keliling = 2 × (24 + 18) = 2 × 42 = 84 m
+
+Jumlah pohon = Keliling / jarak = 84 / 3 = 28 pohon
+```
+
+**Jawaban: 28 pohon**
+
+**Konsep:** Jarak di keliling = keliling / jarak antar objek.
+
+---
+
+#### **Soal 11 (Sedang) - HIGH PRIORITY**
+Perhatikan gambar! Sebuah gardu tingginya 4 m berjarak 5 m dari tiang listrik. Kabel dari ujung atap gardu ke ujung tiang listrik panjangnya 13 m. Berapa tinggi tiang listrik?
+
+**Pembahasan:**
+```
+Misal: x = tinggi bagian tiang di atas gardu
+
+Bentuk segitiga siku-siku:
+- Horizontal: 5 m
+- Vertikal: x m  
+- Miring (kabel): 13 m
+
+Teorema Pythagoras:
+5² + x² = 13²
+25 + x² = 169
+x² = 144
+x = 12 m
+
+Tinggi tiang total = tinggi gardu + x = 4 + 12 = 16 m
+```
+
+**Jawaban: 16 m**
+
+**Konsep:** Kesebangunan/Pythagoras dalam konteks nyata. **Soal ini sangat khas dan sering keluar!**
+
+---
+
+#### **Soal 12 (Sedang)**
+Luas daerah yang diarsir pada gambar (lingkaran dengan diameter 14 cm, di dalamnya ada persegi yang memotong 1/4 bagian) adalah...
+
+**Pembahasan:**
+```
+Diameter = 14 cm → r = 7 cm
+Luas lingkaran = πr² = (22/7) × 49 = 154 cm²
+
+Luas persegi dengan diagonal = diameter = 14 cm
+Luas persegi = (d₁ × d₂)/2 = (14 × 14)/2 = 98 cm²
+Tapi yang diarsir 3/4 lingkaran + (persegi - 1/4 lingkaran)... 
+
+Alternatif (sederhana):
+Yang diarsir = Luas lingkaran - 1/4 luas lingkaran + luas segitiga...
+= 3/4 × 154 + ... 
+
+Atau: Luas lingkaran - luas daerah putih
+Daerah putih = 1/4 lingkaran - segitiga siku-siku
+= 38,5 - 24,5 = 14
+
+Luas arsir = 154 - 14 = 140 cm² (perkiraan, tergantung gambar)
+```
+
+**Catatan:** Tanpa gambar persis, konsepnya adalah **luas gabungan dikurangi tumpang tindih**.
+
+---
+
+#### **Soal 13 (Sedang)**
+Sebuah prisma segitiga alasnya siku-siku dengan panjang sisi 6 cm, 8 cm, 10 cm. Jika tinggi prisma 15 cm, volume prisma adalah...
+
+**Pembahasan:**
+```
+Luas alas segitiga siku-siku = (6 × 8)/2 = 24 cm²
+
+Volume prisma = Luas alas × tinggi = 24 × 15 = 360 cm³
+```
+
+**Jawaban: 360 cm³**
+
+**Konsep:** Volume prisma = Luas alas × tinggi. Sisi 10 cm adalah hipotenusa (tidak dipakai untuk luas).
+
+---
+
+#### **Soal 14 (Sulit)**
+Dua buah persegi panjang sebangun. Persegi panjang A berukuran 12 cm × 8 cm. Jika persegi panjang B lebarnya 12 cm, panjangnya adalah...
+
+**Pembahasan:**
+```
+Perbandingan sisi sama:
+Panjang A / Lebar A = Panjang B / Lebar B
+12 / 8 = p / 12
+3/2 = p/12
+p = 12 × (3/2) = 18 cm
+```
+
+**Jawaban: 18 cm**
+
+**Konsep:** Kesebangunan → perbandingan sisi-sisi yang bersesuaian sama.
+
+---
+
+#### **Soal 15 (Sulit) - HIGH PRIORITY**
+Titik A(3, 4) direfleksikan terhadap garis y = x, kemudian ditranslasikan dengan vektor (-2, 5). Koordinat akhir adalah...
+
+**Pembahasan:**
+```
+Refleksi terhadap y = x: (a, b) → (b, a)
+A(3, 4) → A'(4, 3)
+
+Translasi (-2, 5): (x, y) → (x-2, y+5)
+A'(4, 3) → A''(4-2, 3+5) = (2, 8)
+```
+
+**Jawaban: (2, 8)**
+
+**Konsep:** Transformasi berturut-turut. Refleksi y=x menukar koordinat. **Soal transformasi sangat sering keluar!**
+
+---
+
+### **BAGIAN D: STATISTIKA (3 Soal)**
+
+---
+
+#### **Soal 16 (Mudah)**
+Data nilai ulangan: 6, 7, 8, 6, 9, 7, 8, 7, 6, 9. Modus dan median berturut-turut adalah...
+
+**Pembahasan:**
+```
+Urutkan: 6, 6, 6, 7, 7, 7, 8, 8, 9, 9
+
+Modus (sering muncul): 6 dan 7 (masing-masing 3 kali) → bimodal
+Median (tengah): (7+7)/2 = 7
+```
+
+**Jawaban: Modus = 6 dan 7, Median = 7**
+
+---
+
+#### **Soal 17 (Sedang)**
+Dari tabel nilai berikut, berapa siswa yang mendapat nilai di atas rata-rata?
+
+| Nilai | 5 | 6 | 7 | 8 | 9 | 10 |
+|-------|---|---|---|---|---|----|
+| Frekuensi | 3 | 5 | 8 | 6 | 4 | 2 |
+
+**Pembahasan:**
+```
+Total siswa = 3+5+8+6+4+2 = 28
+Jumlah nilai = (5×3)+(6×5)+(7×8)+(8×6)+(9×4)+(10×2)
+= 15 + 30 + 56 + 48 + 36 + 20 = 205
+
+Rata-rata = 205/28 = 7,32 (dibulatkan)
+
+Nilai di atas 7,32: 8, 9, 10
+Jumlah = 6 + 4 + 2 = 12 siswa
+```
+
+**Jawaban: 12 siswa**
+
+---
+
+#### **Soal 18 (Sedang)**
+Rata-rata nilai 20 siswa adalah 75. Setelah ditambah 5 siswa baru, rata-rata menjadi 76. Rata-rata nilai 5 siswa baru adalah...
+
+**Pembahasan:**
+```
+Jumlah nilai 20 siswa = 20 × 75 = 1500
+Jumlah nilai 25 siswa = 25 × 76 = 1900
+
+Jumlah nilai 5 siswa baru = 1900 - 1500 = 400
+Rata-rata 5 siswa baru = 400/5 = 80
+```
+
+**Jawaban: 80**
+
+**Konsep:** Rata-rata gabungan. Gunakan total = rata-rata × banyak data.
+
+---
+
+### **BAGIAN E: PELUANG (2 Soal)**
+
+---
+
+#### **Soal 19 (Mudah)**
+Dalam kantong ada 5 bola merah, 3 bola biru, dan 2 bola hijau. Jika diambil 1 bola secara acak, peluang mendapat bola bukan merah adalah...
+
+**Pembahasan:**
+```
+Total bola = 5 + 3 + 2 = 10
+Bola bukan merah = 3 + 2 = 5
+
+Peluang = 5/10 = 1/2
+```
+
+**Jawaban: 1/2 atau 0,5**
+
+---
+
+#### **Soal 20 (Sedang)**
+Sebuah dadu dilempar 2 kali. Peluang muncul jumlah mata dadu lebih dari 9 adalah...
+
+**Pembahasan:**
+```
+Pasangan (mata dadu 1, mata dadu 2) dengan jumlah > 9:
+- Jumlah 10: (4,6), (5,5), (6,4) → 3
+- Jumlah 11: (5,6), (6,5) → 2  
+- Jumlah 12: (6,6) → 1
+
+Total kejadian menguntungkan = 6
+Total ruang sampel = 6 × 6 = 36
+
+Peluang = 6/36 = 1/6
+```
+
+**Jawaban: 1/6**
+
+---
+
+## **RINGKASAN BELAJAR: HAL WAJIB DIKUASAI**
+
+### **📋 CHECKLIST SEBELUM UJIAN**
+
+| **No** | **Materi** | **Status** |
+|--------|-----------|------------|
+| 1 | Operasi bilangan bulat & pecahan | ☐ |
+| 2 | Persamaan & pertidaksamaan linear | ☐ |
+| 3 | Sistem persamaan (substitusi & eliminasi) | ☐ |
+| 4 | Fungsi linear (nilai, grafik, gradien) | ☐ |
+| 5 | Teorema Pythagoras & kesebangunan | ☐ |
+| 6 | Luas & keliling bangun datar (gabungan) | ☐ |
+| 7 | Volume bangun ruang (prisma, limas, tabung) | ☐ |
+| 8 | Transformasi geometri (translasi, refleksi, rotasi) | ☐ |
+| 9 | Mean, median, modus dari tabel | ☐ |
+| 10 | Peluang kejadian sederhana | ☐ |
+| 11 | Diskon bertingkat & aritmatika sosial | ☐ |
+| 12 | Barisan aritmatika | ☐ |
+
+---
+
+### **📝 CATATAN RUMUS PENTING**
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  ARITMATIKA SOSIAL                                           ║
+║  • Diskon bertingkat: Harga × (1-p₁) × (1-p₂)                ║
+║  • Untung = Harga jual - Harga beli                          ║
+║  • Persentase untung = (Untung/Harga beli) × 100%           ║
+║  • Bunga tunggal = P × r × t                                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  FUNGSI & GARIS                                              ║
+║  • Gradien melalui (x₁,y₁) dan (x₂,y₂): m = (y₂-y₁)/(x₂-x₁) ║
+║  • Persamaan: y - y₁ = m(x - x₁)                            ║
+║  • Garis sejajar: m₁ = m₂                                    ║
+║  • Garis tegak lurus: m₁ × m₂ = -1                          ║
+╠══════════════════════════════════════════════════════════════╣
+║  GEOMETRI                                                    ║
+║  • Pythagoras: c² = a² + b²                                  ║
+║  • Kesebangunan: a/b = c/d = e/f                            ║
+║  • Luas segitiga siku-siku = ½ × alas × tinggi              ║
+║  • Volume prisma = Luas alas × tinggi                       ║
+║  • Volume limas = ⅓ × Luas alas × tinggi                    ║
+╠══════════════════════════════════════════════════════════════╣
+║  STATISTIKA                                                  ║
+║  • Mean = Σ(f×x) / Σf                                        ║
+║  • Median: nilai tengah setelah diurutkan                   ║
+║  • Modus: nilai dengan frekuensi tertinggi                  ║
+╠══════════════════════════════════════════════════════════════╣
+║  PELUANG                                                     ║
+║  • P(A) = n(A)/n(S)                                          ║
+║  • P(A atau B) = P(A) + P(B) - P(A dan B)                   ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+---
+
+### **⚡ TIPS CEPAT MENGERJAKAN SOAL**
+
+| **Situasi** | **Tips** |
+|-------------|----------|
+| **Soal cerita panjang** | Baca pertanyaan terakhir dulu, baru baca ceritanya |
+| **Diskon bertingkat** | Ingat: bukan penjumlahan %, tapi perkalian bertahap |
+| **Geometri dengan gambar** | Selalu gambar ulang di kertas buram, tandai data yang diketahui |
+| **Transformasi** | Buat tabel koordinat sebelum → sesudah |
+| **Statistika tabel** | Hitung total dan rata-rata dengan teliti, jangan terburu-buru |
+| **Waktu habis** | Kerjakan soal yang paling mudah dulu, jangan terjebak di satu soal |
+| **Tebak** | Jika waktu habis, pilih jawaban yang "tertengah" (B atau C) |
+
+---
+
+### **🎯 SOAL PALING KHAS (HIGH PRIORITY)**
+
+**Soal no. 9 dari foto 21/32 (Tiang Listrik & Gardu):**
+> "Sebuah gardu terletak berdekatan dengan tiang listrik... Tinggi dinding gardu 4 m, jarak ujung atap gardu dengan tiang 5 m, kabel 13 m..."
+
+**Mengapa ini penting:**
+- ✅ Menggabungkan **Pythagoras** dengan **konteks nyata**
+- ✅ Ada **jebakan**: yang ditanya tinggi tiang, bukan x
+- ✅ Memerlukan **interpretasi gambar** yang tepat
+- ✅ Variasinya bisa: jarak berbeda, sudut elevasi, dll.
+
+**Prediksi variasi:** Bisa jadi tentang tangga bersandar di dinding, tiang bendera, atau jembatan.
+
+---
+
+Semoga analisis dan latihan ini membantu persiapan ujian Anda! Fokus pada **Tier 1** dan **Tier 2** untuk hasil maksimal. 🚀

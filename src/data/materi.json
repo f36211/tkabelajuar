@@ -1,0 +1,198 @@
+[
+  {
+    "id": "aritmatika-sosial",
+    "title": "Aritmatika Sosial",
+    "icon": "💰",
+    "tier": "S",
+    "description": "Diskon bertingkat, bunga bank, untung-rugi, dan perbandingan kecepatan/kerja",
+    "summary": "Materi tentang perhitungan dalam kehidupan sehari-hari seperti diskon, bunga, untung-rugi, perbandingan, dan skala peta.",
+    "formulas": [
+      { "name": "Diskon Bertingkat", "formula": "Harga Akhir = Harga × (1 - p₁) × (1 - p₂)", "note": "Diskon 20% + 10% ≠ 30%, tapi 0.8 × 0.9 = 0.72 (diskon 28%)" },
+      { "name": "Untung/Rugi", "formula": "Untung = Harga Jual - Harga Beli", "note": "% Untung = (Untung / Harga Beli) × 100%" },
+      { "name": "Bunga Tunggal", "formula": "Bunga = P × r × t", "note": "P = pokok, r = suku bunga/tahun, t = waktu (tahun)" },
+      { "name": "Rata-rata Kecepatan", "formula": "v = 2ab / (a + b)", "note": "Untuk pergi kecepatan a, pulang kecepatan b" },
+      { "name": "Perbandingan", "formula": "a : b dengan jumlah S → a = [a/(a+b)] × S", "note": "Tentukan bagian total dulu" },
+      { "name": "Skala Peta", "formula": "Jarak peta = Jarak sebenarnya / Skala", "note": "Pastikan satuan sama (cm)" }
+    ],
+    "examples": [
+      {
+        "question": "Sepeda harga Rp1.200.000 diskon 20%, lalu diskon tambahan 10% untuk member. Berapa yang dibayar member?",
+        "solution": "Diskon 1: 1.200.000 × 0,80 = 960.000\nDiskon 2: 960.000 × 0,90 = 864.000\n\nTrick: 0,8 × 0,9 = 0,72 (diskon total 28%)",
+        "answer": "Rp864.000"
+      },
+      {
+        "question": "Anto bersepeda ke sekolah 12 km/jam, pulang 8 km/jam. Rata-rata kecepatan seluruh perjalanan?",
+        "solution": "Jebakan: Bukan (12+8)/2 = 10!\n\nGunakan rumus: 2×12×8/(12+8) = 192/20 = 9,6 km/jam",
+        "answer": "9,6 km/jam"
+      },
+      {
+        "question": "15 pekerja membangun rumah dalam 20 hari. Setelah 8 hari, 5 pekerja sakit. Berapa hari lagi?",
+        "solution": "Total pekerjaan = 15 × 20 = 300 orang-hari\nSelesai = 15 × 8 = 120 orang-hari\nSisa = 180 orang-hari\nPekerja tersisa = 10\nWaktu = 180/10 = 18 hari",
+        "answer": "18 hari"
+      }
+    ]
+  },
+  {
+    "id": "aljabar",
+    "title": "Aljabar",
+    "icon": "🔢",
+    "tier": "A",
+    "description": "Operasi bilangan, persamaan linear, sistem persamaan, pertidaksamaan, eksponen & akar",
+    "summary": "Konsep-konsep dasar aljabar meliputi operasi bilangan, persamaan linear, sistem persamaan dua variabel, dan bentuk akar/eksponen.",
+    "formulas": [
+      { "name": "Persamaan Linear Satu Variabel", "formula": "ax + b = c → x = (c - b) / a", "note": "Pindahkan variabel ke satu sisi" },
+      { "name": "Sistem Persamaan Linear", "formula": "Metode: Substitusi atau Eliminasi", "note": "Trick: Kadang jumlahkan/kurangkan langsung tanpa cari x,y satu-satu" },
+      { "name": "Sifat Eksponen", "formula": "aᵐ × aⁿ = aᵐ⁺ⁿ, aᵐ / aⁿ = aᵐ⁻ⁿ", "note": "Ubah semua ke basis yang sama" },
+      { "name": "Bentuk Akar", "formula": "√(a×b) = √a × √b", "note": "Sederhanakan akar: √12 = √(4×3) = 2√3" }
+    ],
+    "examples": [
+      {
+        "question": "Harga 3 pensil + 2 penghapus = Rp13.000. Harga 2 pensil + 3 penghapus = Rp12.000. Berapa harga 5 pensil + 5 penghapus?",
+        "solution": "Trick cepat: Jumlahkan kedua persamaan!\n(3x+2y) + (2x+3y) = 13.000 + 12.000\n5x + 5y = 25.000",
+        "answer": "Rp25.000"
+      },
+      {
+        "question": "Hasil dari 2√12 - √27 + √75 = ?",
+        "solution": "2√12 = 2×2√3 = 4√3\n√27 = 3√3\n√75 = 5√3\nJumlah: 4√3 - 3√3 + 5√3 = 6√3",
+        "answer": "6√3"
+      },
+      {
+        "question": "Harga 2 pensil dan 3 buku Rp21.000. Harga 4 pensil dan 1 buku Rp23.000. Harga 1 pensil dan 2 buku?",
+        "solution": "2x + 3y = 21.000\n4x + y = 23.000\nDari (2): y = 23.000 - 4x\nSubstitusi: x = 4.800, y = 3.800\n1 pensil + 2 buku = 4.800 + 7.600 = 12.400",
+        "answer": "Rp12.400"
+      }
+    ]
+  },
+  {
+    "id": "fungsi",
+    "title": "Fungsi & Persamaan Garis",
+    "icon": "📈",
+    "tier": "A",
+    "description": "Fungsi linear, nilai fungsi, gradien, persamaan garis, domain & range",
+    "summary": "Memahami konsep fungsi, menghitung nilai fungsi, menentukan gradien dan persamaan garis, serta domain dan range fungsi.",
+    "formulas": [
+      { "name": "Nilai Fungsi", "formula": "f(x) = ax + b → substitusi x", "note": "f(4)-f(2) = a(4)-a(2) = 2a (lebih cepat!)" },
+      { "name": "Gradien", "formula": "m = (y₂ - y₁) / (x₂ - x₁)", "note": "Dua titik → gradien → persamaan (30 detik)" },
+      { "name": "Persamaan Garis", "formula": "y - y₁ = m(x - x₁)", "note": "Atau: y = mx + c" },
+      { "name": "Garis Sejajar", "formula": "m₁ = m₂", "note": "Gradien sama" },
+      { "name": "Garis Tegak Lurus", "formula": "m₁ × m₂ = -1", "note": "Gradien negatif kebalikan" },
+      { "name": "Domain", "formula": "Syarat: akar ≥ 0, penyebut ≠ 0", "note": "Perhatikan kedua syarat bersamaan" }
+    ],
+    "examples": [
+      {
+        "question": "Jika f(x) = 5x - 3, nilai f(4) - f(2) = ?",
+        "solution": "f(4) = 20 - 3 = 17\nf(2) = 10 - 3 = 7\nSelisih = 10\n\nCara cepat: f(4)-f(2) = 5(4)-5(2) = 5×2 = 10",
+        "answer": "10"
+      },
+      {
+        "question": "Garis melalui (1,2) dan (3,8). Persamaannya?",
+        "solution": "m = (8-2)/(3-1) = 6/2 = 3\ny - 2 = 3(x - 1)\ny = 3x - 1",
+        "answer": "y = 3x - 1"
+      },
+      {
+        "question": "Persamaan garis melalui (2,-3), sejajar 3x - 2y = 6?",
+        "solution": "Gradien 3x-2y=6 → y = (3/2)x - 3 → m = 3/2\ny - (-3) = (3/2)(x - 2)\ny = (3/2)x - 6\n→ 3x - 2y = 12",
+        "answer": "3x - 2y = 12"
+      }
+    ]
+  },
+  {
+    "id": "geometri",
+    "title": "Geometri & Pythagoras",
+    "icon": "📐",
+    "tier": "S",
+    "description": "Bangun datar, bangun ruang, kesebangunan, transformasi, teorema Pythagoras",
+    "summary": "Geometri mencakup luas & keliling bangun datar, volume bangun ruang, kesebangunan, teorema Pythagoras, dan transformasi geometri.",
+    "formulas": [
+      { "name": "Teorema Pythagoras", "formula": "c² = a² + b²", "note": "Triple: 3-4-5, 5-12-13, 8-15-17, 7-24-25" },
+      { "name": "Luas Persegi Panjang", "formula": "L = p × l", "note": "Keliling = 2(p + l)" },
+      { "name": "Luas Lingkaran", "formula": "L = πr²", "note": "Keliling = 2πr, gunakan π = 22/7 atau 3,14" },
+      { "name": "Luas Segitiga", "formula": "L = ½ × alas × tinggi", "note": "Untuk segitiga siku-siku, kaki = alas & tinggi" },
+      { "name": "Volume Prisma", "formula": "V = Luas alas × tinggi", "note": "Termasuk balok & kubus" },
+      { "name": "Kesebangunan", "formula": "a/b = c/d = e/f", "note": "Perbandingan sisi-sisi bersesuaian sama" },
+      { "name": "Refleksi sumbu x", "formula": "(x,y) → (x,-y)", "note": "" },
+      { "name": "Refleksi sumbu y", "formula": "(x,y) → (-x,y)", "note": "" },
+      { "name": "Refleksi y = x", "formula": "(x,y) → (y,x)", "note": "Tukar koordinat" },
+      { "name": "Translasi", "formula": "(x,y) → (x+a, y+b)", "note": "Geser sesuai vektor (a,b)" }
+    ],
+    "examples": [
+      {
+        "question": "Tali dari puncak tiang ke tanah 17 m, jarak kaki tiang ke ujung tali 8 m. Tinggi tiang?",
+        "solution": "Pythagoras tersamar!\nTinggi² + 8² = 17²\nTinggi² = 289 - 64 = 225\nTinggi = 15 m",
+        "answer": "15 m"
+      },
+      {
+        "question": "Prisma segitiga alas siku-siku 6cm, 8cm, 10cm. Tinggi prisma 15cm. Volume?",
+        "solution": "Luas alas = (6 × 8)/2 = 24 cm²\nVolume = 24 × 15 = 360 cm³\nNote: 10 cm adalah hipotenusa (tidak dipakai)",
+        "answer": "360 cm³"
+      },
+      {
+        "question": "Titik A(3,4) refleksi y=x, lalu translasi (-2,5). Koordinat akhir?",
+        "solution": "Refleksi y=x: (3,4) → (4,3)\nTranslasi (-2,5): (4,3) → (2,8)",
+        "answer": "(2, 8)"
+      }
+    ]
+  },
+  {
+    "id": "statistika",
+    "title": "Statistika",
+    "icon": "📊",
+    "tier": "A",
+    "description": "Mean, median, modus, interpretasi diagram, tabel frekuensi",
+    "summary": "Statistika dasar: menghitung mean, median, modus dari data tunggal dan tabel frekuensi, serta membaca diagram batang/garis.",
+    "formulas": [
+      { "name": "Mean (Rata-rata)", "formula": "Mean = Σ(f × x) / Σf", "note": "Untuk tabel: jumlahkan (frekuensi × nilai)" },
+      { "name": "Median", "formula": "Nilai tengah setelah data diurutkan", "note": "Ganjil: data ke-(n+1)/2, Genap: rata-rata 2 tengah" },
+      { "name": "Modus", "formula": "Nilai dengan frekuensi tertinggi", "note": "Bisa lebih dari satu (bimodal)" },
+      { "name": "Rata-rata Gabungan", "formula": "x̄ = (n₁x̄₁ + n₂x̄₂) / (n₁ + n₂)", "note": "Total = rata-rata × banyak data" }
+    ],
+    "examples": [
+      {
+        "question": "Tabel: Nilai 4,5,6,7,8 dengan siswa 2,4,6,4,2. Rata-rata?",
+        "solution": "Total siswa = 18\nJumlah nilai = (4×2)+(5×4)+(6×6)+(7×4)+(8×2)\n= 8+20+36+28+16 = 108\nMean = 108/18 = 6",
+        "answer": "6"
+      },
+      {
+        "question": "Data: 12, 15, 18, 20, 22, 25, 28, 30, 32. Median?",
+        "solution": "Data sudah urut, 9 data (ganjil)\nMedian = data ke-5 = 22",
+        "answer": "22"
+      },
+      {
+        "question": "Rata-rata 20 siswa = 75. Ditambah 5 siswa baru, rata-rata jadi 76. Rata-rata 5 siswa baru?",
+        "solution": "Total 20 siswa = 20 × 75 = 1500\nTotal 25 siswa = 25 × 76 = 1900\nTotal 5 baru = 1900 - 1500 = 400\nRata-rata = 400/5 = 80",
+        "answer": "80"
+      }
+    ]
+  },
+  {
+    "id": "peluang",
+    "title": "Peluang",
+    "icon": "🎲",
+    "tier": "B",
+    "description": "Peluang kejadian, peluang bersyarat, dadu, kartu, bola",
+    "summary": "Konsep peluang sederhana, ruang sampel, peluang kejadian tunggal dan majemuk, serta peluang bersyarat.",
+    "formulas": [
+      { "name": "Peluang Dasar", "formula": "P(A) = n(A) / n(S)", "note": "n(A) = kejadian diinginkan, n(S) = total kejadian" },
+      { "name": "Peluang Komplemen", "formula": "P(A') = 1 - P(A)", "note": "Kadang lebih mudah hitung komplemen" },
+      { "name": "Peluang Gabungan", "formula": "P(A∪B) = P(A) + P(B) - P(A∩B)", "note": "Untuk kejadian tidak saling lepas" },
+      { "name": "Peluang Bersyarat", "formula": "P(A∩B) = P(A) × P(B|A)", "note": "Tanpa pengembalian: jumlah berkurang" }
+    ],
+    "examples": [
+      {
+        "question": "Dadu dilempar sekali. Peluang bilangan prima?",
+        "solution": "Prima: 2, 3, 5 → 3 kemungkinan\nTotal: 6\nPeluang = 3/6 = 1/2",
+        "answer": "1/2"
+      },
+      {
+        "question": "5 bola merah, 3 biru. Diambil 2 tanpa pengembalian. Peluang keduanya merah?",
+        "solution": "P(M1) = 5/8\nP(M2|M1) = 4/7\nP = (5/8) × (4/7) = 20/56 = 5/14",
+        "answer": "5/14"
+      },
+      {
+        "question": "Dadu dilempar 2 kali. Peluang jumlah > 9?",
+        "solution": "Jumlah 10: (4,6),(5,5),(6,4) = 3\nJumlah 11: (5,6),(6,5) = 2\nJumlah 12: (6,6) = 1\nTotal = 6/36 = 1/6",
+        "answer": "1/6"
+      }
+    ]
+  }
+]

@@ -1,0 +1,328 @@
+================================================================================
+EXTRACTED QUESTIONS FROM EXAM
+================================================================================
+
+QUESTION 1
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Ani membeli 2 pulpen&nbsp; dan 2 pensil di sebuah toko alat tulis. Harga satuan pulpen adalah Rp12.000,00 dan harga satuan pensil adalah Rp8.000,00. Kebetulan, toko tersebut sedang memberikan promo "H...
+Answers:
+  a) Rp32.000,00.
+  b) Rp36.000,00.
+  c) Rp40.000,00.
+  d) Rp44.000,00.
+
+QUESTION 2
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Sebuah toko menjual 1 kg beras seharga Rp12.750,00.Jika seseorang membeli 19,6 kg untuk jenis beras yang sama, berapa perkiraan total harga yang mungkin?
+Answers:
+  a) Sebuah toko menjual 1 kg beras seharga Rp12.750,00.Jika seseorang membeli 19,6 kg untuk jenis beras 
+  b) Pilih semua jawaban benar! Jawaban benar lebih dari satu.
+  c) Kurang dari Rp260.000,00.
+  d) Lebih besar dari Rp240.000,00.
+  e) Dapat diperkirakan dengan 20×12.500,00.
+
+QUESTION 3
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Terdapat tiga bilangan yang dinyatakan dengan (332 − 32), (82 + 296), dan (36 × 35).
+Answers:
+  a) Terdapat tiga bilangan yang dinyatakan dengan (332 − 32), (82 + 296), dan (36 × 35).
+  b) Bilangan apa saja yang merupakan faktor persekutuan ketiga bilangan tersebut?Pilihlah jawaban yang b
+  c) 23 × 33 × 7
+  d) 22 × 32 × 7
+  e) 22 × 32 × 5
+
+QUESTION 4
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Untuk membuat larutan desinfektan atau larutan pembasmi kuman, dibutuhkan cairan A dan B dengan perbandingan&nbsp; &nbsp; &nbsp; &nbsp; A : B = 3 : 5.
+Answers:
+  a) 3,6 liter
+  b) 4,0 liter
+  c) 4,8 liter
+  d) 6,4 liter
+
+QUESTION 5
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Harga setengah kilogram cabe rawit pada hari ini adalah Rp35.000,00.&nbsp;
+Images: /tka/cbt_images/24751_0cb56d66a423d68b293a4ff189160301.png
+Answers:
+  a) Rp175.000,00
+  b) Rp157.500,00
+  c) Rp140.000,00
+  d) Rp87.500,00
+
+QUESTION 6
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Proyek Renovasi Gedung
+Images: /tka/cbt_images/95316_dae269e04f8b0f9af69d3e8749c3f29b.png
+Answers:
+  a) 30 hari
+  b) 40 hari
+  c) 45 hari
+  d) 90 hari
+
+QUESTION 7
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Proyek Renovasi Gedung
+Images: /tka/cbt_images/90400_dae269e04f8b0f9af69d3e8749c3f29b.png
+Answers:
+  a) Berdasarkan situasi tersebut, tentukan Benar atau Salah untuk setiap pernyataan berikut tentang peny
+  b) Sisa pekerjaan yang harus diselesaikan setelah hari ke-10 adalah setara dengan pekerjaan 800 hari pe
+  c) Selama 10 hari pertama, proyek mengalami ketertinggalan jadwal yang setara dengan hasil kerja 5 oran
+  d) Agar renovasi tetap selesai tepat waktu manajer cukup mempekerjakan kembali 15 pegawai semula tanpa 
+
+QUESTION 8
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Proyek Renovasi Gedung
+Images: /tka/cbt_images/30999_dae269e04f8b0f9af69d3e8749c3f29b.png
+Answers:
+  a) Berdasarkan situasi tersebut, berikut ini manakah pernyataan yang sesuai tentang penyelesaian renova
+  b) Sisa waktu efektif yang tersedia untuk menyelesaikan seluruh sisa pekerjaan adalah 24 hari.
+  c) Beban pekerjaan yang masih tersisa setara dengan hasil kerja 20 orang selama 60 hari.
+  d) Manajer proyek harus menyiapkan total 30 pegawai agar proyek selesai tepat waktu.
+
+QUESTION 9
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Alur Pelayanan Donor Darah
+Images: /tka/cbt_images/50398_e022769b992c16226c3f8ddc84c78b3c.png
+Answers:
+  a) Tahap pemeriksaan kesehatan
+  b) Duduk di kursi tunggu
+  c) Proses pengambilan darah
+  d) Istirahat di ruang pemulihan
+
+QUESTION 10
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Alur Pelayanan Donor Darah
+Images: /tka/cbt_images/33365_e022769b992c16226c3f8ddc84c78b3c.png
+Answers:
+  a) Kegiatan donor adalah salah satu bentuk aksi kemanusian yang sangat bermanfaat untuk diri sendiri da
+  b) Berikut ini pernyataan manakah yang mungkin akan terjadi di posko PMI tersebut?Pilih semua jawaban b
+  c) Yuda sempat bertemu Rama di kursi tunggu.
+  d) Ketika Yuda proses pengambilan darah, Fajar telah pulang lebih dulu.
+  e) Yuda menunggu di kursi tunggu selama 30 menit.
+
+QUESTION 11
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Alur Pelayanan Donor Darah
+Images: /tka/cbt_images/46653_e022769b992c16226c3f8ddc84c78b3c.png
+Answers:
+  a) Kegiatan donor adalah salah satu bentuk aksi kemanusian yang sangat bermanfaat untuk diri sendiri da
+  b) Tentukan Benar atau Salah untuk setiap pernyataan berikut tentang situasi di lokasi donor darah pada
+  c) Posko PMI mulai didatangi calon pendonor sejak pukul 10.30.
+  d) Ada kemungkinan terdapat 3 orang di ruang tunggu.
+  e) Pada pukul 11.00 belum ada pendonor yang memasuki tahap pemulihan.
+
+QUESTION 12
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: &nbsp;Perhatikan&nbsp; bentuk aljabar berikut.
+Images: /tka/cbt_images/74845_90289758ecdf70aa24c46b76ad455192.png, /tka/cbt_images/74845_79e87c9a48728e1352d98afe2b35a913.png, /tka/cbt_images/74845_3a25e4b081adb62e7f5442b1763cab1d.png, /tka/cbt_images/74845_9a50622d8682f6d5400ca5c1fcfc5f6f.png, /tka/cbt_images/74845_e35a4d6243e0ca08a2d0dcbc805fdfe9.png
+
+QUESTION 13
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Sebuah jasa pengantaran barang mengenakan biaya sebagai berikut:
+Images: /tka/cbt_images/80473_8942e852504e3643bf634c418ea22ebe.png
+Answers:
+  a) Sebuah jasa pengantaran barang mengenakan biaya sebagai berikut:
+  b) Seorang pelanggan memiliki anggaran tidak lebih dari Rp40.000,00 untuk satu kali pemesanan jasa anta
+  c) Berikut ini, manakah pernyataan yang benar tentang permasalahan tersebut?Pilih semua jawaban benar! 
+  d) Apabila &nbsp;menyatakan jarak pengantaran (dalam km), maka permasalahan dapat &nbsp; dimodelkan den
+  e) Jarak pengantaran maksimum yang masih dapat dipilih pelanggan adalah 7 km.
+
+QUESTION 14
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Misalkan a dan b merupakan dua bilangan real sehingga sistem persamaan linear (SPL)&nbsp;&nbsp;mempunyai solusi (𝑥, 𝑦) = (5,-2).
+Images: /tka/cbt_images/32802_8affa2a7d2113b49e64338e6efc250df.png
+Answers:
+  a) Misalkan a dan b merupakan dua bilangan real sehingga sistem persamaan linear (SPL)&nbsp;&nbsp;mempu
+  b) &nbsp;
+  c) Tentukan Benar atau Salah untuk setiap pernyataan berikut terkait dengan nilai a dan b!
+  d) a merupakan bilangan prima.
+  e) b merupakan bilangan ganjil.
+
+QUESTION 15
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Sebuah pabrik memproduksi batang logam. Fungsi&nbsp;menyatakan berat total (kg) untuk &nbsp;batang logam.
+Images: /tka/cbt_images/78404_8942e852504e3643bf634c418ea22ebe.png, /tka/cbt_images/78404_50c3d2d71373031f4df7f4c889ae7767.png
+Answers:
+  a) 35 kg.
+  b) 45 kg.
+  c) 50 kg.
+  d) 70 kg.
+
+QUESTION 16
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Perhatikan susunan titik berikut!Pola ke-1●Pola ke-2● ●●Pola ke-3● ● ●● ●●Pola ke-4● ● ● ●● ● ●● ●●
+Answers:
+  a) 15
+  b) 18
+  c) 21
+  d) 28
+
+QUESTION 17
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Seorang tukang memotong papan kayu dengan berbagai ukuran panjang. Potongan pertama panjangnya 240 cm, dan setiap potongan berikutnya lebih pendek 12 cm dari potongan sebelumnya. Tukang tersebut mengh...
+Answers:
+  a) Seorang tukang memotong papan kayu dengan berbagai ukuran panjang. Potongan pertama panjangnya 240 c
+  b) Tentukan Benar atau Salah untuk setiap pernyataan berikut tentang potongan kayu yang dihasilkan tuka
+  c) Panjang potongan ke-5 adalah 190 cm.
+  d) Panjang potongan terakhir adalah 144 cm.
+  e) Selisih panjang antara potongan ke-2 dan potongan ke-8 adalah 72 cm.
+
+QUESTION 18
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Desain jembatan yang tepat sangat penting untuk memperkuat struktur karena menentukan kestabilan, ketahanan, dan keselamatan jembatan dalam menghadapi beban dan kondisi lingkungan. Salah satu contoh d...
+Images: /tka/cbt_images/60727_b196052b1cea00debfc1737fd06d538d.png, /tka/cbt_images/60727_cfc19058b99ab6e2f641ae8609ab936d.png
+Answers:
+  a) Desain jembatan yang tepat sangat penting untuk memperkuat struktur karena menentukan kestabilan, ke
+  b) Bagian rangka jembatan tersebut dapat digambarkan dengan sketsa garis sebagai berikut:
+  c) Diketahui garis L1 sejajar dengan garis L2 dan garis L3 sejajar dengan garis L4.
+  d) Jika besar sudut A adalah 50°, tentukan Benar atau Salah untuk setiap pernyataan berikut!
+  e) Besar sudut D adalah 50°
+
+QUESTION 19
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Perhatikan gambar berikut ini!
+Images: /tka/cbt_images/93970_63b8178cadc61b3ce5f3f2c3e0a45ebc.png
+Answers:
+  a) Perhatikan gambar berikut ini!
+  b) Tentukan Benar atau Salah untuk setiap pernyataan berikut tentang bangun segitiga pada gambar terseb
+  c) Segitiga ABD dan segitiga&nbsp; CAD saling sebangun.
+  d) Panjang sisi BC adalah 15 cm.
+  e) Panjang sisi AC adalah 10 cm.
+
+QUESTION 20
+--------------------------------------------------------------------------------
+Type: True/False (Benar/Salah)
+Text: Di sebuah taman kota berbentuk persegi panjang, terdapat sebuah kolam berbentuk lingkaran yang terletak tepat di tengah-tengah taman, seperti terlihat pada gambar berikut.
+Images: /tka/cbt_images/87550_55e6995fcb9226412cf800683fa5d7bf.png
+Answers:
+  a) Di sebuah taman kota berbentuk persegi panjang, terdapat sebuah kolam berbentuk lingkaran yang terle
+  b) Area taman lainnya (area hijau pada gambar) akan ditanami rumput.
+  c) Tentukan Benar atau Salah untuk setiap pernyataan berikut tentang luas area kolam dan area yang dita
+  d) Selisih antara luas taman dan luas kolam lebih dari 240 m².
+  e) Jika diameter kolam ditambah 1 m, luas kolam bertambah lebih dari 7 m².
+
+QUESTION 21
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Pak Doni mempunyai rumah dengan tampak samping kanan sebagai berikut.
+Images: /tka/cbt_images/04673_ab807443994bec48d31d2aaf3a8cb572.png
+Answers:
+  a) Momilex.
+  b) Josun.
+  c) Bulux.
+  d) Noppin.
+
+QUESTION 22
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Sebuah usaha rumahan akan mengemas produk makanan menggunakan kemasan berbentuk prisma segitiga yang dibuat dari karton. Setiap kemasan dibuat dari satu jaring-jaring utuhBerikut gambar kemasan dan sk...
+Images: /tka/cbt_images/98819_4a0a2296a54ae8c969252e2f1ea619a3.png
+Answers:
+  a) 4 kemasan
+  b) 8 kemasan
+  c) 9 kemasan
+  d) 14 kemasan
+
+QUESTION 23
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Perhatikan posisi robot pembersih pada gambar berikut!
+Images: /tka/cbt_images/42272_51f00489b5aab38bdb3611652829e692.png
+Answers:
+  a) titik A
+  b) titik B
+  c) titik C
+  d) titik D
+
+QUESTION 24
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Perhatikan gambar berikut!
+Images: /tka/cbt_images/42696_8068e4dce24633a7fec18444690dfbc3.png, /tka/cbt_images/02060_69de27c2558a174de3ead1634c89bf18.png
+Answers:
+  a) translasi (−3, 1)
+  b) refleksi terhadap garis
+  c) rotasi 90º&nbsp;berlawanan arah jarum jam dengan pusat di titik asal
+  d) refleksi terhadap sumbu-Y
+
+QUESTION 25
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Dalam pembangunan sebuah monumen peringatan, kontraktor menggunakan bata ringan berbentuk balok untuk menyusun bagian dalam monumen. Desain monumen peringatan diberikan pada gambar berikut:
+Images: /tka/cbt_images/40036_44805eb032d7155040c7bd2b765290ef.png
+Answers:
+  a) 16.800 buah
+  b) 18.000 buah
+  c) 19.200 buah
+  d) 21.600 buah
+
+QUESTION 26
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Petugas perpustakaan di suatu sekolah melakukan pendataan jumlah buku yang dipinjam siswa kelas IX selama 5 hari berturut-turut. Hasil pendataan disajikan dalam diagram berikut:
+Images: /tka/cbt_images/77973_3171874d35068c7ea0de2a630786e92a.png
+Answers:
+  a) Jumlah buku yang dipinjam setiap hari selalu meningkat.
+  b) Jumlah peminjaman buku pada Kamis lebih sedikit dari pada pada Selasa.
+  c) Selisih jumlah peminjaman buku antara Senin dan Jumat lebih dari 10 buku.
+  d) Hari dengan jumlah peminjaman buku terbanyak adalah Rabu.
+
+QUESTION 27
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Sebuah koperasi sekolah ingin mengevaluasi penjualan alat tulis selama 5 bulan terakhir.&nbsp; Berikut disajikan data jumlah pengunjung koperasi sekolah selama 5 bulan dan data persentase alat tulis y...
+Images: /tka/cbt_images/99496_1670e6faee1a2b74899c51360cfe069c.png, /tka/cbt_images/99496_0d7a24d9e6b2b75268ec141d3facc51f.png
+Answers:
+  a) Sebuah koperasi sekolah ingin mengevaluasi penjualan alat tulis selama 5 bulan terakhir.&nbsp; Berik
+  b) Berdasarkan kedua data tersebut, tentukan manakah pernyataan yang benar untuk setiap pernyataan beri
+  c) Peningkatan jumlah pengunjung paling signifikan (paling besar) terjadi pada periode bulan April ke M
+  d) Jika setiap pengunjung di bulan Mei membeli satu alat tulis, maka jumlah pulpen yang terjual adalah 
+  e) Berdasarkan tren pada diagram garis, jumlah pengunjung koperasi selalu mengalami kenaikan secara kon
+
+QUESTION 28
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Berdasarkan data diketahui bahwa rata-rata berat satu butir telur kecil 45 gram, satu telur sedang 55 gram, dan satu telur besar 65 gram. Seorang karyawan toko bahan pangan, sedang mengemas setiap 10 ...
+Answers:
+  a) 2 telur sedang
+  b) 2 telur besar
+  c) 1 telur besar dan 1 telur kecil
+  d) 1 telur besar dan 1 telur sedang
+
+QUESTION 29
+--------------------------------------------------------------------------------
+Type: Single Choice (Radio)
+Text: Untuk menjaga dan meningkatkan kualitas produksi, tim bagian quality control memeriksa kualitas lampu yang diproduksi pada suatu waktu. Berdasarkan pemeriksaan yang dilakukan, diperoleh data sebagai b...
+Images: /tka/cbt_images/16905_6e829a3a042bd27e5d2b216b08b9d1c7.png, /tka/cbt_images/16905_8e465c4dce64685a3a0c56635641c743.png, /tka/cbt_images/16905_f452fd69f56159411ebfce7ffcef8095.png, /tka/cbt_images/16905_ae89c306c679982547060190597cd612.png
+
+QUESTION 30
+--------------------------------------------------------------------------------
+Type: Multiple Choice (Checkboxes)
+Text: Sebuah sensor otomatis diuji untuk mendeteksi kendaraan yang melintas. Pengujian dilakukan dalam tiga tahap dengan hasil sebagai berikut:
+Images: /tka/cbt_images/38821_abf9102ddf3d1a1b01e7a60ba457e7de.png
+Answers:
+  a) Sebuah sensor otomatis diuji untuk mendeteksi kendaraan yang melintas. Pengujian dilakukan dalam tig
+  b) Data tersebut digunakan untuk memperkirakan peluang kegagalan sensor pada satu kali deteksi berikutn
+  c) Berdasarkan hasil pengujian sensor pada tabel, manakah pernyataan yang benar tentang pengujian senso
+  d) Frekuensi relatif atau peluang kegagalan sensor dari seluruh pengujian adalah 0,124.
+  e) Frekuensi relatif atau peluang kegagalan pada Tahap III lebih besar daripada pada Tahap I.
