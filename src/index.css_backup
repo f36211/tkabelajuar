@@ -1,4 +1,3 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -622,4 +621,3 @@ button {
 .justify-between { justify-content: space-between; }
 .flex-wrap { flex-wrap: wrap; }
 .flex-1 { flex: 1; }
-
