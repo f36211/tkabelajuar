@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useApp } from '../context/AppContext';
 import materiData from '../data/materi.json';
 import { useState } from 'react';
+import StepSolver from '../components/StepSolver';
 
 export default function MateriDetail() {
   const { topikId } = useParams();
@@ -96,22 +97,28 @@ export default function MateriDetail() {
                   transition={{ duration: 0.2 }}
                   style={{ padding: '16px 18px' }}
                 >
-                  <h4 style={{ color: 'var(--accent)', fontSize: '0.85rem', marginBottom: 8 }}>
-                    💡 Pembahasan:
-                  </h4>
-                  <pre style={{
-                    fontFamily: 'Inter, monospace', fontSize: '0.85rem',
-                    whiteSpace: 'pre-wrap', lineHeight: 1.7, color: 'var(--text-secondary)',
-                    marginBottom: 12,
-                  }}>
-                    {ex.solution}
-                  </pre>
-                  <div style={{
-                    padding: '10px 14px', background: 'var(--success-light)',
-                    borderRadius: 'var(--radius-sm)', fontWeight: 600, color: 'var(--success)',
-                  }}>
-                    ✅ Jawaban: {ex.answer}
-                  </div>
+                  {ex.steps ? (
+                    <StepSolver steps={ex.steps} finalAnswer={ex.answer} />
+                  ) : (
+                    <>
+                      <h4 style={{ color: 'var(--accent)', fontSize: '0.85rem', marginBottom: 8 }}>
+                        💡 Pembahasan:
+                      </h4>
+                      <pre style={{
+                        fontFamily: 'Inter, monospace', fontSize: '0.85rem',
+                        whiteSpace: 'pre-wrap', lineHeight: 1.7, color: 'var(--text-secondary)',
+                        marginBottom: 12,
+                      }}>
+                        {ex.solution}
+                      </pre>
+                      <div style={{
+                        padding: '10px 14px', background: 'var(--success-light)',
+                        borderRadius: 'var(--radius-sm)', fontWeight: 600, color: 'var(--success)',
+                      }}>
+                        ✅ Jawaban: {ex.answer}
+                      </div>
+                    </>
+                  )}
                 </motion.div>
               )}
             </div>

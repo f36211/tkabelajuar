@@ -16,8 +16,31 @@
     ],
     "examples": [
       {
-        "question": "Sepeda harga Rp1.200.000 diskon 20%, lalu diskon tambahan 10% untuk member. Berapa yang dibayar member?",
-        "solution": "Diskon 1: 1.200.000 × 0,80 = 960.000\nDiskon 2: 960.000 × 0,90 = 864.000\n\nTrick: 0,8 × 0,9 = 0,72 (diskon total 28%)",
+        "question": "Sebuah sepeda harga normal Rp1.200.000 diskon 20%, lalu ada diskon tambahan 10% untuk pemegang kartu member. Berapa total yang harus dibayar member?",
+        "steps": [
+          {
+            "title": "Menganalisis Harga Awal",
+            "text": "Pertama, mari kita tentukan harga normal sebelum adanya diskon apa pun. Harga normal adalah Rp1.200.000.",
+            "visual": { "type": "barChart", "data": { "bars": [{ "label": "Harga Normal", "value": 1200000, "color": "var(--text-secondary)" }] } }
+          },
+          {
+            "title": "Menghitung Diskon Pertama",
+            "text": "Diskon pertama yang diberikan adalah 20%. Kita hitung sisa harga setelah pemotongan 20%, yaitu dengan mengalikan persentase yang tersisa (80%).",
+            "math": "Harga_1 = 1.200.000 \\times (1 - 0.20) = 1.200.000 \\times 0.80 = 960.000",
+            "visual": { "type": "barChart", "data": { "bars": [{ "label": "Harga Normal", "value": 1200000, "color": "var(--text-secondary)" }, { "label": "Diskon 20%", "value": 960000, "color": "var(--accent)" }] } }
+          },
+          {
+            "title": "Menghitung Diskon Tambahan",
+            "text": "Selanjutnya, kita terapkan diskon tambahan 10%. Ingat, diskon ini dihitung dari harga yang sudah didiskon pertama (Rp960.000), BUKAN dari harga awal!",
+            "math": "Harga_2 = 960.000 \\times (1 - 0.10) = 960.000 \\times 0.90 = 864.000",
+            "visual": { "type": "barChart", "data": { "bars": [{ "label": "Harga Normal", "value": 1200000, "color": "var(--text-secondary)" }, { "label": "Diskon 20%", "value": 960000, "color": "var(--accent)" }, { "label": "Diskon 10%", "value": 864000, "color": "var(--success)" }] } }
+          },
+          {
+            "title": "Jebakan Diskon",
+            "text": "Hindari kesalahan umum (jebakan)! Diskon 20% + 10% TIDAK SAMA DENGAN 30%. Jika didiskon 30% dari awal, harganya menjadi Rp840.000. Sedang dengan diskon bertingkat ini, total potongannya hanya setara dengan 28%.",
+            "math": "Diskon_{total} = (1 - (0.80 \\times 0.90)) \\times 100\\% = 28\\%"
+          }
+        ],
         "answer": "Rp864.000"
       },
       {
@@ -117,8 +140,31 @@
     ],
     "examples": [
       {
-        "question": "Tali dari puncak tiang ke tanah 17 m, jarak kaki tiang ke ujung tali 8 m. Tinggi tiang?",
-        "solution": "Pythagoras tersamar!\nTinggi² + 8² = 17²\nTinggi² = 289 - 64 = 225\nTinggi = 15 m",
+        "question": "Tali dari puncak tiang bendera ditarik lurus ke tanah. Panjang tali 17 meter dan jarak kaki tiang ke ujung tali sejauh 8 meter. Berapakah tinggi tiang bendera tersebut?",
+        "steps": [
+          {
+            "title": "Visualisasi Soal",
+            "text": "Situasi ini membentuk sebuah segitiga siku-siku antara tiang, tanah, dan tali. Kita bisa menamai ini sebagai segitiga dengan sisi alas (b), tinggi (a), dan sisi miring/hipotenusa (c).",
+            "visual": { "type": "pythagoras", "data": { "a": "?", "b": 8, "c": 17, "labels": { "left": "Tinggi (a)", "bottom": "Jarak (8m)", "hyp": "Tali (17m)" } } }
+          },
+          {
+            "title": "Teorema Pythagoras",
+            "text": "Jika suatu segitiga adalah siku-siku, maka kuadrat sisi miring sama dengan jumlah kuadrat sisi penyikunya. Kita bisa menuliskan persamaan berikut:",
+            "math": "c^2 = a^2 + b^2",
+            "visual": { "type": "pythagoras", "data": { "a": "?", "b": 8, "c": 17, "labels": { "left": "a", "bottom": "8", "hyp": "17" } } }
+          },
+          {
+            "title": "Memasukkan Nilai",
+            "text": "Kita masukkan angka yang diketahui. Ingat, sisi yang kita cari adalah sisi tegak (a). Kita manipulasi persamaannya untuk mencari a².",
+            "math": "17^2 = a^2 + 8^2 \\quad \\rightarrow \\quad a^2 = 17^2 - 8^2"
+          },
+          {
+            "title": "Menghitung Hasil",
+            "text": "Hitung hasil kuadrat dari masing-masing bilangan untuk menemukan nilai tinggi tiang. Sebagai tip, 8-15-17 adalah salah satu Pythagoras Triple (Tripel Pythagoras) yang wajib dihafal!",
+            "math": "a^2 = 289 - 64 = 225 \\quad \\rightarrow \\quad a = \\sqrt{225} = 15",
+            "visual": { "type": "pythagoras", "data": { "a": 15, "b": 8, "c": 17, "labels": { "left": "15 m", "bottom": "8 m", "hyp": "17 m" } } }
+          }
+        ],
         "answer": "15 m"
       },
       {
@@ -127,8 +173,27 @@
         "answer": "360 cm³"
       },
       {
-        "question": "Titik A(3,4) refleksi y=x, lalu translasi (-2,5). Koordinat akhir?",
-        "solution": "Refleksi y=x: (3,4) → (4,3)\nTranslasi (-2,5): (4,3) → (2,8)",
+        "question": "Titik A(3,4) direfleksikan terhadap persamaan garis y = x, kemudian dilanjutkan dengan translasi sejauh (-2, 5). Tentukan koordinat akhir titik tersebut!",
+        "steps": [
+          {
+            "title": "Visualisasi Titik Awal",
+            "text": "Dimulai dengan titik A pada koordinat (3, 4). Ini adalah koordinat X maju 3 langkah dari pusat, dan Y naik 4 langkah.",
+            "math": "A = (3, 4)",
+            "visual": { "type": "coordinate", "data": { "points": [{ "x": 3, "y": 4, "label": "A(3,4)" }], "xRange": [-2, 8], "yRange": [-2, 10] }, "width": 260, "height": 260 }
+          },
+          {
+            "title": "Refleksi terhadap garis y=x",
+            "text": "Rumus refleksi terhadap y = x adalah menukar nilai sumbu X dengan sumbu Y. Sehingga titik (x, y) menjadi (y, x).",
+            "math": "(x, y) \\xrightarrow{y=x} (y, x) \\quad \\rightarrow \\quad (3, 4) \\xrightarrow{y=x} A'(4, 3)",
+            "visual": { "type": "transformation", "data": { "original": { "x": 3, "y": 4, "label": "A(3,4)" }, "transformed": { "x": 4, "y": 3, "label": "A'(4,3)" }, "axis": "y=x", "xRange": [-2, 8], "yRange": [-2, 10] }, "width": 260, "height": 260 }
+          },
+          {
+            "title": "Pergeseran (Translasi)",
+            "text": "Selanjutnya, kita translasikan titik A' sejauh T(-2, 5). Artinya x digeser ke kiri 2 langkah, dan y digeser ke atas 5 langkah.",
+            "math": "A'' = A' + T \\\\ A'' = \\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix} + \\begin{pmatrix} -2 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 8 \\end{pmatrix}",
+            "visual": { "type": "transformation", "data": { "original": { "x": 4, "y": 3, "label": "A'(4,3)" }, "transformed": { "x": 2, "y": 8, "label": "A''(2,8)" }, "xRange": [-2, 8], "yRange": [-2, 10] }, "width": 260, "height": 260 }
+          }
+        ],
         "answer": "(2, 8)"
       }
     ]
