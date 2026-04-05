@@ -105,7 +105,7 @@ export function getAutoVisual(question) {
   }
 
   // Persamaan garis / through points
-  if (q.includes('garis') && q.includes('melalui')) {
+  if (q.includes('garis') && (q.includes('melalui') || q.includes('sejajar'))) {
     const coordMatches = [...q.matchAll(/\((-?\d+)\s*,\s*(-?\d+)\)/g)];
     if (coordMatches.length >= 2) {
       const x1 = parseInt(coordMatches[0][1]);
@@ -124,6 +124,21 @@ export function getAutoVisual(question) {
           yRange: [Math.min(y1, y2) - 3, Math.max(y1, y2) + 3],
         },
       };
+    } else if (coordMatches.length === 1) {
+      // Single point
+      const x1 = parseInt(coordMatches[0][1]);
+      const y1 = parseInt(coordMatches[0][2]);
+      return {
+        type: 'coordinate',
+        data: {
+          points: [
+            { x: x1, y: y1, label: `P(${x1},${y1})`, color: '#3b82f6' },
+          ],
+          lines: [],
+          xRange: [x1 - 3, x1 + 3],
+          yRange: [y1 - 3, y1 + 3],
+        },
+      };
     }
   }
 
@@ -135,9 +150,32 @@ export function getAutoVisual(question) {
       data: {
         a: nums[0] || 6,
         b: nums[1] || 8,
-        h: nums[3] || 15,
+        h: nums.length > 2 ? nums[nums.length - 1] : 15,
       },
     };
+  }
+
+  // Belah ketupat
+  if (q.includes('belah ketupat')) {
+    const nums = q.match(/\d+/g)?.map(Number) || [];
+    return {
+      type: 'rhombus',
+      data: {
+        d1: nums[0] || 24,
+        d2: nums[1] || 18,
+      },
+    };
+  }
+
+  // Himpunan (Venn)
+  if (q.includes('siswa senang') && q.includes('keduanya')) {
+    const nums = q.match(/\d+/g)?.map(Number) || [];
+    if (nums.length >= 4) {
+      return {
+        type: 'venn',
+        data: { total: nums[0], a: nums[1], b: nums[2], both: nums[3] },
+      };
+    }
   }
 
   // Lingkaran / diameter
@@ -157,6 +195,57 @@ export function getAutoVisual(question) {
       type: 'rectangle',
       data: { width: nums[0] || 24, height: nums[1] || 18 },
     };
+  }
+
+  // Tabel Distribusi / Statistik
+  if (q.includes('frekuensi') || q.includes('tabel distribusi') || q.includes('data:')) {
+    if (q.includes('frekuensi masing-masing')) {
+      const nums = q.match(/\d+/g)?.map(Number) || [];
+      const values = nums.slice(2);
+      const headers = ['Nilai'].concat(values.map((_, i) => `${nums[0] + i}`).filter((_, i) => i < 7));
+      const frekuensi = ['Frekuensi'].concat(values.slice(0, 7));
+      return { 
+        type: 'table', 
+        data: { title: 'Tabel Frekuensi Nilai', headers, rows: [frekuensi] } 
+      };
+    }
+    if (q.includes('distribusi tinggi badan')) {
+      return {
+        type: 'table',
+        data: {
+          title: 'Distribusi Tinggi Badan',
+          headers: ['Tinggi (cm)', '148', '150', '152', '154', '156', '158', '160'],
+          rows: [
+            ['Banyak Siswa', '2', '4', '7', '8', '5', '6', '3']
+          ]
+        }
+      }
+    }
+    if (q.includes('frekuensi') && q.includes('nilai') && q.length < 150) {
+      // e.g., Nilai 4,5,6,7,8 frekuensi 2,4,6,4,2.
+      const nums = q.match(/\d+/g)?.map(Number) || [];
+      if (nums.length >= 10) {
+        return {
+          type: 'table',
+          data: {
+            title: 'Data Frekuensi',
+            headers: ['Nilai'].concat(nums.slice(0, 5)),
+            rows: [ ['Frekuensi'].concat(nums.slice(5, 10)) ]
+          }
+        }
+      }
+    }
+    if (q.includes('data:') && (q.includes('median') || q.includes('modus'))) {
+      const nums = q.match(/\d+/g)?.map(Number) || [];
+      return {
+        type: 'table',
+        data: {
+          title: 'Data Pengamatan',
+          headers: ['Data ke-'].concat(nums.map((_, i) => `${i + 1}`)),
+          rows: [ ['Nilai'].concat(nums) ]
+        }
+      }
+    }
   }
 
   // Diagram batang / pengunjung

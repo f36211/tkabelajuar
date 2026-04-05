@@ -1,468 +1,1630 @@
 {
   "latihan": [
     {
-      "id": 1, "topik": "aritmatika-sosial", "tingkat": "mudah",
+      "id": 1,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
       "pertanyaan": "Sebuah sepeda harga normal Rp1.200.000. Toko memberi diskon 20% untuk semua barang, lalu diskon tambahan 10% untuk member. Jika Andi member, berapa yang dibayar?",
-      "opsi": ["Rp840.000", "Rp864.000", "Rp960.000", "Rp1.080.000"],
+      "opsi": [
+        "Rp840.000",
+        "Rp864.000",
+        "Rp960.000",
+        "Rp1.080.000"
+      ],
       "jawaban": 1,
       "pembahasan": "Diskon 1: 1.200.000 × 0,80 = 960.000\nDiskon 2: 960.000 × 0,90 = 864.000\n\nTrick: Bukan 30%! Tapi 0,8 × 0,9 = 0,72 (diskon total 28%)"
     },
     {
-      "id": 2, "topik": "geometri", "tingkat": "sedang",
+      "id": 2,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Seorang petani memasang tali dari puncak tiang bendera ke tanah. Panjang tali 17 m, jarak kaki tiang ke ujung tali di tanah adalah 8 m. Tinggi tiang adalah...",
-      "opsi": ["12 m", "13 m", "15 m", "16 m"],
+      "opsi": [
+        "12 m",
+        "13 m",
+        "15 m",
+        "16 m"
+      ],
       "jawaban": 2,
       "pembahasan": "Pythagoras tersamar!\nTinggi² + 8² = 17²\nTinggi² = 289 - 64 = 225\nTinggi = √225 = 15 m"
     },
     {
-      "id": 3, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 3,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Umur Ayah : Umur Budi = 7 : 4. Jumlah umur mereka 55 tahun. Umur Ayah 5 tahun lagi adalah...",
-      "opsi": ["35 tahun", "38 tahun", "40 tahun", "42 tahun"],
+      "opsi": [
+        "35 tahun",
+        "38 tahun",
+        "40 tahun",
+        "42 tahun"
+      ],
       "jawaban": 2,
       "pembahasan": "Total bagian = 7 + 4 = 11\nUmur Ayah = (7/11) × 55 = 35 tahun\nUmur Ayah 5 tahun lagi = 35 + 5 = 40 tahun"
     },
     {
-      "id": 4, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 4,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Anto bersepeda ke sekolah 12 km/jam, pulang 8 km/jam. Rata-rata kecepatan seluruh perjalanan adalah...",
-      "opsi": ["9 km/jam", "9,6 km/jam", "10 km/jam", "10,5 km/jam"],
+      "opsi": [
+        "9 km/jam",
+        "9,6 km/jam",
+        "10 km/jam",
+        "10,5 km/jam"
+      ],
       "jawaban": 1,
       "pembahasan": "Jebakan: Bukan (12+8)/2 = 10!\n\nRumus rata-rata kecepatan = 2ab/(a+b)\n= 2×12×8/(12+8) = 192/20 = 9,6 km/jam"
     },
     {
-      "id": 5, "topik": "aritmatika-sosial", "tingkat": "mudah",
+      "id": 5,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
       "pertanyaan": "Jarak dua kota 45 km. Pada peta skala 1:500.000, jaraknya adalah... cm",
-      "opsi": ["4,5 cm", "9 cm", "45 cm", "90 cm"],
+      "opsi": [
+        "4,5 cm",
+        "9 cm",
+        "45 cm",
+        "90 cm"
+      ],
       "jawaban": 1,
       "pembahasan": "45 km = 4.500.000 cm\nJarak peta = 4.500.000 / 500.000 = 9 cm"
     },
     {
-      "id": 6, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 6,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "15 pekerja membangun rumah dalam 20 hari. Setelah 8 hari, 5 pekerja sakit. Berapa hari lagi yang dibutuhkan?",
-      "opsi": ["12 hari", "15 hari", "18 hari", "20 hari"],
+      "opsi": [
+        "12 hari",
+        "15 hari",
+        "18 hari",
+        "20 hari"
+      ],
       "jawaban": 2,
       "pembahasan": "Total pekerjaan = 15 × 20 = 300 orang-hari\nSelesai = 15 × 8 = 120\nSisa = 180 orang-hari\nPekerja = 10\nWaktu = 180/10 = 18 hari"
     },
     {
-      "id": 7, "topik": "aritmatika-sosial", "tingkat": "sulit",
+      "id": 7,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sulit",
       "pertanyaan": "Toko A: Diskon 30% lalu 20%. Toko B: Diskon 40%. Toko C: Diskon 50%. Untuk barang Rp800.000, urutan termurah ke termahal?",
-      "opsi": ["A, B, C", "C, A, B", "C, B, A", "B, C, A"],
+      "opsi": [
+        "A, B, C",
+        "C, A, B",
+        "C, B, A",
+        "B, C, A"
+      ],
       "jawaban": 1,
       "pembahasan": "A: 800.000 × 0,7 × 0,8 = 448.000\nB: 800.000 × 0,6 = 480.000\nC: 800.000 × 0,5 = 400.000\n\nUrutan: C (400k) < A (448k) < B (480k)"
     },
     {
-      "id": 8, "topik": "fungsi", "tingkat": "mudah",
+      "id": 8,
+      "topik": "fungsi",
+      "tingkat": "mudah",
       "pertanyaan": "Jika f(x) = 5x - 3, nilai f(4) - f(2) adalah...",
-      "opsi": ["8", "10", "12", "14"],
+      "opsi": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
       "jawaban": 1,
       "pembahasan": "f(4) = 20 - 3 = 17\nf(2) = 10 - 3 = 7\nSelisih = 17 - 7 = 10\n\nCara cepat: f(4)-f(2) = 5(4-2) = 10"
     },
     {
-      "id": 9, "topik": "fungsi", "tingkat": "sedang",
+      "id": 9,
+      "topik": "fungsi",
+      "tingkat": "sedang",
       "pertanyaan": "Garis melalui (1, 2) dan (3, 8). Persamaannya adalah...",
-      "opsi": ["y = 2x + 1", "y = 3x - 1", "y = 3x + 1", "y = 2x - 1"],
+      "opsi": [
+        "y = 2x + 1",
+        "y = 3x - 1",
+        "y = 3x + 1",
+        "y = 2x - 1"
+      ],
       "jawaban": 1,
       "pembahasan": "m = (8-2)/(3-1) = 6/2 = 3\ny - 2 = 3(x - 1)\ny = 3x - 3 + 2 = 3x - 1"
     },
     {
-      "id": 10, "topik": "statistika", "tingkat": "sedang",
+      "id": 10,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Tabel: Nilai 4,5,6,7,8 dengan frekuensi 2,4,6,4,2. Rata-rata nilai adalah...",
-      "opsi": ["5,5", "6", "6,5", "7"],
+      "opsi": [
+        "5,5",
+        "6",
+        "6,5",
+        "7"
+      ],
       "jawaban": 1,
       "pembahasan": "Total siswa = 18\nΣ(f×x) = (4×2)+(5×4)+(6×6)+(7×4)+(8×2) = 8+20+36+28+16 = 108\nMean = 108/18 = 6"
     },
     {
-      "id": 11, "topik": "statistika", "tingkat": "mudah",
+      "id": 11,
+      "topik": "statistika",
+      "tingkat": "mudah",
       "pertanyaan": "Diagram batang: Senin 20, Selasa 35, Rabu 25, Kamis 30, Jumat 40. Selisih pengunjung terbanyak dan tersedikit?",
-      "opsi": ["10", "15", "20", "25"],
+      "opsi": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
       "jawaban": 2,
       "pembahasan": "Terbanyak: Jumat = 40\nTersedikit: Senin = 20\nSelisih = 40 - 20 = 20"
     },
     {
-      "id": 12, "topik": "statistika", "tingkat": "sedang",
+      "id": 12,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Data: 12, 15, 18, 20, 22, 25, 28, 30, 32. Median adalah...",
-      "opsi": ["20", "22", "25", "23"],
+      "opsi": [
+        "20",
+        "22",
+        "25",
+        "23"
+      ],
       "jawaban": 1,
       "pembahasan": "Data sudah urut, 9 data (ganjil)\nMedian = data ke-5 = 22"
     },
     {
-      "id": 13, "topik": "statistika", "tingkat": "mudah",
+      "id": 13,
+      "topik": "statistika",
+      "tingkat": "mudah",
       "pertanyaan": "Data: 7, 8, 6, 7, 9, 8, 7, 6, 7, 8. Modus adalah...",
-      "opsi": ["6", "7", "8", "9"],
+      "opsi": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
       "jawaban": 1,
       "pembahasan": "7 muncul 4 kali (paling sering)\n8 muncul 3 kali\n6 muncul 2 kali\nModus = 7"
     },
     {
-      "id": 14, "topik": "peluang", "tingkat": "mudah",
+      "id": 14,
+      "topik": "peluang",
+      "tingkat": "mudah",
       "pertanyaan": "Dadu dilempar sekali. Peluang muncul bilangan prima adalah...",
-      "opsi": ["1/3", "1/2", "2/3", "1/6"],
+      "opsi": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
       "jawaban": 1,
       "pembahasan": "Bilangan prima pada dadu: 2, 3, 5 → 3 kemungkinan\nTotal: 6 sisi\nPeluang = 3/6 = 1/2"
     },
     {
-      "id": 15, "topik": "peluang", "tingkat": "sedang",
+      "id": 15,
+      "topik": "peluang",
+      "tingkat": "sedang",
       "pertanyaan": "Dalam kotak 5 bola merah, 3 biru. Diambil 2 bola tanpa pengembalian. Peluang keduanya merah?",
-      "opsi": ["5/16", "5/14", "25/64", "10/28"],
+      "opsi": [
+        "5/16",
+        "5/14",
+        "25/64",
+        "10/28"
+      ],
       "jawaban": 1,
       "pembahasan": "P(M1) = 5/8\nP(M2|M1) = 4/7\nP = (5/8) × (4/7) = 20/56 = 5/14"
     },
     {
-      "id": 16, "topik": "geometri", "tingkat": "sedang",
+      "id": 16,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Titik A(4, -3) direfleksikan terhadap sumbu x, kemudian terhadap sumbu y. Koordinat akhir adalah...",
-      "opsi": ["(4, 3)", "(-4, 3)", "(-4, -3)", "(3, -4)"],
+      "opsi": [
+        "(4, 3)",
+        "(-4, 3)",
+        "(-4, -3)",
+        "(3, -4)"
+      ],
       "jawaban": 1,
       "pembahasan": "Refleksi sumbu x: (4,-3) → (4,3)\nRefleksi sumbu y: (4,3) → (-4,3)"
     },
     {
-      "id": 17, "topik": "aljabar", "tingkat": "mudah",
+      "id": 17,
+      "topik": "aljabar",
+      "tingkat": "mudah",
       "pertanyaan": "Suku ke-5 barisan aritmatika adalah 17, suku ke-9 adalah 29. Suku ke-12 adalah...",
-      "opsi": ["35", "38", "41", "44"],
+      "opsi": [
+        "35",
+        "38",
+        "41",
+        "44"
+      ],
       "jawaban": 1,
       "pembahasan": "Selisih 4 suku = 29-17 = 12\nBeda (b) = 12/4 = 3\nU5 = a + 4b = 17 → a = 5\nU12 = 5 + 11×3 = 38"
     },
     {
-      "id": 18, "topik": "aljabar", "tingkat": "sedang",
+      "id": 18,
+      "topik": "aljabar",
+      "tingkat": "sedang",
       "pertanyaan": "Harga 2 pensil dan 3 buku Rp21.000. Harga 4 pensil dan 1 buku Rp23.000. Harga 1 pensil dan 2 buku adalah...",
-      "opsi": ["Rp10.600", "Rp12.400", "Rp13.200", "Rp14.000"],
+      "opsi": [
+        "Rp10.600",
+        "Rp12.400",
+        "Rp13.200",
+        "Rp14.000"
+      ],
       "jawaban": 1,
       "pembahasan": "2x + 3y = 21.000\n4x + y = 23.000\nDari (2): y = 23.000 - 4x\nSubstitusi: x = 4.800, y = 3.800\n1 pensil + 2 buku = 12.400"
     },
     {
-      "id": 19, "topik": "fungsi", "tingkat": "sedang",
+      "id": 19,
+      "topik": "fungsi",
+      "tingkat": "sedang",
       "pertanyaan": "Jika f(2x - 1) = 4x + 3, maka nilai f(5) adalah...",
-      "opsi": ["11", "13", "15", "17"],
+      "opsi": [
+        "11",
+        "13",
+        "15",
+        "17"
+      ],
       "jawaban": 2,
       "pembahasan": "Cari x saat 2x - 1 = 5\n2x = 6 → x = 3\nf(5) = 4(3) + 3 = 15"
     },
     {
-      "id": 20, "topik": "fungsi", "tingkat": "mudah",
+      "id": 20,
+      "topik": "fungsi",
+      "tingkat": "mudah",
       "pertanyaan": "Diketahui f(x) = 3x - 7. Nilai f(5) + f(-2) adalah...",
-      "opsi": ["-3", "-5", "3", "5"],
+      "opsi": [
+        "-3",
+        "-5",
+        "3",
+        "5"
+      ],
       "jawaban": 1,
       "pembahasan": "f(5) = 15 - 7 = 8\nf(-2) = -6 - 7 = -13\nf(5) + f(-2) = 8 + (-13) = -5"
     },
     {
-      "id": 21, "topik": "aritmatika-sosial", "tingkat": "mudah",
+      "id": 21,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
       "pertanyaan": "Toko memberikan diskon 15% untuk member dan diskon tambahan 10% untuk pembelian di atas Rp500.000. Harga sepatu Rp750.000, berapa yang dibayar member?",
-      "opsi": ["Rp562.500", "Rp573.750", "Rp600.000", "Rp637.500"],
+      "opsi": [
+        "Rp562.500",
+        "Rp573.750",
+        "Rp600.000",
+        "Rp637.500"
+      ],
       "jawaban": 1,
       "pembahasan": "Diskon 15%: 750.000 × 0,85 = 637.500\nKarena > 500.000, diskon 10%:\n637.500 × 0,90 = 573.750"
     },
     {
-      "id": 22, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 22,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Pak Budi menabung Rp2.000.000 bunga 6%/tahun. Berapa bulan hingga tabungan Rp2.060.000?",
-      "opsi": ["3 bulan", "6 bulan", "9 bulan", "12 bulan"],
+      "opsi": [
+        "3 bulan",
+        "6 bulan",
+        "9 bulan",
+        "12 bulan"
+      ],
       "jawaban": 1,
       "pembahasan": "Bunga = 2.060.000 - 2.000.000 = 60.000\n60.000 = 2.000.000 × 0,06 × t\nt = 0,5 tahun = 6 bulan"
     },
     {
-      "id": 23, "topik": "geometri", "tingkat": "mudah",
+      "id": 23,
+      "topik": "geometri",
+      "tingkat": "mudah",
       "pertanyaan": "Taman persegi panjang 24m × 18m. Di sekeliling ditanami pohon jarak 3m. Berapa pohon?",
-      "opsi": ["24 pohon", "28 pohon", "32 pohon", "36 pohon"],
+      "opsi": [
+        "24 pohon",
+        "28 pohon",
+        "32 pohon",
+        "36 pohon"
+      ],
       "jawaban": 1,
       "pembahasan": "Keliling = 2(24+18) = 84 m\nJumlah pohon = 84/3 = 28 pohon"
     },
     {
-      "id": 24, "topik": "geometri", "tingkat": "sedang",
+      "id": 24,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Gardu tinggi 4m, jarak ke tiang listrik 5m. Kabel dari atap gardu ke ujung tiang 13m. Tinggi tiang listrik?",
-      "opsi": ["12 m", "14 m", "16 m", "18 m"],
+      "opsi": [
+        "12 m",
+        "14 m",
+        "16 m",
+        "18 m"
+      ],
       "jawaban": 2,
       "pembahasan": "Segitiga: horizontal 5m, miring 13m\n5² + x² = 13² → x² = 144 → x = 12\nTinggi total = 4 + 12 = 16 m"
     },
     {
-      "id": 25, "topik": "geometri", "tingkat": "sedang",
+      "id": 25,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Prisma segitiga alas siku-siku 6cm, 8cm, 10cm. Tinggi prisma 15cm. Volume?",
-      "opsi": ["240 cm³", "300 cm³", "360 cm³", "480 cm³"],
+      "opsi": [
+        "240 cm³",
+        "300 cm³",
+        "360 cm³",
+        "480 cm³"
+      ],
       "jawaban": 2,
       "pembahasan": "Luas alas = (6×8)/2 = 24 cm²\nVolume = 24 × 15 = 360 cm³\nSisi 10 = hipotenusa (tidak dipakai)"
     },
     {
-      "id": 26, "topik": "geometri", "tingkat": "sedang",
+      "id": 26,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Persegi panjang A: 12cm × 8cm. Persegi panjang B sebangun, lebarnya 12cm. Panjang B?",
-      "opsi": ["14 cm", "16 cm", "18 cm", "20 cm"],
+      "opsi": [
+        "14 cm",
+        "16 cm",
+        "18 cm",
+        "20 cm"
+      ],
       "jawaban": 2,
       "pembahasan": "12/8 = p/12\n3/2 = p/12\np = 18 cm"
     },
     {
-      "id": 27, "topik": "geometri", "tingkat": "sulit",
+      "id": 27,
+      "topik": "geometri",
+      "tingkat": "sulit",
       "pertanyaan": "Titik A(3,4) refleksi terhadap y=x, lalu translasi (-2,5). Koordinat akhir?",
-      "opsi": ["(1, 9)", "(2, 8)", "(5, 2)", "(7, 1)"],
+      "opsi": [
+        "(1, 9)",
+        "(2, 8)",
+        "(5, 2)",
+        "(7, 1)"
+      ],
       "jawaban": 1,
       "pembahasan": "Refleksi y=x: (3,4) → (4,3)\nTranslasi (-2,5): (4,3) → (4-2, 3+5) = (2,8)"
     },
     {
-      "id": 28, "topik": "statistika", "tingkat": "sedang",
+      "id": 28,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Nilai ulangan: 6,7,8,6,9,7,8,7,6,9. Modus dan median berturut-turut?",
-      "opsi": ["6 dan 7, median 7", "7, median 7", "6, median 7,5", "7, median 6,5"],
+      "opsi": [
+        "6 dan 7, median 7",
+        "7, median 7",
+        "6, median 7,5",
+        "7, median 6,5"
+      ],
       "jawaban": 0,
       "pembahasan": "Urutkan: 6,6,6,7,7,7,8,8,9,9\nModus: 6 dan 7 (masing-masing 3 kali)\nMedian: (7+7)/2 = 7"
     },
     {
-      "id": 29, "topik": "statistika", "tingkat": "sedang",
+      "id": 29,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Rata-rata 20 siswa = 75. Ditambah 5 siswa baru, rata-rata jadi 76. Rata-rata 5 siswa baru?",
-      "opsi": ["78", "79", "80", "82"],
+      "opsi": [
+        "78",
+        "79",
+        "80",
+        "82"
+      ],
       "jawaban": 2,
       "pembahasan": "Total 20 siswa = 1500\nTotal 25 siswa = 1900\nTotal 5 baru = 400\nRata-rata = 400/5 = 80"
     },
     {
-      "id": 30, "topik": "peluang", "tingkat": "sedang",
+      "id": 30,
+      "topik": "peluang",
+      "tingkat": "sedang",
       "pertanyaan": "Dadu dilempar 2 kali. Peluang jumlah mata dadu lebih dari 9?",
-      "opsi": ["1/9", "1/6", "1/4", "5/36"],
+      "opsi": [
+        "1/9",
+        "1/6",
+        "1/4",
+        "5/36"
+      ],
       "jawaban": 1,
       "pembahasan": "Jumlah 10: (4,6),(5,5),(6,4) = 3\nJumlah 11: (5,6),(6,5) = 2\nJumlah 12: (6,6) = 1\nTotal = 6/36 = 1/6"
     },
     {
-      "id": 31, "topik": "aljabar", "tingkat": "sedang",
+      "id": 31,
+      "topik": "aljabar",
+      "tingkat": "sedang",
       "pertanyaan": "Nilai x yang memenuhi 2^(2x+1) × 4^(x-1) = 16^(x+2) / 8^(x-1) adalah...",
-      "opsi": ["2", "3", "4", "5"],
+      "opsi": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "jawaban": 2,
       "pembahasan": "Ubah ke basis 2:\n2^(2x+1) × 2^(2x-2) = 2^(4x+8) / 2^(3x-3)\n2^(4x-1) = 2^(x+11)\n4x-1 = x+11 → 3x = 12 → x = 4"
     },
     {
-      "id": 32, "topik": "peluang", "tingkat": "mudah",
+      "id": 32,
+      "topik": "peluang",
+      "tingkat": "mudah",
       "pertanyaan": "Kantong berisi 5 bola merah, 3 biru, 2 hijau. Peluang bola bukan merah?",
-      "opsi": ["1/2", "3/10", "2/5", "3/5"],
+      "opsi": [
+        "1/2",
+        "3/10",
+        "2/5",
+        "3/5"
+      ],
       "jawaban": 0,
       "pembahasan": "Total = 10 bola\nBukan merah = 3+2 = 5\nPeluang = 5/10 = 1/2"
     },
     {
-      "id": 33, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 33,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Proyek 24 pekerja selesai 30 hari. Setelah 10 hari, dihentikan 5 hari. Berapa pekerja tambahan agar tepat waktu?",
-      "opsi": ["4 orang", "6 orang", "8 orang", "10 orang"],
+      "opsi": [
+        "4 orang",
+        "6 orang",
+        "8 orang",
+        "10 orang"
+      ],
       "jawaban": 2,
       "pembahasan": "Total = 720 orang-hari\nSelesai = 240, Sisa = 480\nSisa waktu = 15 hari\nButuh = 480/15 = 32\nTambahan = 32-24 = 8"
     },
     {
-      "id": 34, "topik": "fungsi", "tingkat": "sulit",
+      "id": 34,
+      "topik": "fungsi",
+      "tingkat": "sulit",
       "pertanyaan": "Domain fungsi f(x) = √(2x-6) / (x²-9) adalah...",
-      "opsi": ["x > 3", "x ≥ 3", "x > 3, x ≠ -3", "x ≥ 3, x ≠ 3"],
+      "opsi": [
+        "x > 3",
+        "x ≥ 3",
+        "x > 3, x ≠ -3",
+        "x ≥ 3, x ≠ 3"
+      ],
       "jawaban": 0,
       "pembahasan": "Syarat akar: 2x-6 ≥ 0 → x ≥ 3\nSyarat penyebut: x²-9 ≠ 0 → x ≠ ±3\nGabungan: x ≥ 3 dan x ≠ 3 → x > 3"
     },
     {
-      "id": 35, "topik": "geometri", "tingkat": "sedang",
+      "id": 35,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Luas lingkaran dengan diameter 14 cm (π = 22/7) adalah...",
-      "opsi": ["144 cm²", "154 cm²", "176 cm²", "196 cm²"],
+      "opsi": [
+        "144 cm²",
+        "154 cm²",
+        "176 cm²",
+        "196 cm²"
+      ],
       "jawaban": 1,
       "pembahasan": "d = 14 → r = 7\nLuas = πr² = (22/7) × 49 = 154 cm²"
     },
     {
-      "id": 36, "topik": "statistika", "tingkat": "sedang",
+      "id": 36,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Tabel: Nilai 5,6,7,8,9,10 dengan frekuensi 3,5,8,6,4,2. Siswa yang nilainya di atas rata-rata ada...",
-      "opsi": ["10 siswa", "12 siswa", "14 siswa", "16 siswa"],
+      "opsi": [
+        "10 siswa",
+        "12 siswa",
+        "14 siswa",
+        "16 siswa"
+      ],
       "jawaban": 1,
       "pembahasan": "Total = 28 siswa\nΣ(fx) = 15+30+56+48+36+20 = 205\nMean = 205/28 ≈ 7,32\nNilai > 7,32: 8,9,10 = 6+4+2 = 12"
+    },
+    {
+      "id": 101,
+      "topik": "peluang",
+      "tingkat": "mudah",
+      "pertanyaan": "Sebuah dadu dilambungkan satu kali. Peluang muncul mata dadu faktor dari 6 adalah....",
+      "opsi": [
+        "1/6",
+        "1/2",
+        "2/3",
+        "5/6"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Faktor dari 6: 1, 2, 3, 6 (4 angka). Peluang = 4/6 = 2/3"
+    },
+    {
+      "id": 102,
+      "topik": "peluang",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah keluarga ingin memiliki 2 anak saja. Jika peluang lahir anak laki-laki dan lahir anak perempuan sama, peluang kedua anaknya perempuan adalah....",
+      "opsi": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Peluang {P,P} = 1/2 × 1/2 = 1/4"
+    },
+    {
+      "id": 103,
+      "topik": "geometri",
+      "tingkat": "sedang",
+      "pertanyaan": "Kebun berbentuk belah ketupat, panjang kedua diagonalnya 24 m dan 18 m. Di sekelilingnya ditanami pohon dengan jarak antar pohon 3 m. Banyaknya pohon adalah....",
+      "opsi": [
+        "14",
+        "15",
+        "20",
+        "28"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Diagonal 24 & 18. Sisi belah ketupat miring = √(12²+9²) = √225 = 15m. Keliling = 4×15 = 60m. Banyak pohon = 60/3 = 20"
+    },
+    {
+      "id": 104,
+      "topik": "fungsi",
+      "tingkat": "sedang",
+      "pertanyaan": "Persamaan garis melalui titik (-3,2) dan sejajar dengan garis 2x + 3y = 6 adalah....",
+      "opsi": [
+        "2x + 3y = -8",
+        "2x + 3y = 0",
+        "2x - 3y = -4",
+        "2x - 3y = 0"
+      ],
+      "jawaban": 1,
+      "pembahasan": "m = -2/3. Persamaan: y - 2 = -2/3(x - (-3)) → 3y - 6 = -2x - 6 → 2x + 3y = 0"
+    },
+    {
+      "id": 105,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Penyelesaian sistem persamaan x + y = 7 dan x - y = 3 adalah....",
+      "opsi": [
+        "(2,5)",
+        "(5,2)",
+        "(-3,10)",
+        "(10,-3)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "x+y=7, x-y=3. Tambah dua persamaan: 2x=10 → x=5. Substitusi x=5 ke 5+y=7 → y=2. Jadi (5,2)"
+    },
+    {
+      "id": 106,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Penyelesaian dari 3x + 10 > 6x - 8 adalah....",
+      "opsi": [
+        "x < 2",
+        "x > 2",
+        "x < 6",
+        "x > 6"
+      ],
+      "jawaban": 2,
+      "pembahasan": "3x - 6x > -8 - 10 → -3x > -18 → (Karna dibagi dg -3 maka tanda dibalik) x < 6"
+    },
+    {
+      "id": 107,
+      "topik": "himpunan",
+      "tingkat": "sedang",
+      "pertanyaan": "Dari 143 siswa, 95 siswa senang matematika, 87 siswa senang fisika, dan 60 siswa senang keduanya. Banyak siswa yang tidak senang matematika maupun fisika adalah....",
+      "opsi": [
+        "21 orang",
+        "27 orang",
+        "35 orang",
+        "122 orang"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Gabungan (Union) = 95 + 87 - 60 = 122. Tidak senang keduanya = Total siswa - Union = 143 - 122 = 21 orang"
+    },
+    {
+      "id": 108,
+      "topik": "himpunan",
+      "tingkat": "sedang",
+      "pertanyaan": "Diketahui K = {bilangan prima antara 2 dan 12}. Dan L = {4 bilangan kelipatan 3 yang pertama}. K ∩ L adalah....",
+      "opsi": [
+        "{3,6,9,12}",
+        "{3,6,9}",
+        "{3,6}",
+        "{3}"
+      ],
+      "jawaban": 3,
+      "pembahasan": "K = {3,5,7,11}, L = {3,6,9,12}. Irisan himpunan K ∩ L adalah elemen yang sama di kedua himpunan = {3}"
+    },
+    {
+      "id": 109,
+      "topik": "fungsi",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui suatu fungsi f(x) = 2x - 3. Nilai f(-1) adalah....",
+      "opsi": [
+        "5",
+        "1",
+        "-1",
+        "-5"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Untuk memecahkan cukup substitusi x=-1: f(-1) = 2(-1) - 3 = -2 - 3 = -5"
+    },
+    {
+      "id": 110,
+      "topik": "fungsi",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui f(x) = 8 - 2x, jika f(a) = -2, maka nilai a adalah....",
+      "opsi": [
+        "-5",
+        "-3",
+        "3",
+        "5"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Substitusi nilai ke x: 8 - 2a = -2 → -2a = -2 - 8 = -10 → a = 5"
+    },
+    {
+      "id": 111,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Hasil dari -6 + (6 : (-2)) - ((-3) × 3) adalah....",
+      "opsi": [
+        "0",
+        "3",
+        "6",
+        "9"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Dahulukan pembagian & perkalian: -6 + (-3) - (-9) = -9 + 9 = 0"
+    },
+    {
+      "id": 112,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
+      "pertanyaan": "Tali yang panjangnya 10 meter akan dipotong menjadi beberapa bagian yang sama panjang. Jika tiap bagian panjangnya 1/4 meter, maka banyak potongan tali yang terjadi adalah....",
+      "opsi": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Potongan tali dihitung dengan membagi panjang total dengan panjang tiap bagian: 10 / (1/4) = 10 × 4 = 40 potongan"
+    },
+    {
+      "id": 113,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
+      "pertanyaan": "Untuk membuat 20 roti diperlukan 4 kg tepung terigu. Banyaknya tepung terigu yang diperlukan untuk membuat 50 roti tersebut adalah....",
+      "opsi": [
+        "8 kg",
+        "10 kg",
+        "12 kg",
+        "14 kg"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Rasio: 20 roti = 4 kg. 1 kg = 5 roti. 50 roti = 50/5 = 10 kg tepung"
+    },
+    {
+      "id": 114,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Suatu proyek diselesaikan oleh 30 pekerja dalam 6 bulan. Jika proyek itu harus diselesaikan dalam 4 bulan, maka banyaknya pekerja yang harus ditambah sebanyak....",
+      "opsi": [
+        "10 orang",
+        "15 orang",
+        "20 orang",
+        "25 orang"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sistem beban = 30 × 6 = 180 bulan-pekerja. 180 / 4 = 45 pekerja. Tambahan = 45 - 30 = 15 orang"
+    },
+    {
+      "id": 115,
+      "topik": "aljabar",
+      "tingkat": "sedang",
+      "pertanyaan": "Bentuk sederhana dari 12/(√6 - √2) adalah....",
+      "opsi": [
+        "3(√2 - √6)",
+        "3(√2 + √6)",
+        "3(√6 + √2)",
+        "3(√6 - √2)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Gunakan bentuk sekawan: 12/(√6 - √2) × (√6 + √2)/(√6 + √2) = 12(√6 + √2) / (6 - 2) = 12(√6 + √2) / 4 = 3(√6 + √2)"
+    },
+    {
+      "id": 116,
+      "topik": "fungsi",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui rumus fungsi f(x) = 6 - 3x. Nilai dari f(5) + f(-4) adalah....",
+      "opsi": [
+        "18",
+        "9",
+        "-15",
+        "-27"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Hitung satu-satu: f(5) = 6 - 15 = -9. f(-4) = 6 - (-12) = 18. f(5) + f(-4) = -9 + 18 = 9"
+    },
+    {
+      "id": 117,
+      "topik": "statistika",
+      "tingkat": "sedang",
+      "pertanyaan": "Tabel nilai ulangan matematika mengurutkan nilai dari 4 hingga 10 dengan frekuensi masing-masing: 3, 2, 5, 8, 5, 4, 3. Banyak siswa yang mendapat nilai di atas rata-rata adalah....",
+      "opsi": [
+        "25 orang",
+        "20 orang",
+        "12 orang",
+        "7 orang"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Total siswa = 30. Total nilai = (4×3)+(5×2)+(6×5)+(7×8)+(8×5)+(9×4)+(10×3) = 214. Rata-rata = 214/30 = 7.13. Nilai > 7.13 adalah 8,9,10 dengan frekuensi 5+4+3 = 12 orang."
+    },
+    {
+      "id": 118,
+      "topik": "statistika",
+      "tingkat": "mudah",
+      "pertanyaan": "Tabel Distribusi Tinggi Badan. Tinggi Badan(cm): 148, 150, 152, 154, 156, 158, 160. Banyak Siswa: 2, 4, 7, 8, 5, 6, 3. Modus tinggi badan siswa adalah .... cm",
+      "opsi": [
+        "152",
+        "153",
+        "154",
+        "155"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Modus adalah nilai dengan frekuensi terbesar. Frekuensi tertinggi pada interval data ada di angka 8, yang mewakili tinggi 154 cm."
+    },
+    {
+      "id": 119,
+      "topik": "statistika",
+      "tingkat": "sedang",
+      "pertanyaan": "Dalam suatu kelas terdapat 40 orang, 21 diantaranya perempuan. Nilai rataan ulangan Matematika siswa perempuan adalah 68, sedangkan nilai rataan siswa laki-laki 62. Nilai rata-rata kelasnya adalah....",
+      "opsi": [
+        "66",
+        "65,15",
+        "65,5",
+        "64"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Perempuan=21, Laki-laki=19. Total nilai keseluruhan=(21×68 + 19×62)/40 = (1428 + 1178)/40 = 2606 / 40 = 65,15"
+    },
+    {
+      "id": 120,
+      "topik": "geometri",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah taman berbentuk lingkaran dengan diameter 14 meter akan ditanami bunga. Harga tanaman bunga adalah Rp 100.000,00/m². Biaya yang harus dikeluarkan untuk membeli tanaman bunga adalah....",
+      "opsi": [
+        "Rp 15.400.000,00",
+        "Rp 15.800.000,00",
+        "Rp 16.400.000,00",
+        "Rp 18.600.000,00"
+      ],
+      "jawaban": 0,
+      "pembahasan": "r = 7m. Menggunakan π = 22/7, Luas = (22/7)×7² = 154 m². Biaya keseluruhan = 154 × 100.000 = 15.400.000"
+    },
+    {
+      "id": 121,
+      "topik": "statistika",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui A = {bilangan asli kurang dari 10}, B = {bilangan prima kurang dari 15}. Peluang muncul anggota yang sama pada kedua himpunan adalah....",
+      "opsi": [
+        "10/15",
+        "4/15",
+        "4/11",
+        "11/15"
+      ],
+      "jawaban": 2,
+      "pembahasan": "A={1,2,3,4,5,6,7,8,9} (9 elemen). B={2,3,5,7,11,13} (6 elemen). Irisan A∩B={2,3,5,7} (4 elemen). Peluang sama (n(A∩B) / n(A∪B)). Gabungan elemen unik = 11. Peluang = 4/11"
+    },
+    {
+      "id": 122,
+      "topik": "aljabar",
+      "tingkat": "sedang",
+      "pertanyaan": "Harga setengah kilogram cabe rawit pada hari ini adalah Rp35.000,00. Jika hari ini Ibu membeli cabe rawit seberat 2 1/4 kilogram, total harga yang harus dibayar Ibu adalah....",
+      "opsi": [
+        "Rp175.000,00",
+        "Rp157.500,00",
+        "Rp140.000,00",
+        "Rp87.500,00"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1/2 kg = Rp35.000 → 1 kg = Rp70.000. Ibu beli 2 1/4 kg (2.25 kg) = 2.25 × 70.000 = 157.500"
+    },
+    {
+      "id": 123,
+      "topik": "geometri",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang anak mengendarai sepeda jari-jari roda 35 cm. Roda berputar 30 kali. Jarak yang ditempuh adalah .... m",
+      "opsi": [
+        "60",
+        "65",
+        "66",
+        "70"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Keliling = 2×π×r = 2×(22/7)×35 = 220 cm = 2.2 m. 30 putaran = 30 × 2.2 = 66 m"
+    },
+    {
+      "id": 124,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Perbandingan antara jumlah siswa laki-laki dan perempuan di kelas 4:5. Selisih laki-laki dan perempuan 4 orang. Jumlah siswa kelas tersebut?",
+      "opsi": [
+        "18",
+        "20",
+        "36",
+        "45"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Rasio Perbedaan = 5 - 4 = 1. Selisih riil = 4, maka pengali rasio = 4. Jumlah rasio = 4+5 = 9. Total = 9 × 4 = 36 siswa"
+    },
+    {
+      "id": 125,
+      "topik": "aljabar",
+      "tingkat": "sedang",
+      "pertanyaan": "Yudi persediaan air 3 liter. Pagi 2/3L, Siang 1/2L, Sore 7/10L, Malam 2/5L. Sisa air?",
+      "opsi": [
+        "2 4/15",
+        "11/15",
+        "2/5",
+        "3/5"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Total = 2/3 + 1/2 + 7/10 + 2/5 = 20/30 + 15/30 + 21/30 + 12/30 = 68/30 = 34/15 = 2 4/15 liter. 3 - 2 4/15 = 11/15 liter"
     }
   ],
   "ujian": [
     {
-      "id": 1, "topik": "aritmatika-sosial", "tingkat": "mudah",
+      "id": 1,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
       "pertanyaan": "Sepeda harga Rp1.200.000 diskon 20%, lalu diskon 10% untuk member. Bayar?",
-      "opsi": ["Rp840.000", "Rp864.000", "Rp960.000", "Rp1.080.000"],
+      "opsi": [
+        "Rp840.000",
+        "Rp864.000",
+        "Rp960.000",
+        "Rp1.080.000"
+      ],
       "jawaban": 1,
       "pembahasan": "1.200.000 × 0,80 × 0,90 = 864.000"
     },
     {
-      "id": 2, "topik": "geometri", "tingkat": "sedang",
+      "id": 2,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Tali dari puncak tiang 17m ke tanah, jarak kaki 8m. Tinggi tiang?",
-      "opsi": ["12 m", "13 m", "15 m", "16 m"],
+      "opsi": [
+        "12 m",
+        "13 m",
+        "15 m",
+        "16 m"
+      ],
       "jawaban": 2,
       "pembahasan": "h² + 64 = 289 → h² = 225 → h = 15 m"
     },
     {
-      "id": 3, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 3,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Umur Ayah:Budi = 7:4, jumlah 55. Umur Ayah 5 tahun lagi?",
-      "opsi": ["35", "38", "40", "42"],
+      "opsi": [
+        "35",
+        "38",
+        "40",
+        "42"
+      ],
       "jawaban": 2,
       "pembahasan": "Ayah = (7/11)×55 = 35. +5 = 40 tahun"
     },
     {
-      "id": 4, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 4,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Bersepeda ke sekolah 12 km/jam, pulang 8 km/jam. Rata-rata kecepatan?",
-      "opsi": ["9 km/jam", "9,6 km/jam", "10 km/jam", "10,5 km/jam"],
+      "opsi": [
+        "9 km/jam",
+        "9,6 km/jam",
+        "10 km/jam",
+        "10,5 km/jam"
+      ],
       "jawaban": 1,
       "pembahasan": "v = 2×12×8/(12+8) = 192/20 = 9,6"
     },
     {
-      "id": 5, "topik": "aritmatika-sosial", "tingkat": "mudah",
+      "id": 5,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
       "pertanyaan": "Jarak 45km, skala 1:500.000. Jarak di peta?",
-      "opsi": ["4,5 cm", "9 cm", "45 cm", "90 cm"],
+      "opsi": [
+        "4,5 cm",
+        "9 cm",
+        "45 cm",
+        "90 cm"
+      ],
       "jawaban": 1,
       "pembahasan": "45km = 4.500.000cm. Peta = 4.500.000/500.000 = 9cm"
     },
     {
-      "id": 6, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 6,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "15 pekerja, 20 hari. Setelah 8 hari, 5 sakit. Hari lagi?",
-      "opsi": ["12", "15", "18", "20"],
+      "opsi": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
       "jawaban": 2,
       "pembahasan": "Sisa = 300-120 = 180. 180/10 = 18 hari"
     },
     {
-      "id": 7, "topik": "aritmatika-sosial", "tingkat": "sulit",
+      "id": 7,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sulit",
       "pertanyaan": "A: diskon 30%+20%. B: 40%. C: 50%. Harga 800rb, urutan termurah?",
-      "opsi": ["A, B, C", "C, A, B", "C, B, A", "B, C, A"],
+      "opsi": [
+        "A, B, C",
+        "C, A, B",
+        "C, B, A",
+        "B, C, A"
+      ],
       "jawaban": 1,
       "pembahasan": "A=448rb, B=480rb, C=400rb. Urutan: C<A<B"
     },
     {
-      "id": 8, "topik": "fungsi", "tingkat": "mudah",
+      "id": 8,
+      "topik": "fungsi",
+      "tingkat": "mudah",
       "pertanyaan": "f(x)=5x-3. f(4)-f(2)?",
-      "opsi": ["8", "10", "12", "14"],
+      "opsi": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
       "jawaban": 1,
       "pembahasan": "17-7=10"
     },
     {
-      "id": 9, "topik": "fungsi", "tingkat": "sedang",
+      "id": 9,
+      "topik": "fungsi",
+      "tingkat": "sedang",
       "pertanyaan": "Garis melalui (1,2) dan (3,8). Persamaan?",
-      "opsi": ["y=2x+1", "y=3x-1", "y=3x+1", "y=2x-1"],
+      "opsi": [
+        "y=2x+1",
+        "y=3x-1",
+        "y=3x+1",
+        "y=2x-1"
+      ],
       "jawaban": 1,
       "pembahasan": "m=3, y-2=3(x-1), y=3x-1"
     },
     {
-      "id": 10, "topik": "statistika", "tingkat": "sedang",
+      "id": 10,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Nilai 4,5,6,7,8 frekuensi 2,4,6,4,2. Mean?",
-      "opsi": ["5,5", "6", "6,5", "7"],
+      "opsi": [
+        "5,5",
+        "6",
+        "6,5",
+        "7"
+      ],
       "jawaban": 1,
       "pembahasan": "108/18 = 6"
     },
     {
-      "id": 11, "topik": "statistika", "tingkat": "mudah",
+      "id": 11,
+      "topik": "statistika",
+      "tingkat": "mudah",
       "pertanyaan": "Pengunjung: Sen 20, Sel 35, Rab 25, Kam 30, Jum 40. Selisih max-min?",
-      "opsi": ["10", "15", "20", "25"],
+      "opsi": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
       "jawaban": 2,
       "pembahasan": "40-20 = 20"
     },
     {
-      "id": 12, "topik": "statistika", "tingkat": "sedang",
+      "id": 12,
+      "topik": "statistika",
+      "tingkat": "sedang",
       "pertanyaan": "Data: 12,15,18,20,22,25,28,30,32. Median?",
-      "opsi": ["20", "22", "25", "23"],
+      "opsi": [
+        "20",
+        "22",
+        "25",
+        "23"
+      ],
       "jawaban": 1,
       "pembahasan": "Data ke-5 dari 9 = 22"
     },
     {
-      "id": 13, "topik": "statistika", "tingkat": "mudah",
+      "id": 13,
+      "topik": "statistika",
+      "tingkat": "mudah",
       "pertanyaan": "Data: 7,8,6,7,9,8,7,6,7,8. Modus?",
-      "opsi": ["6", "7", "8", "9"],
+      "opsi": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
       "jawaban": 1,
       "pembahasan": "7 muncul 4 kali"
     },
     {
-      "id": 14, "topik": "peluang", "tingkat": "mudah",
+      "id": 14,
+      "topik": "peluang",
+      "tingkat": "mudah",
       "pertanyaan": "Dadu sekali lempar. Peluang prima?",
-      "opsi": ["1/3", "1/2", "2/3", "1/6"],
+      "opsi": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
       "jawaban": 1,
       "pembahasan": "Prima: 2,3,5 = 3/6 = 1/2"
     },
     {
-      "id": 15, "topik": "peluang", "tingkat": "sedang",
+      "id": 15,
+      "topik": "peluang",
+      "tingkat": "sedang",
       "pertanyaan": "5 merah, 3 biru. Ambil 2 tanpa kembali. Peluang dua merah?",
-      "opsi": ["5/16", "5/14", "25/64", "10/28"],
+      "opsi": [
+        "5/16",
+        "5/14",
+        "25/64",
+        "10/28"
+      ],
       "jawaban": 1,
       "pembahasan": "(5/8)×(4/7) = 20/56 = 5/14"
     },
     {
-      "id": 16, "topik": "geometri", "tingkat": "sedang",
+      "id": 16,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "A(4,-3) refleksi sumbu x, lalu sumbu y. Koordinat akhir?",
-      "opsi": ["(4,3)", "(-4,3)", "(-4,-3)", "(3,-4)"],
+      "opsi": [
+        "(4,3)",
+        "(-4,3)",
+        "(-4,-3)",
+        "(3,-4)"
+      ],
       "jawaban": 1,
       "pembahasan": "(4,-3)→(4,3)→(-4,3)"
     },
     {
-      "id": 17, "topik": "aljabar", "tingkat": "mudah",
+      "id": 17,
+      "topik": "aljabar",
+      "tingkat": "mudah",
       "pertanyaan": "Barisan aritmatika: U5=17, U9=29. U12?",
-      "opsi": ["35", "38", "41", "44"],
+      "opsi": [
+        "35",
+        "38",
+        "41",
+        "44"
+      ],
       "jawaban": 1,
       "pembahasan": "b=3, a=5, U12=5+33=38"
     },
     {
-      "id": 18, "topik": "aljabar", "tingkat": "sedang",
+      "id": 18,
+      "topik": "aljabar",
+      "tingkat": "sedang",
       "pertanyaan": "2 pensil+3 buku=Rp21.000. 4 pensil+1 buku=Rp23.000. 1 pensil+2 buku?",
-      "opsi": ["Rp10.600", "Rp12.400", "Rp13.200", "Rp14.000"],
+      "opsi": [
+        "Rp10.600",
+        "Rp12.400",
+        "Rp13.200",
+        "Rp14.000"
+      ],
       "jawaban": 1,
       "pembahasan": "x=4800, y=3800. 4800+7600=12400"
     },
     {
-      "id": 19, "topik": "fungsi", "tingkat": "sedang",
+      "id": 19,
+      "topik": "fungsi",
+      "tingkat": "sedang",
       "pertanyaan": "f(2x-1)=4x+3. f(5)?",
-      "opsi": ["11", "13", "15", "17"],
+      "opsi": [
+        "11",
+        "13",
+        "15",
+        "17"
+      ],
       "jawaban": 2,
       "pembahasan": "2x-1=5→x=3. f(5)=4(3)+3=15"
     },
     {
-      "id": 20, "topik": "fungsi", "tingkat": "mudah",
+      "id": 20,
+      "topik": "fungsi",
+      "tingkat": "mudah",
       "pertanyaan": "f(x)=3x-7. f(5)+f(-2)?",
-      "opsi": ["-3", "-5", "3", "5"],
+      "opsi": [
+        "-3",
+        "-5",
+        "3",
+        "5"
+      ],
       "jawaban": 1,
       "pembahasan": "8+(-13)=-5"
     },
     {
-      "id": 21, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 21,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "Tabungan Rp2.000.000, bunga 6%/tahun. Berapa bulan jadi Rp2.060.000?",
-      "opsi": ["3 bulan", "6 bulan", "9 bulan", "12 bulan"],
+      "opsi": [
+        "3 bulan",
+        "6 bulan",
+        "9 bulan",
+        "12 bulan"
+      ],
       "jawaban": 1,
       "pembahasan": "60.000 = 2.000.000×0,06×t → t=0,5 tahun = 6 bulan"
     },
     {
-      "id": 22, "topik": "geometri", "tingkat": "mudah",
+      "id": 22,
+      "topik": "geometri",
+      "tingkat": "mudah",
       "pertanyaan": "Taman 24m×18m, pohon tiap 3m. Berapa pohon?",
-      "opsi": ["24", "28", "32", "36"],
+      "opsi": [
+        "24",
+        "28",
+        "32",
+        "36"
+      ],
       "jawaban": 1,
       "pembahasan": "K=84m. 84/3=28 pohon"
     },
     {
-      "id": 23, "topik": "geometri", "tingkat": "sedang",
+      "id": 23,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Gardu 4m, jarak 5m ke tiang. Kabel 13m. Tinggi tiang?",
-      "opsi": ["12 m", "14 m", "16 m", "18 m"],
+      "opsi": [
+        "12 m",
+        "14 m",
+        "16 m",
+        "18 m"
+      ],
       "jawaban": 2,
       "pembahasan": "5²+x²=13² → x=12. Total=4+12=16m"
     },
     {
-      "id": 24, "topik": "geometri", "tingkat": "sedang",
+      "id": 24,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "Prisma segitiga siku-siku 6,8,10cm. Tinggi 15cm. Volume?",
-      "opsi": ["240", "300", "360", "480"],
+      "opsi": [
+        "240",
+        "300",
+        "360",
+        "480"
+      ],
       "jawaban": 2,
       "pembahasan": "Alas=(6×8)/2=24. V=24×15=360 cm³"
     },
     {
-      "id": 25, "topik": "geometri", "tingkat": "sedang",
+      "id": 25,
+      "topik": "geometri",
+      "tingkat": "sedang",
       "pertanyaan": "PP sebangun. A: 12×8cm. B: lebar 12cm. Panjang B?",
-      "opsi": ["14", "16", "18", "20"],
+      "opsi": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
       "jawaban": 2,
       "pembahasan": "12/8=p/12. p=18cm"
     },
     {
-      "id": 26, "topik": "geometri", "tingkat": "sulit",
+      "id": 26,
+      "topik": "geometri",
+      "tingkat": "sulit",
       "pertanyaan": "A(3,4) refleksi y=x, translasi (-2,5). Akhir?",
-      "opsi": ["(1,9)", "(2,8)", "(5,2)", "(7,1)"],
+      "opsi": [
+        "(1,9)",
+        "(2,8)",
+        "(5,2)",
+        "(7,1)"
+      ],
       "jawaban": 1,
       "pembahasan": "(3,4)→(4,3)→(2,8)"
     },
     {
-      "id": 27, "topik": "aljabar", "tingkat": "sedang",
+      "id": 27,
+      "topik": "aljabar",
+      "tingkat": "sedang",
       "pertanyaan": "2√12 - √27 + √75 = ?",
-      "opsi": ["4√3", "5√3", "6√3", "7√3"],
+      "opsi": [
+        "4√3",
+        "5√3",
+        "6√3",
+        "7√3"
+      ],
       "jawaban": 2,
       "pembahasan": "4√3 - 3√3 + 5√3 = 6√3"
     },
     {
-      "id": 28, "topik": "peluang", "tingkat": "sedang",
+      "id": 28,
+      "topik": "peluang",
+      "tingkat": "sedang",
       "pertanyaan": "Dadu 2 kali. Peluang jumlah > 9?",
-      "opsi": ["1/9", "1/6", "1/4", "5/36"],
+      "opsi": [
+        "1/9",
+        "1/6",
+        "1/4",
+        "5/36"
+      ],
       "jawaban": 1,
       "pembahasan": "6 kejadian / 36 = 1/6"
     },
     {
-      "id": 29, "topik": "peluang", "tingkat": "mudah",
+      "id": 29,
+      "topik": "peluang",
+      "tingkat": "mudah",
       "pertanyaan": "5 merah, 3 biru, 2 hijau. Peluang bukan merah?",
-      "opsi": ["1/2", "3/10", "2/5", "3/5"],
+      "opsi": [
+        "1/2",
+        "3/10",
+        "2/5",
+        "3/5"
+      ],
       "jawaban": 0,
       "pembahasan": "Bukan merah = 5/10 = 1/2"
     },
     {
-      "id": 30, "topik": "aritmatika-sosial", "tingkat": "sedang",
+      "id": 30,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
       "pertanyaan": "24 pekerja, 30 hari. 10 hari kerja, 5 hari libur. Tambahan pekerja?",
-      "opsi": ["4", "6", "8", "10"],
+      "opsi": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
       "jawaban": 2,
       "pembahasan": "Total=720. Selesai=240. Sisa=480. Waktu=15. Butuh=32. Tambah=8"
+    },
+    {
+      "id": 101,
+      "topik": "peluang",
+      "tingkat": "mudah",
+      "pertanyaan": "Sebuah dadu dilambungkan satu kali. Peluang muncul mata dadu faktor dari 6 adalah....",
+      "opsi": [
+        "1/6",
+        "1/2",
+        "2/3",
+        "5/6"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Faktor dari 6: 1, 2, 3, 6 (4 angka). Peluang = 4/6 = 2/3"
+    },
+    {
+      "id": 102,
+      "topik": "peluang",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah keluarga ingin memiliki 2 anak saja. Jika peluang lahir anak laki-laki dan lahir anak perempuan sama, peluang kedua anaknya perempuan adalah....",
+      "opsi": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Peluang {P,P} = 1/2 × 1/2 = 1/4"
+    },
+    {
+      "id": 103,
+      "topik": "geometri",
+      "tingkat": "sedang",
+      "pertanyaan": "Kebun berbentuk belah ketupat, panjang kedua diagonalnya 24 m dan 18 m. Di sekelilingnya ditanami pohon dengan jarak antar pohon 3 m. Banyaknya pohon adalah....",
+      "opsi": [
+        "14",
+        "15",
+        "20",
+        "28"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Diagonal 24 & 18. Sisi belah ketupat miring = √(12²+9²) = √225 = 15m. Keliling = 4×15 = 60m. Banyak pohon = 60/3 = 20"
+    },
+    {
+      "id": 104,
+      "topik": "fungsi",
+      "tingkat": "sedang",
+      "pertanyaan": "Persamaan garis melalui titik (-3,2) dan sejajar dengan garis 2x + 3y = 6 adalah....",
+      "opsi": [
+        "2x + 3y = -8",
+        "2x + 3y = 0",
+        "2x - 3y = -4",
+        "2x - 3y = 0"
+      ],
+      "jawaban": 1,
+      "pembahasan": "m = -2/3. Persamaan: y - 2 = -2/3(x - (-3)) → 3y - 6 = -2x - 6 → 2x + 3y = 0"
+    },
+    {
+      "id": 105,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Penyelesaian sistem persamaan x + y = 7 dan x - y = 3 adalah....",
+      "opsi": [
+        "(2,5)",
+        "(5,2)",
+        "(-3,10)",
+        "(10,-3)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "x+y=7, x-y=3. Tambah dua persamaan: 2x=10 → x=5. Substitusi x=5 ke 5+y=7 → y=2. Jadi (5,2)"
+    },
+    {
+      "id": 106,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Penyelesaian dari 3x + 10 > 6x - 8 adalah....",
+      "opsi": [
+        "x < 2",
+        "x > 2",
+        "x < 6",
+        "x > 6"
+      ],
+      "jawaban": 2,
+      "pembahasan": "3x - 6x > -8 - 10 → -3x > -18 → (Karna dibagi dg -3 maka tanda dibalik) x < 6"
+    },
+    {
+      "id": 107,
+      "topik": "himpunan",
+      "tingkat": "sedang",
+      "pertanyaan": "Dari 143 siswa, 95 siswa senang matematika, 87 siswa senang fisika, dan 60 siswa senang keduanya. Banyak siswa yang tidak senang matematika maupun fisika adalah....",
+      "opsi": [
+        "21 orang",
+        "27 orang",
+        "35 orang",
+        "122 orang"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Gabungan (Union) = 95 + 87 - 60 = 122. Tidak senang keduanya = Total siswa - Union = 143 - 122 = 21 orang"
+    },
+    {
+      "id": 108,
+      "topik": "himpunan",
+      "tingkat": "sedang",
+      "pertanyaan": "Diketahui K = {bilangan prima antara 2 dan 12}. Dan L = {4 bilangan kelipatan 3 yang pertama}. K ∩ L adalah....",
+      "opsi": [
+        "{3,6,9,12}",
+        "{3,6,9}",
+        "{3,6}",
+        "{3}"
+      ],
+      "jawaban": 3,
+      "pembahasan": "K = {3,5,7,11}, L = {3,6,9,12}. Irisan himpunan K ∩ L adalah elemen yang sama di kedua himpunan = {3}"
+    },
+    {
+      "id": 109,
+      "topik": "fungsi",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui suatu fungsi f(x) = 2x - 3. Nilai f(-1) adalah....",
+      "opsi": [
+        "5",
+        "1",
+        "-1",
+        "-5"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Untuk memecahkan cukup substitusi x=-1: f(-1) = 2(-1) - 3 = -2 - 3 = -5"
+    },
+    {
+      "id": 110,
+      "topik": "fungsi",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui f(x) = 8 - 2x, jika f(a) = -2, maka nilai a adalah....",
+      "opsi": [
+        "-5",
+        "-3",
+        "3",
+        "5"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Substitusi nilai ke x: 8 - 2a = -2 → -2a = -2 - 8 = -10 → a = 5"
+    },
+    {
+      "id": 111,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Hasil dari -6 + (6 : (-2)) - ((-3) × 3) adalah....",
+      "opsi": [
+        "0",
+        "3",
+        "6",
+        "9"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Dahulukan pembagian & perkalian: -6 + (-3) - (-9) = -9 + 9 = 0"
+    },
+    {
+      "id": 112,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
+      "pertanyaan": "Tali yang panjangnya 10 meter akan dipotong menjadi beberapa bagian yang sama panjang. Jika tiap bagian panjangnya 1/4 meter, maka banyak potongan tali yang terjadi adalah....",
+      "opsi": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Potongan tali dihitung dengan membagi panjang total dengan panjang tiap bagian: 10 / (1/4) = 10 × 4 = 40 potongan"
+    },
+    {
+      "id": 113,
+      "topik": "aritmatika-sosial",
+      "tingkat": "mudah",
+      "pertanyaan": "Untuk membuat 20 roti diperlukan 4 kg tepung terigu. Banyaknya tepung terigu yang diperlukan untuk membuat 50 roti tersebut adalah....",
+      "opsi": [
+        "8 kg",
+        "10 kg",
+        "12 kg",
+        "14 kg"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Rasio: 20 roti = 4 kg. 1 kg = 5 roti. 50 roti = 50/5 = 10 kg tepung"
+    },
+    {
+      "id": 114,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Suatu proyek diselesaikan oleh 30 pekerja dalam 6 bulan. Jika proyek itu harus diselesaikan dalam 4 bulan, maka banyaknya pekerja yang harus ditambah sebanyak....",
+      "opsi": [
+        "10 orang",
+        "15 orang",
+        "20 orang",
+        "25 orang"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sistem beban = 30 × 6 = 180 bulan-pekerja. 180 / 4 = 45 pekerja. Tambahan = 45 - 30 = 15 orang"
+    },
+    {
+      "id": 115,
+      "topik": "aljabar",
+      "tingkat": "sedang",
+      "pertanyaan": "Bentuk sederhana dari 12/(√6 - √2) adalah....",
+      "opsi": [
+        "3(√2 - √6)",
+        "3(√2 + √6)",
+        "3(√6 + √2)",
+        "3(√6 - √2)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Gunakan bentuk sekawan: 12/(√6 - √2) × (√6 + √2)/(√6 + √2) = 12(√6 + √2) / (6 - 2) = 12(√6 + √2) / 4 = 3(√6 + √2)"
+    },
+    {
+      "id": 116,
+      "topik": "fungsi",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui rumus fungsi f(x) = 6 - 3x. Nilai dari f(5) + f(-4) adalah....",
+      "opsi": [
+        "18",
+        "9",
+        "-15",
+        "-27"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Hitung satu-satu: f(5) = 6 - 15 = -9. f(-4) = 6 - (-12) = 18. f(5) + f(-4) = -9 + 18 = 9"
+    },
+    {
+      "id": 117,
+      "topik": "statistika",
+      "tingkat": "sedang",
+      "pertanyaan": "Tabel nilai ulangan matematika mengurutkan nilai dari 4 hingga 10 dengan frekuensi masing-masing: 3, 2, 5, 8, 5, 4, 3. Banyak siswa yang mendapat nilai di atas rata-rata adalah....",
+      "opsi": [
+        "25 orang",
+        "20 orang",
+        "12 orang",
+        "7 orang"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Total siswa = 30. Total nilai = (4×3)+(5×2)+(6×5)+(7×8)+(8×5)+(9×4)+(10×3) = 214. Rata-rata = 214/30 = 7.13. Nilai > 7.13 adalah 8,9,10 dengan frekuensi 5+4+3 = 12 orang."
+    },
+    {
+      "id": 118,
+      "topik": "statistika",
+      "tingkat": "mudah",
+      "pertanyaan": "Tabel Distribusi Tinggi Badan. Tinggi Badan(cm): 148, 150, 152, 154, 156, 158, 160. Banyak Siswa: 2, 4, 7, 8, 5, 6, 3. Modus tinggi badan siswa adalah .... cm",
+      "opsi": [
+        "152",
+        "153",
+        "154",
+        "155"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Modus adalah nilai dengan frekuensi terbesar. Frekuensi tertinggi pada interval data ada di angka 8, yang mewakili tinggi 154 cm."
+    },
+    {
+      "id": 119,
+      "topik": "statistika",
+      "tingkat": "sedang",
+      "pertanyaan": "Dalam suatu kelas terdapat 40 orang, 21 diantaranya perempuan. Nilai rataan ulangan Matematika siswa perempuan adalah 68, sedangkan nilai rataan siswa laki-laki 62. Nilai rata-rata kelasnya adalah....",
+      "opsi": [
+        "66",
+        "65,15",
+        "65,5",
+        "64"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Perempuan=21, Laki-laki=19. Total nilai keseluruhan=(21×68 + 19×62)/40 = (1428 + 1178)/40 = 2606 / 40 = 65,15"
+    },
+    {
+      "id": 120,
+      "topik": "geometri",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah taman berbentuk lingkaran dengan diameter 14 meter akan ditanami bunga. Harga tanaman bunga adalah Rp 100.000,00/m². Biaya yang harus dikeluarkan untuk membeli tanaman bunga adalah....",
+      "opsi": [
+        "Rp 15.400.000,00",
+        "Rp 15.800.000,00",
+        "Rp 16.400.000,00",
+        "Rp 18.600.000,00"
+      ],
+      "jawaban": 0,
+      "pembahasan": "r = 7m. Menggunakan π = 22/7, Luas = (22/7)×7² = 154 m². Biaya keseluruhan = 154 × 100.000 = 15.400.000"
+    },
+    {
+      "id": 121,
+      "topik": "statistika",
+      "tingkat": "mudah",
+      "pertanyaan": "Diketahui A = {bilangan asli kurang dari 10}, B = {bilangan prima kurang dari 15}. Peluang muncul anggota yang sama pada kedua himpunan adalah....",
+      "opsi": [
+        "10/15",
+        "4/15",
+        "4/11",
+        "11/15"
+      ],
+      "jawaban": 2,
+      "pembahasan": "A={1,2,3,4,5,6,7,8,9} (9 elemen). B={2,3,5,7,11,13} (6 elemen). Irisan A∩B={2,3,5,7} (4 elemen). Peluang sama (n(A∩B) / n(A∪B)). Gabungan elemen unik = 11. Peluang = 4/11"
+    },
+    {
+      "id": 122,
+      "topik": "aljabar",
+      "tingkat": "sedang",
+      "pertanyaan": "Harga setengah kilogram cabe rawit pada hari ini adalah Rp35.000,00. Jika hari ini Ibu membeli cabe rawit seberat 2 1/4 kilogram, total harga yang harus dibayar Ibu adalah....",
+      "opsi": [
+        "Rp175.000,00",
+        "Rp157.500,00",
+        "Rp140.000,00",
+        "Rp87.500,00"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1/2 kg = Rp35.000 → 1 kg = Rp70.000. Ibu beli 2 1/4 kg (2.25 kg) = 2.25 × 70.000 = 157.500"
+    },
+    {
+      "id": 123,
+      "topik": "geometri",
+      "tingkat": "mudah",
+      "pertanyaan": "Seorang anak mengendarai sepeda jari-jari roda 35 cm. Roda berputar 30 kali. Jarak yang ditempuh adalah .... m",
+      "opsi": [
+        "60",
+        "65",
+        "66",
+        "70"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Keliling = 2×π×r = 2×(22/7)×35 = 220 cm = 2.2 m. 30 putaran = 30 × 2.2 = 66 m"
+    },
+    {
+      "id": 124,
+      "topik": "aljabar",
+      "tingkat": "mudah",
+      "pertanyaan": "Perbandingan antara jumlah siswa laki-laki dan perempuan di kelas 4:5. Selisih laki-laki dan perempuan 4 orang. Jumlah siswa kelas tersebut?",
+      "opsi": [
+        "18",
+        "20",
+        "36",
+        "45"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Rasio Perbedaan = 5 - 4 = 1. Selisih riil = 4, maka pengali rasio = 4. Jumlah rasio = 4+5 = 9. Total = 9 × 4 = 36 siswa"
+    },
+    {
+      "id": 125,
+      "topik": "aljabar",
+      "tingkat": "sedang",
+      "pertanyaan": "Yudi persediaan air 3 liter. Pagi 2/3L, Siang 1/2L, Sore 7/10L, Malam 2/5L. Sisa air?",
+      "opsi": [
+        "2 4/15",
+        "11/15",
+        "2/5",
+        "3/5"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Total = 2/3 + 1/2 + 7/10 + 2/5 = 20/30 + 15/30 + 21/30 + 12/30 = 68/30 = 34/15 = 2 4/15 liter. 3 - 2 4/15 = 11/15 liter"
     }
   ]
 }

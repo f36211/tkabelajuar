@@ -1,9 +1,12 @@
 import { useEffect, useRef } from 'react';
+import { Mafs, Coordinates, Point, Polygon, Circle, Line, Text, Transform } from "mafs";
+import "mafs/core.css";
+import "mafs/font.css";
 import GeoVisual3D from './GeoVisual3D';
 
 /**
- * SVG-based geometry visualizations for math problems.
- * Types: pythagoras, rectangle, circle, triangle, coordinate, barChart, transformation
+ * Geometry visualizations for math problems.
+ * Types: pythagoras, rectangle, circle, triangle, coordinate, barChart, transformation, similar, gardu
  */
 export default function GeoVisual({ type, data = {}, width = 320, height = 240 }) {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
@@ -76,97 +79,89 @@ export default function GeoVisual({ type, data = {}, width = 320, height = 240 }
     );
   }
 
-  // ─── COORDINATE PLANE with POINTS ───
+  // ─── COORDINATE PLANE with POINTS (Mafs) ───
   if (type === 'coordinate') {
     const { points = [], lines = [], xRange = [-6, 6], yRange = [-6, 6] } = data;
-    const pad = 40;
-    const w = width - pad * 2;
-    const h = height - pad * 2;
-    const xScale = w / (xRange[1] - xRange[0]);
-    const yScale = h / (yRange[1] - yRange[0]);
-    const toX = (x) => pad + (x - xRange[0]) * xScale;
-    const toY = (y) => pad + (yRange[1] - y) * yScale;
+    
+    // Make viewBox symmetrical so 0,0 is perfectly in the center
+    const maxBound = Math.max(
+      Math.abs(xRange[0]), Math.abs(xRange[1]),
+      Math.abs(yRange[0]), Math.abs(yRange[1])
+    ) + 1.5;
+    
+    const vbX = [-maxBound, maxBound];
+    const vbY = [-maxBound, maxBound];
 
     return (
-      <svg viewBox={`0 0 ${width} ${height}`} style={svgStyle}>
-        {/* Grid */}
-        {Array.from({ length: xRange[1] - xRange[0] + 1 }, (_, i) => xRange[0] + i).map(x => (
-          <line key={`gx${x}`} x1={toX(x)} y1={pad} x2={toX(x)} y2={height - pad}
-            stroke={colors.grid} strokeWidth={x === 0 ? 2 : 0.5} />
-        ))}
-        {Array.from({ length: yRange[1] - yRange[0] + 1 }, (_, i) => yRange[0] + i).map(y => (
-          <line key={`gy${y}`} x1={pad} y1={toY(y)} x2={width - pad} y2={toY(y)}
-            stroke={colors.grid} strokeWidth={y === 0 ? 2 : 0.5} />
-        ))}
-        {/* Axis labels */}
-        <text x={width - pad + 10} y={toY(0) + 4} fill={colors.label} fontSize="11">x</text>
-        <text x={toX(0) - 12} y={pad - 8} fill={colors.label} fontSize="11">y</text>
-        {/* Lines */}
-        {lines.map((line, i) => (
-          <line key={`l${i}`}
-            x1={toX(line.x1)} y1={toY(line.y1)}
-            x2={toX(line.x2)} y2={toY(line.y2)}
-            stroke={line.color || colors.accent}
-            strokeWidth="2"
-            strokeDasharray={line.dashed ? '6 3' : 'none'}
-          />
-        ))}
-        {/* Points */}
-        {points.map((pt, i) => (
-          <g key={`p${i}`}>
-            <circle cx={toX(pt.x)} cy={toY(pt.y)} r={5}
-              fill={pt.color || colors.accent} stroke="white" strokeWidth="2" />
-            <text x={toX(pt.x) + 10} y={toY(pt.y) - 8}
-              fill={pt.color || colors.text} fontSize="11" fontWeight="600">
-              {pt.label || `(${pt.x},${pt.y})`}
-            </text>
-          </g>
-        ))}
-        {/* Arrow at origin */}
-        {points.length > 1 && points[0].arrow && (
-          <line
-            x1={toX(points[0].x)} y1={toY(points[0].y)}
-            x2={toX(points[1].x)} y2={toY(points[1].y)}
-            stroke={colors.success}
-            strokeWidth="2"
-            markerEnd="url(#arrowhead)"
-            strokeDasharray="5 3"
-          />
-        )}
-        <defs>
-          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-            <polygon points="0 0, 10 3.5, 0 7" fill={colors.success} />
-          </marker>
-        </defs>
-      </svg>
+      <div style={{ ...svgStyle, height, overflow: 'hidden' }}>
+        <Mafs viewBox={{ x: vbX, y: vbY }} zoom={true} pan={true} preserveAspectRatio="contain">
+          <Coordinates.Cartesian />
+          
+          {/* Lines */}
+          {lines.map((line, i) => (
+            <Line.Segment
+              key={`l${i}`}
+              point1={[line.x1, line.y1]}
+              point2={[line.x2, line.y2]}
+              color={line.color || colors.accent}
+              weight={2}
+              style={line.dashed ? "dashed" : "solid"}
+            />
+          ))}
+          
+          {/* Points & Labels */}
+          {points.map((pt, i) => (
+            <g key={`p${i}`}>
+              <Point x={pt.x} y={pt.y} color={pt.color || colors.accent} />
+              <Text x={pt.x + 0.3} y={pt.y + 0.3} color={pt.color || colors.text} size={14}>
+                {pt.label || `(${pt.x},${pt.y})`}
+              </Text>
+            </g>
+          ))}
+
+          {/* Optional Arrow (Vector marker) */}
+          {points.length > 1 && points[0].arrow && (
+            <Line.Segment
+              point1={[points[0].x, points[0].y]}
+              point2={[points[1].x, points[1].y]}
+              color={colors.success}
+              weight={3}
+              style="dashed"
+            />
+          )}
+        </Mafs>
+      </div>
     );
   }
 
-  // ─── CIRCLE ───
+  // ─── CIRCLE (Mafs) ───
   if (type === 'circle') {
     const { radius = 7, diameter, showRadius = true, label } = data;
     const r = diameter ? diameter / 2 : radius;
-    const cx = width / 2;
-    const cy = height / 2;
-    const scale = Math.min((width - 80) / (r * 2), (height - 80) / (r * 2));
-    const sr = r * scale;
 
     return (
-      <svg viewBox={`0 0 ${width} ${height}`} style={svgStyle}>
-        <circle cx={cx} cy={cy} r={sr} fill={colors.fill} stroke={colors.accent} strokeWidth="2.5" />
-        {showRadius && (
-          <>
-            <line x1={cx} y1={cy} x2={cx + sr} y2={cy} stroke={colors.danger} strokeWidth="2" />
-            <text x={cx + sr / 2} y={cy - 8} textAnchor="middle" fill={colors.danger} fontSize="12" fontWeight="600">
-              r = {r}
-            </text>
-          </>
-        )}
-        <circle cx={cx} cy={cy} r={3} fill={colors.accent} />
-        {label && (
-          <text x={cx} y={cy + sr + 25} textAnchor="middle" fill={colors.text} fontSize="12">{label}</text>
-        )}
-      </svg>
+      <div style={{ ...svgStyle, height, overflow: 'hidden' }}>
+        <Mafs viewBox={{ x: [-r - 2, r + 2], y: [-r - 2, r + 2] }} zoom={true} pan={true}>
+          <Coordinates.Cartesian />
+          <Circle center={[0, 0]} radius={r} color={colors.accent} weight={2} />
+          
+          {showRadius && (
+            <>
+              <Line.Segment point1={[0, 0]} point2={[r, 0]} color={colors.danger} />
+              <Text x={r / 2} y={0.5} color={colors.danger} size={14}>
+                r = {r}
+              </Text>
+            </>
+          )}
+          <Point x={0} y={0} color={colors.accent} />
+          
+          {label && (
+            <Text x={0} y={-r - 1} color={colors.text} size={14}>
+              {label}
+            </Text>
+          )}
+        </Mafs>
+      </div>
     );
   }
 
@@ -243,6 +238,80 @@ export default function GeoVisual({ type, data = {}, width = 320, height = 240 }
           );
         })}
       </svg>
+    );
+  }
+
+  // ─── RHOMBUS (Mafs) ───
+  if (type === 'rhombus') {
+    const { d1 = 24, d2 = 18 } = data;
+    const x = d1 / 2;
+    const y = d2 / 2;
+
+    return (
+      <div style={{ ...svgStyle, height, overflow: 'hidden' }}>
+        <Mafs viewBox={{ x: [-x - 2, x + 2], y: [-y - 2, y + 2] }} zoom={true} pan={true} preserveAspectRatio="contain">
+          <Coordinates.Cartesian />
+          <Polygon points={[[x, 0], [0, y], [-x, 0], [0, -y]]} color={colors.accent} weight={2} />
+          
+          <Line.Segment point1={[-x, 0]} point2={[x, 0]} color={colors.danger} style="dashed" />
+          <Line.Segment point1={[0, -y]} point2={[0, y]} color={colors.danger} style="dashed" />
+          
+          <Text x={x/2} y={1} color={colors.text} size={14}>D1 = {d1}</Text>
+          <Text x={1} y={y/2} color={colors.text} size={14}>D2 = {d2}</Text>
+        </Mafs>
+      </div>
+    );
+  }
+
+  // ─── VENN DIAGRAM (SVG) ───
+  if (type === 'venn') {
+    const { total, a, b, both } = data;
+    const pad = 30;
+    const r = 45;
+    const cx1 = width/2 - 25;
+    const cx2 = width/2 + 25;
+    const cy = height/2;
+    
+    return (
+      <svg viewBox={`0 0 ${width} ${height}`} style={svgStyle}>
+        <rect x={10} y={10} width={width-20} height={height-20} fill="none" stroke={colors.stroke} strokeWidth="2" />
+        <text x={18} y={25} fill={colors.text} fontSize="12" fontWeight="600">S={total}</text>
+        
+        <circle cx={cx1} cy={cy} r={r} fill={colors.accent} fillOpacity="0.3" stroke={colors.accent} strokeWidth="2" />
+        <circle cx={cx2} cy={cy} r={r} fill={colors.danger} fillOpacity="0.3" stroke={colors.danger} strokeWidth="2" />
+        
+        <text x={cx1 - 20} y={cy + 4} textAnchor="middle" fill={colors.text} fontSize="14" fontWeight="bold">{a - both}</text>
+        <text x={cx2 + 20} y={cy + 4} textAnchor="middle" fill={colors.text} fontSize="14" fontWeight="bold">{b - both}</text>
+        <text x={width/2} y={cy + 4} textAnchor="middle" fill={colors.text} fontSize="14" fontWeight="bold">{both}</text>
+      </svg>
+    );
+  }
+
+  // ─── DATA TABLE (HTML Table) ───
+  if (type === 'table') {
+    const { headers = [], rows = [], title } = data;
+    return (
+      <div style={{ ...svgStyle, height: 'auto', padding: '12px 4px', width: '100%', boxSizing: 'border-box' }}>
+        {title && <div style={{ textAlign: 'center', fontWeight: 'bold', marginBottom: '8px', fontSize: '13px', color: colors.text }}>{title}</div>}
+        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'center', fontSize: '12px', color: colors.text, tableLayout: 'auto' }}>
+          <thead>
+            <tr>
+              {headers.map((h, i) => (
+                <th key={i} style={{ padding: '8px', borderBottom: `2px solid ${colors.stroke}`, background: colors.fill }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, i) => (
+               <tr key={i}>
+                 {row.map((cell, j) => (
+                   <td key={j} style={{ padding: '8px', borderBottom: `1px solid ${colors.grid}`, fontWeight: j === 0 ? '600' : 'normal' }}>{cell}</td>
+                 ))}
+               </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     );
   }
 

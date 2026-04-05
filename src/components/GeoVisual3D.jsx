@@ -1,7 +1,7 @@
+import { Suspense, useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Center, Text, Edges } from '@react-three/drei';
+import { OrbitControls, Center, Text, Edges, Billboard } from '@react-three/drei';
 import * as THREE from 'three';
-import { useMemo } from 'react';
 
 /**
  * 3D Geometry Visualizer
@@ -26,19 +26,22 @@ export default function GeoVisual3D({ type, data = {}, width = 320, height = 240
     border: `1px solid ${isDark ? '#334155' : '#e2e8f0'}`,
     background: colors.bg,
     cursor: 'move',
+    overflow: 'hidden',
   };
 
   return (
     <div style={style}>
       <Canvas camera={{ position: [20, 20, 20], fov: 45 }}>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[10, 20, 10]} intensity={0.8} />
-        
-        <Center>
-          {type === 'prism' && <PrismMesh data={data} colors={colors} />}
-        </Center>
-        
-        <OrbitControls makeDefault enableZoom={true} enablePan={true} />
+        <Suspense fallback={null}>
+          <ambientLight intensity={0.6} />
+          <directionalLight position={[10, 20, 10]} intensity={0.8} />
+          
+          <Center>
+            {type === 'prism' && <PrismMesh data={data} colors={colors} />}
+          </Center>
+          
+          <OrbitControls makeDefault enableZoom={true} enablePan={true} />
+        </Suspense>
       </Canvas>
     </div>
   );
@@ -46,6 +49,7 @@ export default function GeoVisual3D({ type, data = {}, width = 320, height = 240
 
 function PrismMesh({ data, colors }) {
   const { a = 6, b = 8, h = 15 } = data;
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
 
   // Create right-angled triangle shape
   const shape = useMemo(() => {
@@ -78,40 +82,25 @@ function PrismMesh({ data, colors }) {
       </mesh>
 
       {/* Label b (alas/bottom leg) */}
-      <Text
-        position={[b / 2, -2, 0]}
-        rotation={[Math.PI / 2, 0, 0]}
-        fontSize={a * 0.15}
-        color={colors.text}
-        outlineWidth={0.05}
-        outlineColor={colors.bg}
-      >
-        {b} cm
-      </Text>
+      <Billboard position={[b / 2, -2, extrudeSettings.depth / 2]}>
+        <Text fontSize={a * 0.15} color={colors.text} outlineWidth={0.05} outlineColor={colors.bg}>
+          {b} cm
+        </Text>
+      </Billboard>
 
       {/* Label a (tinggi alas/vertical leg) */}
-      <Text
-        position={[-2, a / 2, 0]}
-        rotation={[Math.PI / 2, 0, 0]}
-        fontSize={a * 0.15}
-        color={colors.text}
-        outlineWidth={0.05}
-        outlineColor={colors.bg}
-      >
-        {a} cm
-      </Text>
+      <Billboard position={[-2, a / 2, extrudeSettings.depth / 2]}>
+        <Text fontSize={a * 0.15} color={colors.text} outlineWidth={0.05} outlineColor={colors.bg}>
+          {a} cm
+        </Text>
+      </Billboard>
 
       {/* Label h (tinggi prisma) */}
-      <Text
-        position={[-2, 0, h / 2]}
-        rotation={[Math.PI / 2, Math.PI / 2, 0]}
-        fontSize={a * 0.15}
-        color={colors.text}
-        outlineWidth={0.05}
-        outlineColor={colors.bg}
-      >
-        t = {h} cm
-      </Text>
+      <Billboard position={[-2, -2, h / 2]}>
+        <Text fontSize={a * 0.15} color={colors.text} outlineWidth={0.05} outlineColor={colors.bg}>
+          t = {h} cm
+        </Text>
+      </Billboard>
     </group>
   );
 }
