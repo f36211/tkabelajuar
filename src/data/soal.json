@@ -12,7 +12,17 @@
         "Rp1.080.000"
       ],
       "jawaban": 1,
-      "pembahasan": "Diskon 1: 1.200.000 × 0,80 = 960.000\nDiskon 2: 960.000 × 0,90 = 864.000\n\nTrick: Bukan 30%! Tapi 0,8 × 0,9 = 0,72 (diskon total 28%)"
+      "pembahasan": "Diskon 1: 1.200.000 × 0,80 = 960.000\nDiskon 2: 960.000 × 0,90 = 864.000\n\nTrick: Bukan 30%! Tapi 0,8 × 0,9 = 0,72 (diskon total 28%)",
+      "visual": {
+        "type": "barChart",
+        "data": {
+          "bars": [
+            { "label": "Normal", "value": 1200000, "color": "#94a3b8" },
+            { "label": "Disk 20%", "value": 960000, "color": "#3b82f6" },
+            { "label": "Disk 10%", "value": 864000, "color": "#10b981" }
+          ]
+        }
+      }
     },
     {
       "id": 2,
@@ -26,7 +36,16 @@
         "16 m"
       ],
       "jawaban": 2,
-      "pembahasan": "Pythagoras tersamar!\nTinggi² + 8² = 17²\nTinggi² = 289 - 64 = 225\nTinggi = √225 = 15 m"
+      "pembahasan": "Pythagoras tersamar!\nTinggi² + 8² = 17²\nTinggi² = 289 - 64 = 225\nTinggi = √225 = 15 m",
+      "visual": {
+        "type": "pythagoras",
+        "data": {
+          "a": 15,
+          "b": 8,
+          "c": 17,
+          "labels": { "left": "15 m", "bottom": "8 m", "hyp": "17 m" }
+        }
+      }
     },
     {
       "id": 3,
@@ -124,7 +143,19 @@
         "y = 2x - 1"
       ],
       "jawaban": 1,
-      "pembahasan": "m = (8-2)/(3-1) = 6/2 = 3\ny - 2 = 3(x - 1)\ny = 3x - 3 + 2 = 3x - 1"
+      "pembahasan": "m = (8-2)/(3-1) = 6/2 = 3\ny - 2 = 3(x - 1)\ny = 3x - 3 + 2 = 3x - 1",
+      "visual": {
+        "type": "coordinate",
+        "data": {
+          "points": [
+            { "x": 1, "y": 2, "label": "(1,2)" },
+            { "x": 3, "y": 8, "label": "(3,8)" }
+          ],
+          "lines": [{ "x1": 1, "y1": 2, "x2": 3, "y2": 8 }],
+          "xRange": [0, 4],
+          "yRange": [0, 10]
+        }
+      }
     },
     {
       "id": 10,
@@ -138,7 +169,15 @@
         "7"
       ],
       "jawaban": 1,
-      "pembahasan": "Total siswa = 18\nΣ(f×x) = (4×2)+(5×4)+(6×6)+(7×4)+(8×2) = 8+20+36+28+16 = 108\nMean = 108/18 = 6"
+      "pembahasan": "Total siswa = 18\nΣ(f×x) = (4×2)+(5×4)+(6×6)+(7×4)+(8×2) = 8+20+36+28+16 = 108\nMean = 108/18 = 6",
+      "visual": {
+        "type": "table",
+        "data": {
+          "title": "Tabel Frekuensi Nilai",
+          "headers": ["Nilai", "4", "5", "6", "7", "8"],
+          "rows": [["Frekuensi", "2", "4", "6", "4", "2"]]
+        }
+      }
     },
     {
       "id": 11,
@@ -152,7 +191,19 @@
         "25"
       ],
       "jawaban": 2,
-      "pembahasan": "Terbanyak: Jumat = 40\nTersedikit: Senin = 20\nSelisih = 40 - 20 = 20"
+      "pembahasan": "Terbanyak: Jumat = 40\nTersedikit: Senin = 20\nSelisih = 40 - 20 = 20",
+      "visual": {
+        "type": "barChart",
+        "data": {
+          "bars": [
+            { "label": "Sen", "value": 20, "color": "#3b82f6" },
+            { "label": "Sel", "value": 35, "color": "#8b5cf6" },
+            { "label": "Rab", "value": 25, "color": "#10b981" },
+            { "label": "Kam", "value": 30, "color": "#f59e0b" },
+            { "label": "Jum", "value": 40, "color": "#ef4444" }
+          ]
+        }
+      }
     },
     {
       "id": 12,
@@ -222,7 +273,16 @@
         "(3, -4)"
       ],
       "jawaban": 1,
-      "pembahasan": "Refleksi sumbu x: (4,-3) → (4,3)\nRefleksi sumbu y: (4,3) → (-4,3)"
+      "pembahasan": "Refleksi sumbu x: (4,-3) → (4,3)\nRefleksi sumbu y: (4,3) → (-4,3)",
+      "visual": {
+        "type": "transformation",
+        "data": {
+          "original": { "x": 4, "y": -3, "label": "A(4,-3)" },
+          "transformed": { "x": -4, "y": 3, "label": "A''(-4,3)" },
+          "xRange": [-6, 6],
+          "yRange": [-6, 6]
+        }
+      }
     },
     {
       "id": 17,
@@ -320,7 +380,11 @@
         "36 pohon"
       ],
       "jawaban": 1,
-      "pembahasan": "Keliling = 2(24+18) = 84 m\nJumlah pohon = 84/3 = 28 pohon"
+      "pembahasan": "Keliling = 2(24+18) = 84 m\nJumlah pohon = 84/3 = 28 pohon",
+      "visual": {
+        "type": "rectangle",
+        "data": { "width": 24, "height": 18, "label": "Taman 24m x 18m" }
+      }
     },
     {
       "id": 24,
@@ -362,7 +426,14 @@
         "20 cm"
       ],
       "jawaban": 2,
-      "pembahasan": "12/8 = p/12\n3/2 = p/12\np = 18 cm"
+      "pembahasan": "12/8 = p/12\n3/2 = p/12\np = 18 cm",
+      "visual": {
+        "type": "similar",
+        "data": {
+          "rect1": { "w": 12, "h": 8 },
+          "rect2": { "w": 18, "h": 12 }
+        }
+      }
     },
     {
       "id": 27,

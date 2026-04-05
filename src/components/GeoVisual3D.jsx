@@ -27,6 +27,25 @@ export default function GeoVisual3D({ type, data = {}, width = 320, height = 240
     background: colors.bg,
     cursor: 'move',
     overflow: 'hidden',
+    position: 'relative',
+  };
+
+  const reminderStyle = {
+    position: 'absolute',
+    bottom: '12px',
+    right: '12px',
+    background: 'rgba(0, 0, 0, 0.4)',
+    color: '#fff',
+    padding: '4px 8px',
+    borderRadius: '16px',
+    fontSize: '0.65rem',
+    pointerEvents: 'none',
+    zIndex: 10,
+    backdropFilter: 'blur(4px)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+    border: '1px solid rgba(255, 255, 255, 0.1)',
   };
 
   return (
@@ -43,6 +62,9 @@ export default function GeoVisual3D({ type, data = {}, width = 320, height = 240
           <OrbitControls makeDefault enableZoom={true} enablePan={true} />
         </Suspense>
       </Canvas>
+      <div style={reminderStyle}>
+        <span>🔄 Putar & Zoom 3D</span>
+      </div>
     </div>
   );
 }

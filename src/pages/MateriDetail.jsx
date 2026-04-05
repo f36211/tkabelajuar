@@ -4,6 +4,7 @@ import { useApp } from '../context/AppContext';
 import materiData from '../data/materi.json';
 import { useState } from 'react';
 import StepSolver from '../components/StepSolver';
+import GeoVisual from '../components/GeoVisual';
 
 export default function MateriDetail() {
   const { topikId } = useParams();
@@ -46,6 +47,17 @@ export default function MateriDetail() {
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{topik.summary}</p>
         </div>
       </div>
+
+      {/* Animation Learning */}
+      {topik.animation && (
+        <div className="card" style={{ marginBottom: 24, border: '2px solid var(--accent-subtle)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+            <span style={{ fontSize: '1.2rem' }}>🎬</span>
+            <h2 style={{ fontSize: '1.1rem', fontWeight: 700 }}>Visualisasi Interaktif</h2>
+          </div>
+          <GeoVisual type={topik.animation.type} data={topik.animation.data} />
+        </div>
+      )}
 
       {/* Rumus */}
       <div className="card" style={{ marginBottom: 24 }}>

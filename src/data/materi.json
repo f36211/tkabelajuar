@@ -2,7 +2,7 @@
   {
     "id": "aritmatika-sosial",
     "title": "Aritmatika Sosial",
-    "icon": "💰",
+    "icon": "💸",
     "tier": "S",
     "description": "Diskon bertingkat, bunga bank, untung-rugi, dan perbandingan kecepatan/kerja",
     "summary": "Materi tentang perhitungan dalam kehidupan sehari-hari seperti diskon, bunga, untung-rugi, perbandingan, dan skala peta.",
@@ -138,6 +138,43 @@
       { "name": "Refleksi y = x", "formula": "(x,y) → (y,x)", "note": "Tukar koordinat" },
       { "name": "Translasi", "formula": "(x,y) → (x+a, y+b)", "note": "Geser sesuai vektor (a,b)" }
     ],
+    "animation": {
+      "type": "animated",
+      "data": {
+        "steps": [
+          { 
+            "title": "Konsep Pythagoras", 
+            "description": "Teorema ini menghubungkan ketiga sisi segitiga siku-siku. Mari kita gunakan contoh segitiga dengan sisi 3 dan 4.", 
+            "math": "a^2 + b^2 = c^2",
+            "visual": { "type": "pythagoras", "data": { "a": 3, "b": 4, "c": "?", "labels": { "left": "a=3", "bottom": "b=4", "hyp": "c=?" } } }
+          },
+          { 
+            "title": "Kuadrat Sisi a", 
+            "description": "Kita hitung luas persegi pada sisi a (3). Luasnya adalah 3 x 3 = 9.", 
+            "math": "a^2 = 3^2 = 9",
+            "visual": { "type": "rectangle", "data": { "width": 3, "height": 3, "label": "a^2 = 9" } }
+          },
+          { 
+            "title": "Kuadrat Sisi b", 
+            "description": "Kita hitung luas persegi pada sisi b (4). Luasnya adalah 4 x 4 = 16.", 
+            "math": "b^2 = 4^2 = 16",
+            "visual": { "type": "rectangle", "data": { "width": 4, "height": 4, "label": "b^2 = 16" } }
+          },
+          { 
+            "title": "Jumlahkan Luas", 
+            "description": "Jumlah dari kuadrat kedua sisi tersebut adalah nilai dari c kuadrat (sisi miring).", 
+            "math": "c^2 = a^2 + b^2 = 9 + 16 = 25",
+            "visual": { "type": "pythagoras", "data": { "a": 3, "b": 4, "c": 5, "labels": { "left": "9", "bottom": "16", "hyp": "25" } } }
+          },
+          { 
+            "title": "Akar Kuadrat", 
+            "description": "Untuk mendapatkan panjang sisi miring (c), kita tarik akar kuadrat dari 25.", 
+            "math": "c = \\sqrt{25} = 5",
+            "visual": { "type": "pythagoras", "data": { "a": 3, "b": 4, "c": 5, "labels": { "left": "3", "bottom": "4", "hyp": "c=5" } } }
+          }
+        ]
+      }
+    },
     "examples": [
       {
         "question": "Tali dari puncak tiang bendera ditarik lurus ke tanah. Panjang tali 17 meter dan jarak kaki tiang ke ujung tali sejauh 8 meter. Berapakah tinggi tiang bendera tersebut?",
@@ -168,8 +205,47 @@
         "answer": "15 m"
       },
       {
+        "question": "Sebuah kolam berbentuk lingkaran memiliki diameter 14 m. Di sekeliling kolam akan dibuat jalan setapak selebar 1 m. Berapakah luas jalan setapak tersebut?",
+        "steps": [
+          {
+            "title": "Analisis Jari-jari",
+            "text": "Diameter kolam adalah 14 m, maka jari-jari kolam (r₁) adalah 7 m. Jalan setapak menambah lebar 1 m di sekelilingnya, sehingga jari-jari total (r₂) menjadi 8 m.",
+            "math": "r_1 = 7\\,m, \\quad r_2 = 7 + 1 = 8\\,m",
+            "visual": { "type": "circle", "data": { "radius": 7, "label": "Kolam (r=7)" } }
+          },
+          {
+            "title": "Visualisasi Luas",
+            "text": "Luas jalan setapak adalah selisih antara luas lingkaran besar (kolam + jalan) dan luas lingkaran kecil (kolam saja).",
+            "math": "L_{jalan} = \\pi(r_2^2 - r_1^2)",
+            "visual": { "type": "circle", "data": { "radius": 8, "label": "Total (r=8)" } }
+          },
+          {
+            "title": "Perhitungan Akhir",
+            "text": "Gunakan π ≈ 22/7 untuk memudahkan perhitungan.",
+            "math": "L = \\frac{22}{7} \\times (8^2 - 7^2) = \\frac{22}{7} \\times (64 - 49) = \\frac{22}{7} \\times 15 \\approx 47,14\\,m^2"
+          }
+        ],
+        "answer": "47,14 m²"
+      },
+      {
         "question": "Prisma segitiga alas siku-siku 6cm, 8cm, 10cm. Tinggi prisma 15cm. Volume?",
-        "solution": "Luas alas = (6 × 8)/2 = 24 cm²\nVolume = 24 × 15 = 360 cm³\nNote: 10 cm adalah hipotenusa (tidak dipakai)",
+        "steps": [
+          {
+            "title": "Identifikasi Alas",
+            "text": "Alas prisma adalah segitiga siku-siku dengan sisi 6 cm dan 8 cm (10 cm adalah sisi miring).",
+            "math": "L_{alas} = \\frac{1}{2} \\times 6 \\times 8 = 24\\,cm^2"
+          },
+          {
+            "title": "Visualisasi 3D",
+            "text": "Volume prisma dihitung dengan mengalikan luas alas dengan tinggi prisma.",
+            "visual": { "type": "prism", "data": { "a": 6, "b": 8, "h": 15 } }
+          },
+          {
+            "title": "Hitung Volume",
+            "text": "Masukkan nilai luas alas dan tinggi ke rumus volume.",
+            "math": "V = 24 \\times 15 = 360\\,cm^3"
+          }
+        ],
         "answer": "360 cm³"
       },
       {
@@ -202,7 +278,7 @@
     "id": "statistika",
     "title": "Statistika",
     "icon": "📊",
-    "tier": "A",
+    "tier": "S",
     "description": "Mean, median, modus, interpretasi diagram, tabel frekuensi",
     "summary": "Statistika dasar: menghitung mean, median, modus dari data tunggal dan tabel frekuensi, serta membaca diagram batang/garis.",
     "formulas": [
@@ -242,6 +318,37 @@
       { "name": "Peluang Gabungan", "formula": "P(A∪B) = P(A) + P(B) - P(A∩B)", "note": "Untuk kejadian tidak saling lepas" },
       { "name": "Peluang Bersyarat", "formula": "P(A∩B) = P(A) × P(B|A)", "note": "Tanpa pengembalian: jumlah berkurang" }
     ],
+    "animation": {
+      "type": "animated",
+      "data": {
+        "steps": [
+          { 
+            "title": "Ruang Sampel Dadu", 
+            "description": "Satu dadu memiliki 6 sisi. Maka total ruang sampel n(S) adalah 6.", 
+            "math": "n(S) = \\{1, 2, 3, 4, 5, 6\\} = 6",
+            "visual": { "type": "probability", "data": { "subType": "dice", "value": 1 } }
+          },
+          { 
+            "title": "Kejadian Tertentu", 
+            "description": "Misal kita ingin mencari peluang muncul mata dadu GENAP (2, 4, 6).", 
+            "math": "n(A) = \\{2, 4, 6\\} = 3",
+            "visual": { "type": "probability", "data": { "subType": "dice", "value": 2 } }
+          },
+          { 
+            "title": "Rumus Peluang", 
+            "description": "Peluang kejadian A adalah jumlah kejadian A dibagi total ruang sampel.", 
+            "math": "P(A) = \\frac{n(A)}{n(S)} = \\frac{3}{6}",
+            "visual": { "type": "probability", "data": { "subType": "logic" } }
+          },
+          { 
+            "title": "Hasil Sederhana", 
+            "description": "Kita sederhanakan pecahannya untuk mendapatkan hasil akhir.", 
+            "math": "P(A) = 0,5 \\text{ atau } 50\\%",
+            "visual": { "type": "probability", "data": { "subType": "dice", "value": 6 } }
+          }
+        ]
+      }
+    },
     "examples": [
       {
         "question": "Dadu dilempar sekali. Peluang bilangan prima?",
@@ -255,7 +362,25 @@
       },
       {
         "question": "Dadu dilempar 2 kali. Peluang jumlah > 9?",
-        "solution": "Jumlah 10: (4,6),(5,5),(6,4) = 3\nJumlah 11: (5,6),(6,5) = 2\nJumlah 12: (6,6) = 1\nTotal = 6/36 = 1/6",
+        "steps": [
+          {
+            "title": "Analisis Ruang Sampel",
+            "text": "Dua dadu dilempar memiliki 6 x 6 = 36 kemungkinan hasil.",
+            "visual": { "type": "probability", "data": { "subType": "dice", "value": 5, "value2": 6 } }
+          },
+          {
+            "title": "Kejadian Diinginkan",
+            "text": "Jumlah > 9 berarti 10, 11, atau 12. Kemungkinannya: (4,6), (5,5), (6,4), (5,6), (6,5), (6,6). Ada 6 kejadian.",
+            "math": "n(A) = 6, \\quad n(S) = 36",
+            "visual": { "type": "probability", "data": { "subType": "dice", "value": 6, "value2": 4 } }
+          },
+          {
+            "title": "Hitung Peluang",
+            "text": "Peluang adalah perbandingan antara jumlah kejadian yang diinginkan dengan total ruang sampel.",
+            "math": "P(A) = \\frac{6}{36} = \\frac{1}{6}",
+            "visual": { "type": "probability", "data": { "subType": "logic" } }
+          }
+        ],
         "answer": "1/6"
       }
     ]
