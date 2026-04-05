@@ -19,6 +19,7 @@ export default function SimulasiUjian() {
   const { addXP, addUjianResult, addWrongAnswer } = useApp();
 
   const [phase, setPhase] = useState('intro'); // intro | exam | finished
+  const [mode, setMode] = useState(null); // 'no-timer' | 'with-timer'
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -41,7 +42,7 @@ export default function SimulasiUjian() {
 
   // Timer
   useEffect(() => {
-    if (phase === 'exam' && timeLeft > 0) {
+    if (phase === 'exam' && mode === 'with-timer' && timeLeft > 0) {
       intervalRef.current = setInterval(() => {
         setTimeLeft(t => {
           if (t <= 1) {
@@ -54,14 +55,19 @@ export default function SimulasiUjian() {
       }, 1000);
       return () => clearInterval(intervalRef.current);
     }
-  }, [phase]);
+  }, [phase, mode]);
 
-  const startExam = () => {
+  const startExam = (selectedMode) => {
     const shuffled = shuffleArray(soalData.ujian).slice(0, 30);
     setQuestions(shuffled);
     setAnswers({});
     setMarked({});
-    setTimeLeft(75 * 60);
+    setMode(selectedMode);
+    if (selectedMode === 'with-timer') {
+      setTimeLeft(75 * 60);
+    } else {
+      setTimeLeft(null); // No timer
+    }
     setCurrentIndex(0);
     setPhase('exam');
   };
@@ -84,7 +90,7 @@ export default function SimulasiUjian() {
 
     const correct = result.filter(r => r.isCorrect).length;
     const score = Math.round((correct / questions.length) * 100);
-    const timeUsed = 75 * 60 - timeLeft;
+    const timeUsed = mode === 'with-timer' ? 75 * 60 - timeLeft : 0;
 
     addXP(correct * 5 + (score >= 70 ? 50 : 0));
     addUjianResult({
@@ -139,8 +145,7 @@ export default function SimulasiUjian() {
             Simulasi Ujian TKA Matematika
           </h1>
           <p style={{ color: 'var(--text-secondary)', marginBottom: 24, lineHeight: 1.7 }}>
-            30 soal campuran semua topik dengan waktu 75 menit.
-            <br />Jawaban tidak bisa dilihat sebelum submit.
+            30 soal campuran semua topik. Pilih mode simulasi yang diinginkan.
           </p>
 
           <div style={{
@@ -150,7 +155,6 @@ export default function SimulasiUjian() {
             <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: 12 }}>📋 Ketentuan:</h3>
             <ul style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 2, paddingLeft: 20 }}>
               <li>30 soal pilihan ganda</li>
-              <li>Timer 75 menit (auto submit jika habis)</li>
               <li>Soal campuran dari semua topik</li>
               <li>Bisa tandai soal ragu-ragu</li>
               <li>Navigasi bebas (maju/mundur)</li>
@@ -158,9 +162,18 @@ export default function SimulasiUjian() {
             </ul>
           </div>
 
-          <button className="btn btn-primary btn-lg btn-full" onClick={startExam}>
-            🚀 Mulai Ujian Sekarang
-          </button>
+          <div style={{ display: 'flex', gap: 16, flexDirection: 'column' }}>
+            <button className="btn btn-primary btn-lg btn-full" onClick={() => startExam('no-timer')}>
+              🕒 Mode Tanpa Timer
+              <br />
+              <small style={{ fontSize: '0.8rem', opacity: 0.8 }}>Latihan tanpa batas waktu</small>
+            </button>
+            <button className="btn btn-success btn-lg btn-full" onClick={() => startExam('with-timer')}>
+              ⏱️ Mode Dengan Timer
+              <br />
+              <small style={{ fontSize: '0.8rem', opacity: 0.8 }}>75 menit (auto submit jika habis)</small>
+            </button>
+          </div>
         </div>
       </motion.div>
     );
@@ -168,24 +181,35 @@ export default function SimulasiUjian() {
 
   // ─── EXAM ───
   const current = questions[currentIndex];
-  const isTimeDanger = timeLeft < 300; // < 5 min
+  const isTimeDanger = mode === 'with-timer' && timeLeft < 300; // < 5 min
 
   return (
     <div className="exam-layout">
       {/* Main Question Area */}
       <div>
         {/* Timer bar mobile */}
-        <div className="card" style={{
-          marginBottom: 16, display: 'flex', justifyContent: 'space-between',
-          alignItems: 'center', padding: '12px 20px',
-        }}>
-          <div className={`timer-display ${isTimeDanger ? 'timer-danger' : ''}`}>
-            🕐 {formatTime(timeLeft)}
+        {mode === 'with-timer' && (
+          <div className="card" style={{
+            marginBottom: 16, display: 'flex', justifyContent: 'space-between',
+            alignItems: 'center', padding: '12px 20px',
+          }}>
+            <div className={`timer-display ${isTimeDanger ? 'timer-danger' : ''}`}>
+              🕐 {formatTime(timeLeft)}
+            </div>
+            <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+              <span className="badge badge-blue">{answeredCount}/{questions.length} dijawab</span>
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+        )}
+
+        {mode === 'no-timer' && (
+          <div className="card" style={{
+            marginBottom: 16, display: 'flex', justifyContent: 'center',
+            alignItems: 'center', padding: '12px 20px',
+          }}>
             <span className="badge badge-blue">{answeredCount}/{questions.length} dijawab</span>
           </div>
-        </div>
+        )}
 
         {/* Progress bar */}
         <div className="progress-bar" style={{ marginBottom: 16, height: 4 }}>
