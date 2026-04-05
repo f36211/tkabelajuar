@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import GeoVisual3D from './GeoVisual3D';
 
 /**
  * SVG-based geometry visualizations for math problems.
@@ -199,50 +200,9 @@ export default function GeoVisual({ type, data = {}, width = 320, height = 240 }
     );
   }
 
-  // ─── PRISM (3D-ish) ───
+  // ─── PRISM 3D (R3F) ───
   if (type === 'prism') {
-    const { a = 6, b = 8, h = 15 } = data;
-    const pad = 40;
-    const scale = 8;
-    const ox = pad + 30;
-    const oy = height - pad;
-
-    // Front triangle
-    const p1 = [ox, oy];
-    const p2 = [ox + b * scale, oy];
-    const p3 = [ox, oy - a * scale];
-
-    // Back triangle (offset)
-    const dx = h * 2.5;
-    const dy = -h * 1.5;
-    const p4 = [p1[0] + dx, p1[1] + dy];
-    const p5 = [p2[0] + dx, p2[1] + dy];
-    const p6 = [p3[0] + dx, p3[1] + dy];
-
-    return (
-      <svg viewBox={`0 0 ${width + 40} ${height}`} style={{ ...svgStyle, maxWidth: width + 40 }}>
-        {/* Back face */}
-        <polygon points={`${p4[0]},${p4[1]} ${p5[0]},${p5[1]} ${p6[0]},${p6[1]}`}
-          fill="none" stroke={colors.grid} strokeWidth="1.5" strokeDasharray="5 3" />
-        {/* Side faces */}
-        <polygon points={`${p1[0]},${p1[1]} ${p2[0]},${p2[1]} ${p5[0]},${p5[1]} ${p4[0]},${p4[1]}`}
-          fill={colors.fill} stroke={colors.accent} strokeWidth="1.5" opacity="0.5" />
-        <polygon points={`${p1[0]},${p1[1]} ${p3[0]},${p3[1]} ${p6[0]},${p6[1]} ${p4[0]},${p4[1]}`}
-          fill={colors.fill} stroke={colors.accent} strokeWidth="1.5" opacity="0.7" />
-        <polygon points={`${p2[0]},${p2[1]} ${p3[0]},${p3[1]} ${p6[0]},${p6[1]} ${p5[0]},${p5[1]}`}
-          fill={colors.fill} stroke={colors.accent} strokeWidth="1.5" opacity="0.3" />
-        {/* Front face */}
-        <polygon points={`${p1[0]},${p1[1]} ${p2[0]},${p2[1]} ${p3[0]},${p3[1]}`}
-          fill={colors.fill} stroke={colors.accent} strokeWidth="2.5" />
-        {/* Right angle */}
-        <path d={`M ${p1[0]},${p1[1] - 12} L ${p1[0] + 12},${p1[1] - 12} L ${p1[0] + 12},${p1[1]}`}
-          fill="none" stroke={colors.stroke} strokeWidth="1.5" />
-        {/* Labels */}
-        <text x={(p1[0] + p2[0]) / 2} y={p1[1] + 18} textAnchor="middle" fill={colors.text} fontSize="12" fontWeight="600">{b} cm</text>
-        <text x={p1[0] - 18} y={(p1[1] + p3[1]) / 2} textAnchor="middle" fill={colors.text} fontSize="12" fontWeight="600">{a} cm</text>
-        <text x={(p1[0] + p4[0]) / 2 - 5} y={(p1[1] + p4[1]) / 2 + 15} textAnchor="middle" fill={colors.label} fontSize="11">t = {h} cm</text>
-      </svg>
-    );
+    return <GeoVisual3D type="prism" data={data} width={width} height={height} />;
   }
 
   // ─── BAR CHART ───
@@ -349,6 +309,56 @@ export default function GeoVisual({ type, data = {}, width = 320, height = 240 }
         <text x={pad + w1 + 30 * scale + w2 / 2} y={height - pad - h2 - 8} textAnchor="middle" fill={colors.label} fontSize="10">B</text>
         {/* ≅ symbol */}
         <text x={pad + w1 + 15 * scale} y={height / 2 + 4} textAnchor="middle" fill={colors.label} fontSize="18">≅</text>
+      </svg>
+    );
+  }
+
+  // ─── GARDU + TIANG ───
+  if (type === 'gardu') {
+    const { garduH = 4, dict = 5, kabel = 13 } = data;
+    const pad = 40;
+    
+    // Calculate difference in height (x) and total pole height
+    const xDist = Math.sqrt(Math.max(kabel * kabel - dict * dict, 1));
+    const tiangH = garduH + xDist;
+    const scale = Math.min((width - pad * 2) / 10, (height - pad * 2) / Math.max(tiangH, 10));
+    
+    const garduX = pad + 20;
+    const garduY = height - pad - (garduH * scale);
+    const tiangX = width - pad - 40;
+    const tiangY = height - pad - (tiangH * scale);
+    const gwScaled = 40; // width of gardu building
+    
+    return (
+      <svg viewBox={`0 0 ${width} ${height}`} style={svgStyle}>
+        {/* Ground */}
+        <line x1={10} y1={height - pad} x2={width - 10} y2={height - pad} stroke={colors.stroke} strokeWidth="3" />
+        
+        {/* Gardu */}
+        <rect x={garduX - gwScaled/2} y={garduY} width={gwScaled} height={garduH * scale} fill={colors.fill} stroke={colors.accent} strokeWidth="2" rx="2" />
+        <text x={garduX} y={garduY + (garduH * scale)/2 + 4} textAnchor="middle" fill={colors.text} fontSize="12" fontWeight="600">{garduH} m</text>
+        <text x={garduX} y={height - pad + 18} textAnchor="middle" fill={colors.label} fontSize="12" fontWeight="600">Gardu</text>
+
+        {/* Tiang */}
+        <line x1={tiangX} y1={height - pad} x2={tiangX} y2={tiangY} stroke={colors.stroke} strokeWidth="6" strokeLinecap="round" />
+        <text x={tiangX} y={height - pad + 18} textAnchor="middle" fill={colors.label} fontSize="12" fontWeight="600">Tiang</text>
+        
+        {/* Horizontal Line for x */}
+        <line x1={garduX} y1={garduY} x2={tiangX} y2={garduY} stroke={colors.grid} strokeWidth="2" strokeDasharray="5 5" />
+        
+        {/* Kabel */}
+        <line x1={garduX} y1={garduY} x2={tiangX} y2={tiangY} stroke={colors.danger} strokeWidth="3" />
+        <text x={(garduX + tiangX)/2 - 10} y={(garduY + tiangY)/2 - 10} textAnchor="middle" fill={colors.danger} fontSize="13" fontWeight="700">{kabel} m</text>
+        
+        {/* Distance (dict) */}
+        <line x1={garduX} y1={height - pad - 12} x2={tiangX} y2={height - pad - 12} stroke={colors.accent} strokeWidth="1.5" />
+        <text x={(garduX + tiangX)/2} y={height - pad - 20} textAnchor="middle" fill={colors.accent} fontSize="12" fontWeight="600">{dict} m</text>
+        
+        {/* Height indicator for tiang diff */}
+        <text x={tiangX - 10} y={(garduY + tiangY)/2 + 5} textAnchor="end" fill={colors.text} fontSize="13" fontWeight="600">? m</text>
+        
+        {/* Total height text */}
+        <text x={tiangX + 15} y={(tiangY + height - pad)/2 + 5} textAnchor="start" fill={colors.accent} fontSize="12" fontWeight="700">t tiang = ?</text>
       </svg>
     );
   }

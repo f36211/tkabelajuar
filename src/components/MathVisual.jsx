@@ -32,6 +32,19 @@ export function Formula({ tex, display = false, style = {} }) {
 export function getAutoVisual(question) {
   const q = question.pertanyaan?.toLowerCase() || '';
 
+  // Gardu + tiang listrik
+  if (q.includes('gardu') || (q.includes('kabel') && q.includes('tiang'))) {
+    const nums = q.match(/\d+/g)?.map(Number) || [];
+    return {
+      type: 'gardu',
+      data: {
+        garduH: nums[0] || 4,
+        dict: nums[1] || 5,
+        kabel: nums[2] || 13,
+      },
+    };
+  }
+
   // Pythagoras / tiang / tali
   if ((q.includes('tali') || q.includes('tiang') || q.includes('tangga')) &&
     (q.includes('tinggi') || q.includes('panjang'))) {
@@ -49,18 +62,6 @@ export function getAutoVisual(question) {
         },
       };
     }
-  }
-
-  // Gardu + tiang listrik
-  if (q.includes('gardu') || (q.includes('kabel') && q.includes('tiang'))) {
-    const nums = q.match(/\d+/g)?.map(Number) || [];
-    return {
-      type: 'pythagoras',
-      data: {
-        a: 12, b: nums.find(n => n === 5) || 5, c: nums.find(n => n === 13) || 13,
-        labels: { bottom: '5 m', left: 'x m', hyp: '13 m' },
-      },
-    };
   }
 
   // Refleksi / translasi
@@ -82,11 +83,19 @@ export function getAutoVisual(question) {
         tx = y; ty = x; axis = 'y=x';
       }
 
+      if (q.includes('translasi')) {
+         const transMatch = q.match(/translasi\s*\(\s*(-?\d+)\s*,\s*(-?\d+)\s*\)/);
+         if (transMatch) {
+            tx += parseInt(transMatch[1]);
+            ty += parseInt(transMatch[2]);
+         }
+      }
+
       return {
         type: 'transformation',
         data: {
           original: { x, y, label: `A(${x},${y})` },
-          transformed: { x: tx, y: ty, label: `A'(${tx},${ty})` },
+          transformed: { x: tx, y: ty, label: `Akhir(${tx},${ty})` },
           axis,
           xRange: [Math.min(x, tx) - 3, Math.max(x, tx) + 3],
           yRange: [Math.min(y, ty) - 3, Math.max(y, ty) + 3],
@@ -126,7 +135,7 @@ export function getAutoVisual(question) {
       data: {
         a: nums[0] || 6,
         b: nums[1] || 8,
-        h: nums[2] || 15,
+        h: nums[3] || 15,
       },
     };
   }
@@ -175,7 +184,7 @@ export function getAutoVisual(question) {
       type: 'similar',
       data: {
         rect1: { w: nums[0] || 12, h: nums[1] || 8 },
-        rect2: { w: nums[2] || 18, h: nums[2] || 12 },
+        rect2: { w: nums[3] || 18, h: nums[2] || 12 },
       },
     };
   }
