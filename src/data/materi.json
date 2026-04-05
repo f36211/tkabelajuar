@@ -59,15 +59,45 @@
     "id": "aljabar",
     "title": "Aljabar",
     "icon": "🔢",
-    "tier": "A",
+    "tier": "S",
     "description": "Operasi bilangan, persamaan linear, sistem persamaan, pertidaksamaan, eksponen & akar",
     "summary": "Konsep-konsep dasar aljabar meliputi operasi bilangan, persamaan linear, sistem persamaan dua variabel, dan bentuk akar/eksponen.",
     "formulas": [
       { "name": "Persamaan Linear Satu Variabel", "formula": "ax + b = c → x = (c - b) / a", "note": "Pindahkan variabel ke satu sisi" },
       { "name": "Sistem Persamaan Linear", "formula": "Metode: Substitusi atau Eliminasi", "note": "Trick: Kadang jumlahkan/kurangkan langsung tanpa cari x,y satu-satu" },
       { "name": "Sifat Eksponen", "formula": "aᵐ × aⁿ = aᵐ⁺ⁿ, aᵐ / aⁿ = aᵐ⁻ⁿ", "note": "Ubah semua ke basis yang sama" },
-      { "name": "Bentuk Akar", "formula": "√(a×b) = √a × √b", "note": "Sederhanakan akar: √12 = √(4×3) = 2√3" }
+      { "name": "Bentuk Akar", "formula": "√(a×b) = √a × √b", "note": "Sederhanakan akar: √12 = √(4×3) = 2√3" },
+      { "name": "Faktorisasi Prima", "formula": "FPB & KPK", "note": "Gunakan pohon faktor untuk mencari faktor persekutuan" }
     ],
+    "animation": {
+      "type": "animated",
+      "data": {
+        "steps": [
+          {
+            "title": "Pola Bilangan (Segitiga)",
+            "description": "Pola ini membentuk segitiga. Jumlah titik pada setiap pola mengikuti aturan tertentu.",
+            "visual": { "type": "sequence", "data": { "pattern": "dots", "steps": [1, 3, 6, 10, 15], "current": 0 } }
+          },
+          {
+            "title": "Pola ke-2",
+            "description": "Pola kedua memiliki 3 titik.",
+            "visual": { "type": "sequence", "data": { "pattern": "dots", "steps": [1, 3, 6, 10, 15], "current": 1 } }
+          },
+          {
+            "title": "Pola ke-3",
+            "description": "Pola ketiga memiliki 6 titik. Rumusnya adalah n(n+1)/2.",
+            "math": "U_3 = \\frac{3(3+1)}{2} = 6",
+            "visual": { "type": "sequence", "data": { "pattern": "dots", "steps": [1, 3, 6, 10, 15], "current": 2 } }
+          },
+          {
+            "title": "Pola ke-4",
+            "description": "Pola keempat memiliki 10 titik.",
+            "math": "U_4 = \\frac{4(4+1)}{2} = 10",
+            "visual": { "type": "sequence", "data": { "pattern": "dots", "steps": [1, 3, 6, 10, 15], "current": 3 } }
+          }
+        ]
+      }
+    },
     "examples": [
       {
         "question": "Harga 3 pensil + 2 penghapus = Rp13.000. Harga 2 pensil + 3 penghapus = Rp12.000. Berapa harga 5 pensil + 5 penghapus?",

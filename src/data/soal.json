@@ -924,6 +924,100 @@
       ],
       "jawaban": 1,
       "pembahasan": "Total = 2/3 + 1/2 + 7/10 + 2/5 = 20/30 + 15/30 + 21/30 + 12/30 = 68/30 = 34/15 = 2 4/15 liter. 3 - 2 4/15 = 11/15 liter"
+    },
+    {
+      "id": 126,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Ani membeli 2 pulpen (Rp12.000) dan 2 pensil (Rp8.000). Promo 'Hemat Berempat': beli 4 barang, gratis 1 barang termurah. Berapa total bayar?",
+      "opsi": [
+        "Rp32.000",
+        "Rp36.000",
+        "Rp40.000",
+        "Rp44.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Total: (2×12rb) + (2×8rb) = 24rb + 16rb = 40rb. Gratis termurah (8rb). Bayar: 40rb - 8rb = 32rb",
+      "visual": {
+        "type": "barChart",
+        "data": {
+          "bars": [
+            { "label": "Normal", "value": 40000, "color": "#94a3b8" },
+            { "label": "Termurah", "value": 8000, "color": "#ef4444" },
+            { "label": "Bayar", "value": 32000, "color": "#10b981" }
+          ]
+        }
+      }
+    },
+    {
+      "id": 127,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Sebuah toko menjual 1 kg beras seharga Rp12.750. Jika seseorang membeli 19,6 kg, perkiraan total harga yang paling mendekati adalah...",
+      "opsi": [
+        "Rp230.000",
+        "Rp240.000",
+        "Rp250.000",
+        "Rp260.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Estimasi: 20 kg × Rp12.500 = Rp250.000. Atau 20 × 12.750 = 255.000.",
+      "visual": {
+        "type": "estimation",
+        "data": { "unit": 1, "total": 19.6, "price": 12750 }
+      }
+    },
+    {
+      "id": 128,
+      "topik": "aljabar",
+      "tingkat": "sulit",
+      "pertanyaan": "Terdapat tiga bilangan: (33² - 3²), (8² + 296), dan (36 × 35). Faktor persekutuan terbesar (FPB) dari ketiga bilangan tersebut adalah...",
+      "opsi": [
+        "2² × 3² × 5",
+        "2² × 3² × 7",
+        "2³ × 3² × 5",
+        "2 × 3² × 7"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1: 1089-9=1080 (2³×3³×5). 2: 64+296=360 (2³×3²×5). 3: 1260 (2²×3²×5×7). FPB = 2²×3²×5 = 180"
+    },
+    {
+      "id": 129,
+      "topik": "aritmatika-sosial",
+      "tingkat": "sedang",
+      "pertanyaan": "Larutan desinfektan butuh cairan A dan B dengan rasio A:B = 3:5. Jika tersedia 2,5 liter cairan B, berapa volume maksimum larutan yang dapat dibuat?",
+      "opsi": [
+        "3,6 liter",
+        "4,0 liter",
+        "4,8 liter",
+        "6,4 liter"
+      ],
+      "jawaban": 1,
+      "pembahasan": "B = 2,5L (5 bagian). 1 bagian = 0,5L. A = 3 bagian = 1,5L. Total = 1,5 + 2,5 = 4,0 liter",
+      "visual": {
+        "type": "barChart",
+        "data": {
+          "bars": [
+            { "label": "Cairan A", "value": 1.5, "color": "#3b82f6" },
+            { "label": "Cairan B", "value": 2.5, "color": "#10b981" },
+            { "label": "Total", "value": 4.0, "color": "#94a3b8" }
+          ]
+        }
+      }
+    },
+    {
+      "id": 130,
+      "topik": "geometri",
+      "tingkat": "sulit",
+      "pertanyaan": "Sebuah monumen dibangun dari bata ringan 60x20x10 cm. Jika volume monumen tersebut adalah 216 m³, berapa jumlah minimal bata ringan yang diperlukan?",
+      "opsi": [
+        "16.800 buah",
+        "18.000 buah",
+        "19.200 buah",
+        "21.600 buah"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Vol bata = 0,6×0,2×0,1 = 0,012 m³. Jumlah = 216 / 0,012 = 18.000 buah"
     }
   ],
   "ujian": [

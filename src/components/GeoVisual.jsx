@@ -7,7 +7,7 @@ import MathAnimator from './MathAnimator';
 
 /**
  * Geometry visualizations for math problems.
- * Types: pythagoras, rectangle, circle, triangle, coordinate, barChart, transformation, similar, gardu, probability, animated
+ * Types: pythagoras, rectangle, circle, triangle, coordinate, barChart, transformation, similar, gardu, probability, animated, estimation, sequence
  */
 export default function GeoVisual({ type, data = {}, width = '100%', height = 300 }) {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
@@ -615,6 +615,72 @@ export default function GeoVisual({ type, data = {}, width = '100%', height = 30
           
           {/* Total height text */}
           <text x={tiangX + 15} y={(tiangY + viewH - pad)/2 + 5} textAnchor="start" fill={colors.accent} fontSize="12" fontWeight="700">t tiang = ?</text>
+        </svg>
+      </div>
+    );
+  }
+
+  // ─── ESTIMATION / SCALE (SVG) ───
+  if (type === 'estimation') {
+    const { unit = 1, total = 19.6, price = 12750 } = data;
+    const viewW = 400;
+    const viewH = 300;
+    const estTotal = Math.round(total);
+    const estPrice = Math.round(price / 500) * 500;
+
+    return (
+      <div style={containerStyle}>
+        <svg viewBox={`0 0 ${viewW} ${viewH}`} style={svgStyle}>
+          <g transform="translate(50, 80)">
+             <rect width="80" height="100" fill={colors.fill} stroke={colors.accent} strokeWidth="2" rx="5" />
+             <text x="40" y="55" textAnchor="middle" fill={colors.text} fontSize="14" fontWeight="bold">{unit} kg</text>
+             <text x="40" y="125" textAnchor="middle" fill={colors.label} fontSize="12">Rp{price.toLocaleString()}</text>
+          </g>
+          
+          <text x="175" y="135" textAnchor="middle" fill={colors.accent} fontSize="30">×</text>
+          <text x="175" y="165" textAnchor="middle" fill={colors.label} fontSize="12">≈ {estTotal}</text>
+
+          <g transform="translate(250, 80)">
+             <rect width="100" height="120" fill={colors.accent} fillOpacity="0.2" stroke={colors.accent} strokeWidth="2" rx="5" />
+             <text x="50" y="50" textAnchor="middle" fill={colors.text} fontSize="14" fontWeight="bold">{total} kg</text>
+             <text x="50" y="80" textAnchor="middle" fill={colors.danger} fontSize="16" fontWeight="bold">?</text>
+             <text x="50" y="145" textAnchor="middle" fill={colors.label} fontSize="11">Estimasi: {estTotal} x {estPrice.toLocaleString()}</text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ─── SEQUENCE / POLA (SVG) ───
+  if (type === 'sequence') {
+    const { pattern = 'dots', steps = [1, 3, 6, 10], current = 3 } = data;
+    const viewW = 400;
+    const viewH = 300;
+    const n = steps[current] || 1;
+    
+    // Draw dots in triangle or line
+    const renderDots = () => {
+      const dots = [];
+      if (pattern === 'dots') {
+        // Triangular pattern
+        let count = 0;
+        for (let row = 0; row < 10; row++) {
+          for (let col = 0; col <= row; col++) {
+            if (count < n) {
+              dots.push(<circle key={count} cx={200 - (row * 12) + (col * 24)} cy={100 + (row * 24)} r="8" fill={colors.accent} />);
+              count++;
+            }
+          }
+        }
+      }
+      return dots;
+    };
+
+    return (
+      <div style={containerStyle}>
+        <svg viewBox={`0 0 ${viewW} ${viewH}`} style={svgStyle}>
+          {renderDots()}
+          <text x={viewW/2} y={260} textAnchor="middle" fill={colors.text} fontSize="16" fontWeight="bold">Pola ke-{current + 1}: {n} titik</text>
         </svg>
       </div>
     );
